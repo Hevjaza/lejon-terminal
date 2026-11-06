@@ -1,0 +1,202 @@
+{
+ "ticket": "SOL-20261029-001",
+ "mint": "H3iGq7KSqdzw7QG3xZo2mF4eaYsvihZqqoAkdXripump",
+ "status": "CLOSED",
+ "label": "SIMULATED (Jupiter quote, desk-side)",
+ "caveat": "optimistic: ignores bots/MEV, failed or delayed txs and quote drift; no real transaction",
+ "approved_method": "desk-side simulated fill approved by Hevar t22u (2026-10-28); repo paper path unavailable, repo untouched",
+ "risk_basis": "research/RISK-SOL-20261029-001.md",
+ "risk_verdict": "CLEAR",
+ "conditions_met_flag": false,
+ "entry_utc": "2026-10-29T20:12:23Z",
+ "entry_stockholm": "2026-10-29 21:12:23",
+ "size_sol": 0.2,
+ "entry_fee_sol": 1e-05,
+ "cost_sol": 0.20001,
+ "tokens_raw": 0,
+ "tokens_ui": 0.0,
+ "decimals": 6,
+ "entry_price_sol_per_token": 1.1393567916497663e-06,
+ "stop_loss_frac": -0.3,
+ "stop_loss_price_sol_per_token": 7.975497541548364e-07,
+ "stop_loss_value_sol": 0.140007,
+ "max_loss_check": {
+  "loss_at_stop_sol": 0.06002,
+  "limit_sol": 0.15,
+  "ok": true,
+  "note": "a gap through the stop between marks can lose more; checked again on exit"
+ },
+ "entry_quote": {
+  "quote_utc": "2026-10-29T20:12:23Z",
+  "context_slot": 463011103,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "in_lamports": 200000000,
+  "out_tokens_raw": 175546414842,
+  "decimals": 6,
+  "decimals_source": "rpc",
+  "min_out_tokens_raw_at_tolerance": 170280022397,
+  "slippage_tolerance_bps": 300,
+  "measured_slippage_pct": 0.1365,
+  "jupiter_priceImpactPct_raw": "0.004164620573209928199644468",
+  "ref_quote_in_lamports": 1000000,
+  "ref_quote_out_raw": 878932247,
+  "swap_usd_value": "19.75790445946320"
+ },
+ "checkpoints": {
+  "+5m": {
+   "due_utc": "2026-10-29T20:17:23Z",
+   "filled": true,
+   "utc": "2026-10-29T20:39:22Z",
+   "multiple": 0.7511,
+   "pct": -24.887,
+   "exit_value_sol": 0.150233475,
+   "price_sol_per_token": 8.558048601289702e-07,
+   "lag_sec": 1319,
+   "late": true
+  },
+  "+15m": {
+   "due_utc": "2026-10-29T20:27:23Z",
+   "filled": true,
+   "utc": "2026-10-29T20:39:22Z",
+   "multiple": 0.7511,
+   "pct": -24.887,
+   "exit_value_sol": 0.150233475,
+   "price_sol_per_token": 8.558048601289702e-07,
+   "lag_sec": 719,
+   "late": true
+  },
+  "+60m": {
+   "due_utc": "2026-10-29T21:12:23Z",
+   "filled": false
+  }
+ },
+ "marks": [
+  {
+   "utc": "2026-10-29T20:39:22Z",
+   "exit_value_sol": 0.150233475,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.049776525,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.049776525,
+   "pct": -24.887,
+   "multiple": 0.7511,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 8.558048601289702e-07,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 463018651
+  },
+  {
+   "utc": "2026-10-29T21:04:20Z",
+   "exit_value_sol": 0.1377697,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.0622403,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.0622403,
+   "pct": -31.119,
+   "multiple": 0.6888,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 7.848049766439217e-07,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 463025658
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-10-29T21:04:20Z",
+  "exit_value_sol": 0.1377697,
+  "remaining_cost_basis_sol": 0.20001,
+  "unrealised_pnl_sol": -0.0622403,
+  "realised_partial_pnl_sol": 0.0,
+  "trade_total_pnl_sol": -0.0622403,
+  "pct": -31.119,
+  "multiple": 0.6888,
+  "tokens_held_frac": 1.0,
+  "price_sol_per_token": 7.848049766439217e-07,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 463025658
+ },
+ "exit": {
+  "utc": "2026-10-29T21:04:20Z",
+  "stockholm": "2026-10-29 22:04:20",
+  "reason": "STOP-LOSS -30 % vs entry (whole holding; simulated sell at token->SOL quote)",
+  "final_leg": "SL",
+  "proceeds_sol": 0.1377697,
+  "final_leg_proceeds_sol": 0.1377697,
+  "exit_fee_sol": 1e-05,
+  "legs": 1,
+  "realised_pnl_sol": -0.0622403,
+  "realised_pnl_pct": -31.119,
+  "multiple": 0.6888,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 463025658,
+  "label": "SIMULATED (Jupiter quote, desk-side)",
+  "max_loss_breached": false
+ },
+ "notes": "cycle 73 CROWD",
+ "tokens_raw_initial": 175546414842,
+ "tokens_ui_initial": 175546.414842,
+ "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
+ "take_profit_plan": "TP1 +100 % sells 50 % (stake recovered); TP2 +1000 % sells the remaining 50 %",
+ "tp1_pct": 100,
+ "tp1_sell_frac": 0.5,
+ "tp1_price_sol_per_token": 2.2787135832995326e-06,
+ "tp1_value_full_holding_sol": 0.40002,
+ "tp1_expected_proceeds_sol": 0.20001,
+ "tp2_pct": 1000,
+ "tp2_sell_frac": 1.0,
+ "tp2_price_sol_per_token": 1.2532924708147429e-05,
+ "tp2_expected_proceeds_sol": 1.100055,
+ "stop_loss_after_tp1_frac": 0.0,
+ "stop_loss_after_tp1_price_sol_per_token": 1.1393567916497663e-06,
+ "tp1_done": false,
+ "tp2_done": false,
+ "stake_recovered": false,
+ "partial_exits": [
+  {
+   "leg": "SL",
+   "utc": "2026-10-29T21:04:20Z",
+   "stockholm": "2026-10-29 22:04:20",
+   "reason": "STOP-LOSS -30 % vs entry (whole holding; simulated sell at token->SOL quote)",
+   "tokens_sold_raw": 175546414842,
+   "tokens_sold_ui": 175546.414842,
+   "frac_of_initial": 1.0,
+   "proceeds_sol": 0.1377697,
+   "exit_fee_sol": 1e-05,
+   "cost_basis_sol": 0.20001,
+   "realised_pnl_sol": -0.0622403,
+   "multiple": 0.6888,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 463025658,
+   "label": "SIMULATED (Jupiter quote, desk-side)",
+   "fill_source": "mark quote"
+  }
+ ],
+ "realised_partial_pnl_sol": -0.0622403,
+ "proceeds_so_far_sol": 0.1377697,
+ "rules_history": [
+  {
+   "utc": "2026-10-29T20:39:17Z",
+   "change": "migrated from single TP +100 % (t23u) to Moonshot 50/50 (t34u); no TP had been hit; all marks/checkpoints kept",
+   "superseded": {
+    "take_profit_pct": 100,
+    "take_profit_price_sol_per_token": 2.2787135832995326e-06,
+    "take_profit_value_sol": 0.40002
+   }
+  },
+  {
+   "utc": "2026-10-29T20:48:06.289214Z",
+   "change": "t35u: stop after TP1 moved from -30% to break-even (entry price)"
+  }
+ ]
+}
