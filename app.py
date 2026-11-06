@@ -129,6 +129,13 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 .goal-bar-fg { height:100%; border-radius:99px; background:#00e676; }
 .goal-bar-fg.bad { background:#ff6b6b; }
 .goal-bar-fg.mid { background:#ffd166; }
+
+.cmp-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; }
+.cmp-col { background:#10141c; border:1px solid #1c2230; border-radius:14px; padding:10px; }
+.cmp-col h4 { margin:0 0 6px; font-size:0.78rem; color:#fff; }
+.cmp-kv { display:flex; justify-content:space-between; font-size:0.68rem; padding:2px 0; color:#c5cad6; }
+.cmp-kv b { color:#e8ecf5; font-family:JetBrains Mono, ui-monospace, monospace; }
+
 .goal-foot { margin-top:10px; font-size:0.68rem; color:#8b93a7; line-height:1.35; }
 
 .login-box { background:#0c0f14; border:1px solid #1c2230; border-radius:22px; padding:18px; margin:18px 0; }
@@ -241,6 +248,55 @@ def fmt_sol(n: Any, digits: int = 6) -> str:
     except Exception:
         return "–"
 
+
+
+
+def load_strategy_stats(desk: Path, kind: str) -> dict[str, Any]:
+    """kind A = main desk positions/; B = shadow-b/."""
+    out: dict[str, Any] = {
+        "equity": None, "pnl": None, "closed": None, "win_rate": None, "open": None, "label": kind,
+    }
+    if kind == "A":
+        led = load_json(desk / "positions" / "ledger.json") or {}
+        pos_glob = str(desk / "positions" / "*.json")
+    else:
+        led = load_json(desk / "shadow-b" / "ledger.json") or {}
+        # also allow desk-data/shadow-b for Cloud snapshot
+        if not led:
+            led = load_json(desk / "desk-data" / "shadow-b" / "ledger.json") or {}
+        pos_glob = str(desk / "shadow-b" / "positions" / "B-*.json")
+        if not glob.glob(pos_glob):
+            pos_glob = str(desk / "desk-data" / "shadow-b" / "positions" / "B-*.json")
+    if not isinstance(led, dict) or not led:
+        return out
+    try:
+        eq0 = float(led.get("equity_start_sol") or 0)
+        pnl = float(led.get("realised_pnl_sol") or 0)
+        out["pnl"] = pnl
+        out["equity"] = eq0 + pnl
+    except Exception:
+        pass
+    try:
+        out["closed"] = int(led.get("trades_closed") or 0)
+    except Exception:
+        pass
+    try:
+        w = int(led.get("wins") or 0); l = int(led.get("losses") or 0)
+        if w + l > 0:
+            out["win_rate"] = 100.0 * w / (w + l)
+        elif out["closed"] == 0:
+            out["win_rate"] = None
+    except Exception:
+        pass
+    open_n = 0
+    for p in glob.glob(pos_glob):
+        if p.endswith("ledger.json"):
+            continue
+        d = load_json(Path(p))
+        if isinstance(d, dict) and str(d.get("status", "")).upper() == "OPEN":
+            open_n += 1
+    out["open"] = open_n
+    return out
 
 
 def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
@@ -779,6 +835,49 @@ st.markdown(
   <h3>Mål innan live <span class="meta">paper-bevis</span></h3>
   {''.join(goal_rows)}
   <div class="goal-foot">Live slås på först när alla är ✅ och Hevar godkänner. Endast paper.</div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
+
+
+# ----- A vs B comparison -----
+stats_a = load_strategy_stats(DESK, "A")
+stats_b = load_strategy_stats(DESK, "B")
+
+def _cmp_val(v, kind="num"):
+    if v is None:
+        return "–"
+    if kind == "sol":
+        return f"{float(v):.6f}"
+    if kind == "pnl":
+        return f"{float(v):+.6f}"
+    if kind == "pct":
+        return f"{float(v):.0f} %"
+    return str(v)
+
+st.markdown(
+    f"""
+<div class="card">
+  <h3>Jämförelse A vs B <span class="meta">paper</span></h3>
+  <div class="cmp-grid">
+    <div class="cmp-col">
+      <h4>A · desk</h4>
+      <div class="cmp-kv"><span>Equity</span><b>{_cmp_val(stats_a.get('equity'),'sol')} SOL</b></div>
+      <div class="cmp-kv"><span>P/L</span><b>{_cmp_val(stats_a.get('pnl'),'pnl')} SOL</b></div>
+      <div class="cmp-kv"><span>Stängda</span><b>{_cmp_val(stats_a.get('closed'))}</b></div>
+      <div class="cmp-kv"><span>Träffsäkerhet</span><b>{_cmp_val(stats_a.get('win_rate'),'pct')}</b></div>
+      <div class="cmp-kv"><span>Öppna</span><b>{_cmp_val(stats_a.get('open'))}</b></div>
+    </div>
+    <div class="cmp-col">
+      <h4>B · shadow</h4>
+      <div class="cmp-kv"><span>Equity</span><b>{_cmp_val(stats_b.get('equity'),'sol')} SOL</b></div>
+      <div class="cmp-kv"><span>P/L</span><b>{_cmp_val(stats_b.get('pnl'),'pnl')} SOL</b></div>
+      <div class="cmp-kv"><span>Stängda</span><b>{_cmp_val(stats_b.get('closed'))}</b></div>
+      <div class="cmp-kv"><span>Träffsäkerhet</span><b>{_cmp_val(stats_b.get('win_rate'),'pct')}</b></div>
+      <div class="cmp-kv"><span>Öppna</span><b>{_cmp_val(stats_b.get('open'))}</b></div>
+    </div>
+  </div>
 </div>
 """,
     unsafe_allow_html=True,
