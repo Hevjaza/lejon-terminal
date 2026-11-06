@@ -119,6 +119,18 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 .reason-bar-wrap { display:flex; align-items:center; gap:8px; }
 .reason-bar { height:6px; border-radius:99px; background:#ff4d4d; min-width:4px; }
 .reason-n { font-family:JetBrains Mono, monospace; font-size:0.72rem; color:#ff8e8e; min-width:2.2rem; text-align:right; }
+
+.goal-row { display:grid; grid-template-columns: 1.4rem 1fr; gap:8px; align-items:start; padding:8px 0; border-bottom:1px solid #161b26; }
+.goal-row:last-child { border-bottom:none; }
+.goal-mark { font-size:0.9rem; line-height:1.2; }
+.goal-title { font-size:0.82rem; font-weight:600; color:#e8ecf5; }
+.goal-sub { font-size:0.68rem; color:#8b93a7; margin-top:2px; }
+.goal-bar-bg { margin-top:6px; height:6px; border-radius:99px; background:#1a2030; overflow:hidden; }
+.goal-bar-fg { height:100%; border-radius:99px; background:#00e676; }
+.goal-bar-fg.bad { background:#ff6b6b; }
+.goal-bar-fg.mid { background:#ffd166; }
+.goal-foot { margin-top:10px; font-size:0.68rem; color:#8b93a7; line-height:1.35; }
+
 .login-box { background:#0c0f14; border:1px solid #1c2230; border-radius:22px; padding:18px; margin:18px 0; }
 .foot { color:#5c6578; font-size:0.68rem; text-align:center; margin-top:14px; }
 div[data-testid="stMetric"] { background:transparent; border:none; padding:0; }
@@ -228,6 +240,132 @@ def fmt_sol(n: Any, digits: int = 6) -> str:
         return f"{float(n):.{digits}f}"
     except Exception:
         return "–"
+
+
+
+def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
+    """Compute read-only 'Mål innan live' from paper ledger/positions only."""
+    eq0 = None
+    try:
+        if ledger.get("equity_start_sol") is not None:
+            eq0 = float(ledger["equity_start_sol"])
+    except Exception:
+        eq0 = None
+    pnl = None
+    try:
+        if ledger.get("realised_pnl_sol") is not None:
+            pnl = float(ledger["realised_pnl_sol"])
+    except Exception:
+        pnl = None
+
+    closed = [d for d in positions if str(d.get("status", "")).upper() == "CLOSED"]
+    # Prefer ledger trades_closed when present
+    n_closed = ledger.get("trades_closed")
+    try:
+        n_closed = int(n_closed) if n_closed is not None else len(closed)
+    except Exception:
+        n_closed = len(closed)
+
+    wins = ledger.get("wins")
+    losses = ledger.get("losses")
+    try:
+        wins_i = int(wins) if wins is not None else None
+        losses_i = int(losses) if losses is not None else None
+    except Exception:
+        wins_i = losses_i = None
+    closed_wl = None
+    hit = None
+    if wins_i is not None and losses_i is not None:
+        closed_wl = wins_i + losses_i
+        if closed_wl > 0:
+            hit = 100.0 * wins_i / closed_wl
+
+    # Daily loss vs start equity (2 % limit)
+    daily = ledger.get("daily") or {}
+    worst_pct = None
+    days_known = 0
+    if isinstance(daily, dict) and eq0 and eq0 > 0:
+        for _day, info in daily.items():
+            if not isinstance(info, dict):
+                continue
+            try:
+                d_pnl = float(info.get("realised_pnl_sol") or 0)
+            except Exception:
+                continue
+            days_known += 1
+            pct = d_pnl / eq0 * 100.0
+            if worst_pct is None or pct < worst_pct:
+                worst_pct = pct
+    # Also fold closed-position exit days if ledger.daily empty
+    if days_known == 0 and eq0 and eq0 > 0:
+        by_day: dict[str, float] = {}
+        for d in closed:
+            ex = d.get("exit") or {}
+            ts = ex.get("stockholm") or ex.get("utc") or d.get("entry_stockholm") or ""
+            day = str(ts)[:10]
+            if len(day) < 10:
+                continue
+            try:
+                rp = float(ex.get("realised_pnl_sol"))
+            except Exception:
+                continue
+            by_day[day] = by_day.get(day, 0.0) + rp
+        for _day, d_pnl in by_day.items():
+            days_known += 1
+            pct = d_pnl / eq0 * 100.0
+            if worst_pct is None or pct < worst_pct:
+                worst_pct = pct
+
+    goals = []
+    # 1 closed count
+    g1_ok = n_closed >= 20
+    g1_frac = min(1.0, (n_closed / 20.0) if n_closed is not None else 0.0)
+    goals.append({
+        "ok": g1_ok,
+        "title": "Minst 20 stängda paper-köp",
+        "sub": f"{n_closed}/20" if n_closed is not None else "–",
+        "frac": g1_frac,
+    })
+    # 2 hit rate
+    if hit is None:
+        goals.append({"ok": False, "title": "Träffsäkerhet > 50 %", "sub": "–", "frac": 0.0, "unknown": True})
+    else:
+        goals.append({
+            "ok": hit > 50.0,
+            "title": "Träffsäkerhet > 50 %",
+            "sub": f"{hit:.0f} % ({wins_i}/{closed_wl})",
+            "frac": min(1.0, hit / 100.0),
+        })
+    # 3 total PnL plus
+    if pnl is None:
+        goals.append({"ok": False, "title": "Totalt resultat plus", "sub": "–", "frac": 0.0, "unknown": True})
+    else:
+        goals.append({
+            "ok": pnl > 0,
+            "title": "Totalt resultat plus",
+            "sub": f"{pnl:+.6f} SOL",
+            "frac": 1.0 if pnl > 0 else 0.0,
+        })
+    # 4 no day loss > 2%
+    if worst_pct is None:
+        goals.append({"ok": False, "title": "Ingen dag med förlust > 2 %", "sub": "–", "frac": 0.0, "unknown": True})
+    else:
+        ok4 = worst_pct > -2.0  # loss not worse than -2%
+        goals.append({
+            "ok": ok4,
+            "title": "Ingen dag med förlust > 2 %",
+            "sub": f"sämsta dag {worst_pct:+.2f} %",
+            "frac": 1.0 if ok4 else max(0.0, 1.0 + worst_pct / 10.0),
+        })
+    # 5 audit static
+    goals.append({
+        "ok": False,
+        "title": "Oberoende granskning gjord",
+        "sub": "inte gjord",
+        "frac": 0.0,
+        "static": True,
+    })
+    return goals
 
 
 def count_candidates(journals: list[str]) -> int | None:
@@ -616,6 +754,35 @@ elif eq_ys:
     st.line_chart(eq_ys, height=64)
 else:
     st.caption("Equity-kurva: –")
+
+
+# ----- mål innan live -----
+goals = live_goals(ledger, positions)
+goal_rows = []
+for g in goals:
+    mark = "✅" if g.get("ok") else ("–" if g.get("unknown") else "❌")
+    if g.get("unknown"):
+        mark = "❌"
+    frac = float(g.get("frac") or 0.0)
+    width = int(max(0, min(100, round(frac * 100))))
+    bar_cls = "goal-bar-fg" if g.get("ok") else ("goal-bar-fg mid" if width > 0 else "goal-bar-fg bad")
+    goal_rows.append(
+        f'<div class="goal-row"><div class="goal-mark">{mark}</div><div>'
+        f'<div class="goal-title">{g["title"]}</div>'
+        f'<div class="goal-sub">{g["sub"]}</div>'
+        f'<div class="goal-bar-bg"><div class="{bar_cls}" style="width:{width}%"></div></div>'
+        f'</div></div>'
+    )
+st.markdown(
+    f"""
+<div class="card">
+  <h3>Mål innan live <span class="meta">paper-bevis</span></h3>
+  {''.join(goal_rows)}
+  <div class="goal-foot">Live slås på först när alla är ✅ och Hevar godkänner. Endast paper.</div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
 
 # ----- desk agents -----
 scan_trade = f"{fmt_int(scanned)} skannade · {fmt_int(traded_n)} handlade"
