@@ -131,10 +131,16 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 .goal-bar-fg.mid { background:#ffd166; }
 
 .cmp-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; }
+.cmp-grid-3 { grid-template-columns:1fr 1fr 1fr; gap:6px; }
 .cmp-col { background:#10141c; border:1px solid #1c2230; border-radius:14px; padding:10px; }
 .cmp-col h4 { margin:0 0 6px; font-size:0.78rem; color:#fff; }
 .cmp-kv { display:flex; justify-content:space-between; font-size:0.68rem; padding:2px 0; color:#c5cad6; }
 .cmp-kv b { color:#e8ecf5; font-family:JetBrains Mono, ui-monospace, monospace; }
+.whale-row { display:grid; grid-template-columns: 4.6rem 2.4rem 1fr; gap:8px; align-items:start; padding:7px 0; border-bottom:1px solid #161b26; }
+.whale-row:last-child { border-bottom:none; }
+.whale-addr { font-family:JetBrains Mono, ui-monospace, monospace; font-size:0.72rem; color:#e8ecf5; font-weight:700; }
+.whale-score { font-family:JetBrains Mono, ui-monospace, monospace; font-size:0.72rem; color:#00e676; text-align:right; }
+.whale-reason { font-size:0.68rem; color:#8b93a7; line-height:1.3; }
 
 .goal-foot { margin-top:10px; font-size:0.68rem; color:#8b93a7; line-height:1.35; }
 
@@ -251,22 +257,32 @@ def fmt_sol(n: Any, digits: int = 6) -> str:
 
 
 
+def _shadow_dir(desk: Path, name: str) -> Path:
+    p = desk / name
+    if (p / "ledger.json").is_file():
+        return p
+    p2 = desk / "desk-data" / name
+    if (p2 / "ledger.json").is_file():
+        return p2
+    return p
+
+
 def load_strategy_stats(desk: Path, kind: str) -> dict[str, Any]:
-    """kind A = main desk positions/; B = shadow-b/."""
+    """kind A = main desk positions/; B = shadow-b/; C = shadow-c/."""
     out: dict[str, Any] = {
         "equity": None, "pnl": None, "closed": None, "win_rate": None, "open": None, "label": kind,
     }
     if kind == "A":
         led = load_json(desk / "positions" / "ledger.json") or {}
         pos_glob = str(desk / "positions" / "*.json")
+    elif kind == "C":
+        root = _shadow_dir(desk, "shadow-c")
+        led = load_json(root / "ledger.json") or {}
+        pos_glob = str(root / "positions" / "C-*.json")
     else:
-        led = load_json(desk / "shadow-b" / "ledger.json") or {}
-        # also allow desk-data/shadow-b for Cloud snapshot
-        if not led:
-            led = load_json(desk / "desk-data" / "shadow-b" / "ledger.json") or {}
-        pos_glob = str(desk / "shadow-b" / "positions" / "B-*.json")
-        if not glob.glob(pos_glob):
-            pos_glob = str(desk / "desk-data" / "shadow-b" / "positions" / "B-*.json")
+        root = _shadow_dir(desk, "shadow-b")
+        led = load_json(root / "ledger.json") or {}
+        pos_glob = str(root / "positions" / "B-*.json")
     if not isinstance(led, dict) or not led:
         return out
     try:
@@ -841,9 +857,10 @@ st.markdown(
 )
 
 
-# ----- A vs B comparison -----
+# ----- A vs B vs C comparison -----
 stats_a = load_strategy_stats(DESK, "A")
 stats_b = load_strategy_stats(DESK, "B")
+stats_c = load_strategy_stats(DESK, "C")
 
 def _cmp_val(v, kind="num"):
     if v is None:
@@ -856,32 +873,107 @@ def _cmp_val(v, kind="num"):
         return f"{float(v):.0f} %"
     return str(v)
 
+def _cmp_col(title: str, stt: dict) -> str:
+    return (
+        f"<div class=\"cmp-col\"><h4>{title}</h4>"
+        f"<div class=\"cmp-kv\"><span>Equity</span><b>{_cmp_val(stt.get('equity'),'sol')} SOL</b></div>"
+        f"<div class=\"cmp-kv\"><span>P/L</span><b>{_cmp_val(stt.get('pnl'),'pnl')} SOL</b></div>"
+        f"<div class=\"cmp-kv\"><span>Stängda</span><b>{_cmp_val(stt.get('closed'))}</b></div>"
+        f"<div class=\"cmp-kv\"><span>Träffsäkerhet</span><b>{_cmp_val(stt.get('win_rate'),'pct')}</b></div>"
+        f"<div class=\"cmp-kv\"><span>Öppna</span><b>{_cmp_val(stt.get('open'))}</b></div>"
+        f"</div>"
+    )
+
 st.markdown(
     f"""
 <div class="card">
-  <h3>Jämförelse A vs B <span class="meta">paper</span></h3>
-  <div class="cmp-grid">
-    <div class="cmp-col">
-      <h4>A · desk</h4>
-      <div class="cmp-kv"><span>Equity</span><b>{_cmp_val(stats_a.get('equity'),'sol')} SOL</b></div>
-      <div class="cmp-kv"><span>P/L</span><b>{_cmp_val(stats_a.get('pnl'),'pnl')} SOL</b></div>
-      <div class="cmp-kv"><span>Stängda</span><b>{_cmp_val(stats_a.get('closed'))}</b></div>
-      <div class="cmp-kv"><span>Träffsäkerhet</span><b>{_cmp_val(stats_a.get('win_rate'),'pct')}</b></div>
-      <div class="cmp-kv"><span>Öppna</span><b>{_cmp_val(stats_a.get('open'))}</b></div>
-    </div>
-    <div class="cmp-col">
-      <h4>B · shadow</h4>
-      <div class="cmp-kv"><span>Equity</span><b>{_cmp_val(stats_b.get('equity'),'sol')} SOL</b></div>
-      <div class="cmp-kv"><span>P/L</span><b>{_cmp_val(stats_b.get('pnl'),'pnl')} SOL</b></div>
-      <div class="cmp-kv"><span>Stängda</span><b>{_cmp_val(stats_b.get('closed'))}</b></div>
-      <div class="cmp-kv"><span>Träffsäkerhet</span><b>{_cmp_val(stats_b.get('win_rate'),'pct')}</b></div>
-      <div class="cmp-kv"><span>Öppna</span><b>{_cmp_val(stats_b.get('open'))}</b></div>
-    </div>
+  <h3>Jämförelse A, B och C <span class="meta">paper</span></h3>
+  <div class="cmp-grid cmp-grid-3">
+    {_cmp_col("A · desk", stats_a)}
+    {_cmp_col("B · shadow", stats_b)}
+    {_cmp_col("C · valar", stats_c)}
   </div>
 </div>
 """,
     unsafe_allow_html=True,
 )
+
+# ----- Valar (C) -----
+_wh_root = _shadow_dir(DESK, "shadow-c")
+whales_blob = load_json(_wh_root / "whales.json") or {}
+whale_rows = whales_blob.get("reviewed") or whales_blob.get("qualified") or []
+if not isinstance(whale_rows, list):
+    whale_rows = []
+whale_html = []
+for r in whale_rows[:10]:
+    if not isinstance(r, dict):
+        continue
+    short = r.get("short") or "–"
+    score = r.get("score")
+    score_s = str(score) if score is not None else "–"
+    reason = r.get("reason") or "–"
+    whale_html.append(
+        f'<div class="whale-row"><div class="whale-addr">{short}</div>'
+        f'<div class="whale-score">{score_s}</div>'
+        f'<div class="whale-reason">{reason}</div></div>'
+    )
+if not whale_html:
+    whale_html.append('<div class="whale-reason">Inga valar just nu. C köper inget förrän någon klarar kraven.</div>')
+n_ok = len(whales_blob.get("qualified") or []) if isinstance(whales_blob.get("qualified"), list) else 0
+st.markdown(
+    f"""
+<div class="card">
+  <h3>Valar <span class="meta">godkända {n_ok} · paper</span></h3>
+  {''.join(whale_html)}
+</div>
+""",
+    unsafe_allow_html=True,
+)
+
+# C day equity line (grows over the Stockholm day)
+eq_day = load_json(_wh_root / "equity-day.json") or {}
+c_pts = eq_day.get("points") if isinstance(eq_day, dict) else None
+c_ys = []
+c_xs = []
+if isinstance(c_pts, list):
+    for pt in c_pts:
+        if not isinstance(pt, dict):
+            continue
+        try:
+            c_ys.append(float(pt.get("equity")))
+            c_xs.append(str(pt.get("t") or ""))
+        except Exception:
+            continue
+st.markdown(
+    '<div class="card"><h3>C idag <span class="meta">val-strategi · paper</span></h3>',
+    unsafe_allow_html=True,
+)
+if go and c_ys:
+    fig_c = go.Figure(
+        go.Scatter(
+            x=c_xs or list(range(len(c_ys))),
+            y=c_ys,
+            mode="lines+markers",
+            line=dict(color="#00e676", width=2),
+            marker=dict(size=5, color="#00e676"),
+            hoverinfo="skip",
+        )
+    )
+    fig_c.update_layout(
+        paper_bgcolor="#0c0f14",
+        plot_bgcolor="#0c0f14",
+        margin=dict(l=8, r=8, t=8, b=24),
+        height=140,
+        xaxis=dict(visible=True, showgrid=False, tickfont=dict(color="#8b93a7", size=10), color="#8b93a7"),
+        yaxis=dict(visible=True, showgrid=True, gridcolor="#161b26", tickfont=dict(color="#8b93a7", size=10), color="#8b93a7"),
+        showlegend=False,
+    )
+    st.plotly_chart(fig_c, use_container_width=True, config={"displayModeBar": False})
+elif c_ys:
+    st.line_chart(c_ys, height=140)
+else:
+    st.caption("C-kurva idag: väntar på första mätningen.")
+st.markdown("</div>", unsafe_allow_html=True)
 
 # ----- desk agents -----
 scan_trade = f"{fmt_int(scanned)} skannade · {fmt_int(traded_n)} handlade"

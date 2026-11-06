@@ -1,0 +1,21 @@
+{
+ "label": "SHADOW-C PAPER ledger - SIMULATED (DexScreener, whale-follow, separate from A/B)",
+ "strategy": "C",
+ "equity_start_sol": 10.0,
+ "realised_pnl_sol": 0.0,
+ "daily": {},
+ "trades_closed": 0,
+ "wins": 0,
+ "losses": 0,
+ "loss_streak": 0,
+ "created_utc": "2026-11-06T15:55:27Z",
+ "updated_utc": "2026-11-06T15:55:27Z",
+ "rules": {
+  "entry": ">=2 whale-list wallets bought same token within 15 min; mint auth revoked; LP burned/locked; top10<30%; liq>=25k; + A hard kills",
+  "exit": "hard stop -6%; exit if a triggering whale sells; else trailing -12% from peak once in profit",
+  "size_frac": 0.08,
+  "max_size_sol": 0.2,
+  "max_open": 3,
+  "daily_loss_frac": 0.02
+ }
+}
