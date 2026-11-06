@@ -1,0 +1,19 @@
+{
+ "label": "SHADOW-B PAPER ledger - SIMULATED (DexScreener, separate from A)",
+ "strategy": "B",
+ "equity_start_sol": 10.0,
+ "realised_pnl_sol": 0.0,
+ "daily": {},
+ "trades_closed": 0,
+ "wins": 0,
+ "losses": 0,
+ "loss_streak": 0,
+ "created_utc": "2026-11-06T14:42:48Z",
+ "updated_utc": "2026-11-06T14:42:48Z",
+ "rules": {
+  "entry": "mint auth revoked; LP burned/locked; top10<=20%; 1h vol>=50k; no deployer rugs; + A hard kills (1/2/11/factory/hidden/liq>=25k)",
+  "exit": "hard stop -6%; trailing -12% from peak once in profit",
+  "size_frac": 0.08,
+  "max_open": 3
+ }
+}
