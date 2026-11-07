@@ -1,0 +1,12 @@
+# KILLED-SCOUT Busted (FzmSx4UuG8Jhsrxvyt1xNtk6qFxo7KY4zGwPifKZpump)
+Cycle 266 (03:0x Stockholm, 2026-11-07), bundler pre-check (rule 1 cap 15 wallets, creator buy counted, rule 2, Rule 11 with fixed c6 locator), measured 2026-11-07T02:08:52Z-2026-11-07T02:09:32Z (UTC; Stockholm = UTC+1). Engagement: paper. No lead ID, no ticket.
+
+- Mint: FzmSx4UuG8Jhsrxvyt1xNtk6qFxo7KY4zGwPifKZpump
+- PumpSwap pool: GWpxi3LT6WznhS2zgJdBDymyYxBHt7Vk38fpeiRZVFcS (https://dexscreener.com/solana/GWpxi3LT6WznhS2zgJdBDymyYxBHt7Vk38fpeiRZVFcS)
+- DexScreener/GT ~02:0xZ: Busted, pool GWpxi3LT..., age ~104 min at scan (curve created 2026-11-07 00:24:13Z, creation slot 466309519, creator 6QcWtF...; migrated in the SAME slot), found via dsretry+scan2 (gtslow 0 new): DS liq ~47-49k, 1h vol ~91-92k, h1 +45 %, FDV ~377k. Creation slot: CreateV2 + multiwallet Buys (6-signer CreateV2 + two 7-signer Buy txs) -> r1 (ex-pool) 19 wallets 100 % of tradable, k30 = 5 -> Rule 1 HIT. Authoritative MigrateV2/CreatePool 43yCNi... same slot, co-signed by the creator 6QcWtF... (+5cwf4v...) -> Rule 2 HIT. Rule 11: window 26 buyers 112.44 %, k80 = 13 (mechanical cap 5 not hit); same-slot multiwallet BuyV3 pattern (6+7+7 signers) with top10 66.12 % of tradable in migration window -> Rule 11 judgment HIT (hard KILL per t39u, coordinated graduation-bundle template). bundle.py locator picked a later no-op Migrate by 9C4nRv... (+2 slots, known quirk); rule11.py authoritative.
+- Created: 2026-11-07T00:24:13Z, slot 466309519, tx 2jfchsrzaW2sS8HeL6phjZ6Qq3u7e1m1vrPovGUSj57T1gVDdj41e7TcWvPKXBHScTnudAjdhKsMEusLqJ7Y9KUn; curve CPfChjFUgqPZoFXeGVDJCvB8uRYbi8bHVmoLF1zwxmyw; creator 6QcWtF4L4EsAMgGyp82KmpLYACJAtEKtuCTnyeTTXZtb
+- Rule 1: creation slot 19 buying wallets (creator counted, migration tx and pool excluded), 100.0 % of tradable supply, wallets to reach 30 %: 5; slots 0-2: 19 wallets, 100.0 %. **HIT**
+- Rule 2: migration 43yCNiUeW7YXbUuHx6usKfk1ju77gw8i3U2HnrgtHVyAegwfx9snQMtvpna5ULMzyKXHEAYSFLG9aeFD9nqXfLnZ, same slot as creation, creator co-signed. **HIT**
+- Rule 11: migration slot 466309519 (+0 slots), window +0..+2: 26 buyers, 112.44 % of tradable supply, wallets to reach 80 %: 13. Not hit mechanically (k80>5).
+- Rule hit: **Rule 1, Rule 2, Rule 11 (judgment: same-slot 6+7+7-signer BuyV3 multiwallet = top10 66.12 % in migration window)**
+- Raw: research/raw-20261107/c266/bundle_Busted.json, rule11_Busted.json, bun_Busted.log, r11_Busted.log
