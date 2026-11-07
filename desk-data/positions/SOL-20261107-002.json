@@ -13,8 +13,8 @@
  "size_sol": 0.2,
  "entry_fee_sol": 1e-05,
  "cost_sol": 0.20001,
- "tokens_raw": 114028526246,
- "tokens_ui": 114028.526246,
+ "tokens_raw": 57014263123,
+ "tokens_ui": 57014.263123,
  "decimals": 6,
  "entry_price_sol_per_token": 1.7540347716895637e-06,
  "stop_loss_frac": -0.3,
@@ -49,19 +49,97 @@
  "checkpoints": {
   "+5m": {
    "due_utc": "2026-11-07T12:20:58Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-07T12:22:41Z",
+   "multiple": 0.8717,
+   "pct": -12.825,
+   "exit_value_sol": 0.174358142,
+   "price_sol_per_token": 1.5290747652376706e-06,
+   "lag_sec": 102,
+   "late": false
   },
   "+15m": {
    "due_utc": "2026-11-07T12:30:58Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-07T12:51:35Z",
+   "multiple": 2.2314,
+   "pct": 123.137,
+   "exit_value_sol": 0.446295542,
+   "price_sol_per_token": 3.913893800900155e-06,
+   "lag_sec": 1236,
+   "late": true
   },
   "+60m": {
    "due_utc": "2026-11-07T13:15:58Z",
    "filled": false
   }
  },
- "marks": [],
- "last_mark": null,
+ "marks": [
+  {
+   "utc": "2026-11-07T12:22:41Z",
+   "exit_value_sol": 0.174358142,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.025651858,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.025651858,
+   "pct": -12.825,
+   "multiple": 0.8717,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 1.5290747652376706e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466510758
+  },
+  {
+   "utc": "2026-11-07T12:51:35Z",
+   "exit_value_sol": 0.446295542,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": 0.246285542,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": 0.246285542,
+   "pct": 123.137,
+   "multiple": 2.2314,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 3.913893800900155e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466518888
+  },
+  {
+   "utc": "2026-11-07T13:02:42Z",
+   "exit_value_sol": 0.143136323,
+   "remaining_cost_basis_sol": 0.100005,
+   "unrealised_pnl_sol": 0.043131323,
+   "realised_partial_pnl_sol": 0.124674262,
+   "trade_total_pnl_sol": 0.167805585,
+   "pct": 43.129,
+   "multiple": 1.4313,
+   "tokens_held_frac": 0.5,
+   "price_sol_per_token": 2.5105353495704074e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466521974
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-11-07T13:02:42Z",
+  "exit_value_sol": 0.143136323,
+  "remaining_cost_basis_sol": 0.100005,
+  "unrealised_pnl_sol": 0.043131323,
+  "realised_partial_pnl_sol": 0.124674262,
+  "trade_total_pnl_sol": 0.167805585,
+  "pct": 43.129,
+  "multiple": 1.4313,
+  "tokens_held_frac": 0.5,
+  "price_sol_per_token": 2.5105353495704074e-06,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 466521974
+ },
  "exit": null,
  "notes": "",
  "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
@@ -77,10 +155,39 @@
  "tp2_expected_proceeds_sol": 1.100055,
  "stop_loss_after_tp1_frac": 0.0,
  "stop_loss_after_tp1_price_sol_per_token": 1.7540347716895637e-06,
- "tp1_done": false,
+ "tp1_done": true,
  "tp2_done": false,
- "stake_recovered": false,
- "partial_exits": [],
- "realised_partial_pnl_sol": 0.0,
- "proceeds_so_far_sol": 0.0
+ "stake_recovered": true,
+ "partial_exits": [
+  {
+   "leg": "TP1",
+   "utc": "2026-11-07T12:51:36Z",
+   "stockholm": "2026-11-07 13:51:36",
+   "reason": "TAKE-PROFIT 1 (+100 %, 50 %) triggered at +15m (2.2314x)",
+   "tokens_sold_raw": 57014263123,
+   "tokens_sold_ui": 57014.263123,
+   "frac_of_initial": 0.5,
+   "proceeds_sol": 0.224679262,
+   "exit_fee_sol": 1e-05,
+   "cost_basis_sol": 0.100005,
+   "realised_pnl_sol": 0.124674262,
+   "multiple": 2.2467,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466518894,
+   "label": "SIMULATED (Jupiter quote, desk-side)",
+   "fill_source": "fresh token->SOL sell quote",
+   "trigger": {
+    "checkpoint": "+15m",
+    "multiple": 2.2314,
+    "pct": 123.137,
+    "utc": "2026-11-07T12:51:35Z"
+   }
+  }
+ ],
+ "realised_partial_pnl_sol": 0.124674262,
+ "proceeds_so_far_sol": 0.224679262,
+ "stake_recovered_ratio": 1.1233,
+ "risk_free_note": "stake recovered: TP1 proceeds >= full cost; remaining 50 % is house money"
 }
