@@ -71,7 +71,14 @@
   },
   "+60m": {
    "due_utc": "2026-11-07T13:15:58Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-07T14:08:38Z",
+   "multiple": 1.1451,
+   "pct": 14.51,
+   "exit_value_sol": 0.114515558,
+   "price_sol_per_token": 2.0085422792003695e-06,
+   "lag_sec": 3159,
+   "late": true
   }
  },
  "marks": [
@@ -122,23 +129,55 @@
     "Pump.fun Amm"
    ],
    "context_slot": 466521974
+  },
+  {
+   "utc": "2026-11-07T14:08:38Z",
+   "exit_value_sol": 0.114515558,
+   "remaining_cost_basis_sol": 0.100005,
+   "unrealised_pnl_sol": 0.014510558,
+   "realised_partial_pnl_sol": 0.124674262,
+   "trade_total_pnl_sol": 0.13918482,
+   "pct": 14.51,
+   "multiple": 1.1451,
+   "tokens_held_frac": 0.5,
+   "price_sol_per_token": 2.0085422792003695e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466540429
+  },
+  {
+   "utc": "2026-11-07T14:09:04Z",
+   "exit_value_sol": 0.109711505,
+   "remaining_cost_basis_sol": 0.100005,
+   "unrealised_pnl_sol": 0.009706505,
+   "realised_partial_pnl_sol": 0.124674262,
+   "trade_total_pnl_sol": 0.134380767,
+   "pct": 9.706,
+   "multiple": 1.0971,
+   "tokens_held_frac": 0.5,
+   "price_sol_per_token": 1.9242817321573264e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 466540550
   }
  ],
  "last_mark": {
-  "utc": "2026-11-07T13:02:42Z",
-  "exit_value_sol": 0.143136323,
+  "utc": "2026-11-07T14:09:04Z",
+  "exit_value_sol": 0.109711505,
   "remaining_cost_basis_sol": 0.100005,
-  "unrealised_pnl_sol": 0.043131323,
+  "unrealised_pnl_sol": 0.009706505,
   "realised_partial_pnl_sol": 0.124674262,
-  "trade_total_pnl_sol": 0.167805585,
-  "pct": 43.129,
-  "multiple": 1.4313,
+  "trade_total_pnl_sol": 0.134380767,
+  "pct": 9.706,
+  "multiple": 1.0971,
   "tokens_held_frac": 0.5,
-  "price_sol_per_token": 2.5105353495704074e-06,
+  "price_sol_per_token": 1.9242817321573264e-06,
   "route": [
    "Pump.fun Amm"
   ],
-  "context_slot": 466521974
+  "context_slot": 466540550
  },
  "exit": null,
  "notes": "",
