@@ -1,0 +1,86 @@
+{
+ "ticket": "SOL-20261107-002",
+ "mint": "iW4XP2BWd3iqf1LMZvpsKidb49wVAh3S8SfNUsDpump",
+ "status": "OPEN",
+ "label": "SIMULATED (Jupiter quote, desk-side)",
+ "caveat": "optimistic: ignores bots/MEV, failed or delayed txs and quote drift; no real transaction",
+ "approved_method": "desk-side simulated fill approved by Hevar t22u (2026-10-28); repo paper path unavailable, repo untouched",
+ "risk_basis": "research/RISK-SOL-20261107-002.md",
+ "risk_verdict": "CLEAR",
+ "conditions_met_flag": false,
+ "entry_utc": "2026-11-07T12:15:58Z",
+ "entry_stockholm": "2026-11-07 13:15:58",
+ "size_sol": 0.2,
+ "entry_fee_sol": 1e-05,
+ "cost_sol": 0.20001,
+ "tokens_raw": 114028526246,
+ "tokens_ui": 114028.526246,
+ "decimals": 6,
+ "entry_price_sol_per_token": 1.7540347716895637e-06,
+ "stop_loss_frac": -0.3,
+ "stop_loss_price_sol_per_token": 1.2278243401826945e-06,
+ "stop_loss_value_sol": 0.140007,
+ "tokens_raw_initial": 114028526246,
+ "tokens_ui_initial": 114028.526246,
+ "max_loss_check": {
+  "loss_at_stop_sol": 0.06002,
+  "limit_sol": 0.15,
+  "ok": true,
+  "note": "a gap through the stop between marks can lose more; checked again on exit"
+ },
+ "entry_quote": {
+  "quote_utc": "2026-11-07T12:15:58Z",
+  "context_slot": 466508876,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "in_lamports": 200000000,
+  "out_tokens_raw": 114028526246,
+  "decimals": 6,
+  "decimals_source": "rpc",
+  "min_out_tokens_raw_at_tolerance": 110607670459,
+  "slippage_tolerance_bps": 300,
+  "measured_slippage_pct": 0.1616,
+  "jupiter_priceImpactPct_raw": "0.0101300801259974511597453067",
+  "ref_quote_in_lamports": 1000000,
+  "ref_quote_out_raw": 571065262,
+  "swap_usd_value": "17.966401409503280"
+ },
+ "checkpoints": {
+  "+5m": {
+   "due_utc": "2026-11-07T12:20:58Z",
+   "filled": false
+  },
+  "+15m": {
+   "due_utc": "2026-11-07T12:30:58Z",
+   "filled": false
+  },
+  "+60m": {
+   "due_utc": "2026-11-07T13:15:58Z",
+   "filled": false
+  }
+ },
+ "marks": [],
+ "last_mark": null,
+ "exit": null,
+ "notes": "",
+ "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
+ "take_profit_plan": "TP1 +100 % sells 50 % (stake recovered); TP2 +1000 % sells the remaining 50 %",
+ "tp1_pct": 100,
+ "tp1_sell_frac": 0.5,
+ "tp1_price_sol_per_token": 3.5080695433791274e-06,
+ "tp1_value_full_holding_sol": 0.40002,
+ "tp1_expected_proceeds_sol": 0.20001,
+ "tp2_pct": 1000,
+ "tp2_sell_frac": 1.0,
+ "tp2_price_sol_per_token": 1.92943824885852e-05,
+ "tp2_expected_proceeds_sol": 1.100055,
+ "stop_loss_after_tp1_frac": 0.0,
+ "stop_loss_after_tp1_price_sol_per_token": 1.7540347716895637e-06,
+ "tp1_done": false,
+ "tp2_done": false,
+ "stake_recovered": false,
+ "partial_exits": [],
+ "realised_partial_pnl_sol": 0.0,
+ "proceeds_so_far_sol": 0.0
+}

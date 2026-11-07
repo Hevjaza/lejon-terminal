@@ -1,0 +1,29 @@
+{
+ "ticket": "B-20261107-001",
+ "strategy": "B",
+ "mint": "iW4XP2BWd3iqf1LMZvpsKidb49wVAh3S8SfNUsDpump",
+ "symbol": "duge",
+ "pair": "4Ld38vL83KtPxAkjXZRss2fpKNwsdY1mwY59HTF9zkmA",
+ "status": "OPEN",
+ "label": "SHADOW-B SIMULATED (DexScreener price, desk-side)",
+ "cycle_id": "c276",
+ "entry_utc": "2026-11-07T12:16:00Z",
+ "entry_stockholm": "2026-11-07 13:16:00",
+ "size_sol": 0.8,
+ "entry_fee_sol": 1e-05,
+ "cost_sol": 0.80001,
+ "tokens_ui": 460829.4930875576,
+ "entry_price_sol_per_token": 1.736e-06,
+ "peak_price_sol_per_token": 1.736e-06,
+ "stop_hard_frac": -0.06,
+ "trail_drop_frac": 0.12,
+ "filter_notes": [
+  "liq 31672 OK",
+  "vol1h 325304 OK",
+  "mint_authority revoked OK",
+  "LP burned OK",
+  "top10 16.31% OK",
+  "deployer rugs check OK"
+ ],
+ "updated_utc": "2026-11-07T12:16:00Z"
+}

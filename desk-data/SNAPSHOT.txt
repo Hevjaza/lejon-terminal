@@ -1,5 +1,5 @@
-Ögonblicksbild Europe/Stockholm 2026-11-07 12:06
-KILLED-noter i denna snapshot: 80 (av 569 på desken).
+Ögonblicksbild Europe/Stockholm 2026-11-07 13:16
+KILLED-noter i denna snapshot: 80 (av 570 på desken).
 Shadow-B och Shadow-C ledger ingår om present (paper only).
 Ingen .env, inga nycklar, inget lösenord ingår.
 På Streamlit Cloud: sätt SPIDER_PASSWORD eller LEJON_PASSWORD i Secrets.
