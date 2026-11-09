@@ -1,8 +1,8 @@
 {
- "updated_utc": "2026-11-09T08:09:53Z",
- "stockholm_day": "2026-11-09",
+ "updated_utc": "2026-11-09T23:11:43Z",
+ "stockholm_day": "2026-11-10",
  "source": "Desk-filer: tidiga köpare i risk_*.json och affärer i cachade GeckoTerminal gt_trades_*.json för mynt desken redan sett. Arkham hoppades över (ingen gratistjänst utan nyckel). Poängen är ungefärlig – gratisdata visar sällan 30 hela affärer per plånbok.",
- "wallets_reviewed": 4789,
+ "wallets_reviewed": 5011,
  "qualified": [],
  "reviewed": [
   {
@@ -54,6 +54,30 @@
    "avg_hold_min": 34.4
   },
   {
+   "wallet": "FUEL3Te8gvaohxwQMapfMTeJVHh2z1BL9fvTCcHZeYEh",
+   "short": "FUE…YEh",
+   "score": 54,
+   "reason": "för få mätbara avslut (1/30) i gratisdata",
+   "qualified": false,
+   "winner_tokens": 2,
+   "tokens_seen": 4,
+   "closed_trades": 1,
+   "win_rate": 100.0,
+   "avg_hold_min": 28.2
+  },
+  {
+   "wallet": "sssssv2ivFNk1ogpBnEkcijSHzvib5vKfhiJMhRT2NT",
+   "short": "sss…2NT",
+   "score": 53,
+   "reason": "för snabba affärer (snitt 6 min) – liknar sniper",
+   "qualified": false,
+   "winner_tokens": 4,
+   "tokens_seen": 13,
+   "closed_trades": 9,
+   "win_rate": 55.55555555555556,
+   "avg_hold_min": 5.9
+  },
+  {
    "wallet": "8vLYnykbvqqAcUSwtqSenHYZo8huboMJeLcZQiz3Etp5",
    "short": "8vL…tp5",
    "score": 52,
@@ -71,8 +95,8 @@
    "score": 50,
    "reason": "för snabba affärer (snitt 4 min) – liknar sniper",
    "qualified": false,
-   "winner_tokens": 10,
-   "tokens_seen": 26,
+   "winner_tokens": 11,
+   "tokens_seen": 27,
    "closed_trades": 22,
    "win_rate": 27.272727272727273,
    "avg_hold_min": 4.4
@@ -83,11 +107,11 @@
    "score": 50,
    "reason": "för snabba affärer (snitt 5 min) – liknar sniper",
    "qualified": false,
-   "winner_tokens": 8,
-   "tokens_seen": 24,
-   "closed_trades": 22,
-   "win_rate": 27.272727272727273,
-   "avg_hold_min": 4.7
+   "winner_tokens": 9,
+   "tokens_seen": 25,
+   "closed_trades": 23,
+   "win_rate": 26.08695652173913,
+   "avg_hold_min": 4.5
   },
   {
    "wallet": "AQdmrWxVph26KL4brdFscqyoZToLye7Buvw6zhfk9hWG",
@@ -100,30 +124,6 @@
    "closed_trades": 1,
    "win_rate": 0.0,
    "avg_hold_min": 66.1
-  },
-  {
-   "wallet": "5dCnoS4muwRs7zugBwfBsgQFk8yTjYBdDWq1WZtmsvcm",
-   "short": "5dC…vcm",
-   "score": 47,
-   "reason": "för få mätbara avslut (0/30) i gratisdata",
-   "qualified": false,
-   "winner_tokens": 4,
-   "tokens_seen": 9,
-   "closed_trades": 0,
-   "win_rate": null,
-   "avg_hold_min": null
-  },
-  {
-   "wallet": "6Qt8a3Y6B4nekSRQ1p2e5yqP5bSCbE6HzUTdWwdfYXmR",
-   "short": "6Qt…XmR",
-   "score": 47,
-   "reason": "för få mätbara avslut (1/30) i gratisdata",
-   "qualified": false,
-   "winner_tokens": 3,
-   "tokens_seen": 4,
-   "closed_trades": 1,
-   "win_rate": 0.0,
-   "avg_hold_min": 285.3
   }
  ],
  "arkham": "skipped"
