@@ -1096,7 +1096,7 @@ st.markdown(
 
 st.markdown(
     f'<div class="foot">🦁 Lejon Terminal · PAPER · cykel {fmt_int(cycle)} · '
-    f'öppna {open_n}/3 · endast läsning · inga nycklar<br>'
+    f'öppna {open_n}/10 · endast läsning · inga nycklar<br>'
     f'Desk {DESK} · uppdaterad {dt.datetime.now():%Y-%m-%d %H:%M} Europe/Stockholm</div>',
     unsafe_allow_html=True,
 )

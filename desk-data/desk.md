@@ -16,6 +16,9 @@ Bundler pre-check: active from research cycle 3, see scout-bundler-rules.md
 Rule 11 (graduation-bundle) and permanent rule 1 counting active from cycle 4, see scout-bundler-rules.md
 RPC: Helius (paid-tier key in env DESK_SOLANA_RPC_URL, also wired into /workspace/PumpGrok/.env as PUMPGROK_RPC__ENDPOINTS with the public RPC as fallback; PUMPGROK_PAID_RPC_PROVIDER=helius). Desk scripts use rpc_endpoint.py. Top-10 holders and deployer history are now measured on-chain, no longer BLIND by default. Never print the key.
 
+## Strategy update 2026-11-09 (Hevar t98/t99u, paper only)
+Max open A paper positions raised 3 -> 10 (risk-limits.md + paperfill.py). All other A limits unchanged. Shadow B/C still max 3. Reduce again before any live mode.
+
 ## Strategy update 2026-10-26 23:35 (Hevar, applies from Cycle 5)
 1. [Parameters superseded 2026-10-29 t34u, see below] RISK top-10 holders (ex-pool): limit 35 % normally; up to 40 % allowed ONLY with "extremt starkt momentum": buy volume >= 2x sell volume over the last 15 min AND 1h volume >= 100k USD AND liquidity >= 25k USD. Above 40 % = always KILL. Every other limit (liquidity, authorities, age, bundler rules 1/2/11, stop-loss etc.) is unchanged. Exception must be explicitly marked in the RISK block as "Momentum-undantag".
 2. SCOUT Early Signals prioritised: massive sniper-race, or buy volume >= 2x sell volume in the first 15 min after migration. Ranking only; never overrides a KILL.
