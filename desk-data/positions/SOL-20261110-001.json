@@ -49,19 +49,65 @@
  "checkpoints": {
   "+5m": {
    "due_utc": "2026-11-10T18:14:50Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-10T19:03:16Z",
+   "multiple": 0.7756,
+   "pct": -22.436,
+   "exit_value_sol": 0.155135137,
+   "price_sol_per_token": 1.7362927721239976e-06,
+   "lag_sec": 2905,
+   "late": true
   },
   "+15m": {
    "due_utc": "2026-11-10T18:24:50Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-10T19:03:16Z",
+   "multiple": 0.7756,
+   "pct": -22.436,
+   "exit_value_sol": 0.155135137,
+   "price_sol_per_token": 1.7362927721239976e-06,
+   "lag_sec": 2305,
+   "late": true
   },
   "+60m": {
    "due_utc": "2026-11-10T19:09:50Z",
    "filled": false
   }
  },
- "marks": [],
- "last_mark": null,
+ "marks": [
+  {
+   "utc": "2026-11-10T19:03:16Z",
+   "exit_value_sol": 0.155135137,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.044874863,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.044874863,
+   "pct": -22.436,
+   "multiple": 0.7756,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 1.7362927721239976e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 467831014
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-11-10T19:03:16Z",
+  "exit_value_sol": 0.155135137,
+  "remaining_cost_basis_sol": 0.20001,
+  "unrealised_pnl_sol": -0.044874863,
+  "realised_partial_pnl_sol": 0.0,
+  "trade_total_pnl_sol": -0.044874863,
+  "pct": -22.436,
+  "multiple": 0.7756,
+  "tokens_held_frac": 1.0,
+  "price_sol_per_token": 1.7362927721239976e-06,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 467831014
+ },
  "exit": null,
  "notes": "",
  "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
