@@ -1,2 +1,0 @@
-# KILLED-SCOUT QUAKE BGmQ6b635PJYPu13mVjjuTUWi1pmNiN6Dao5S2zSpump (cycle 290, 2026-11-09 18:06 Stockholm)
-Rule 1 HARD KILL: 7 wallets bought 36.81 % of tradable supply in creation slot (34.34 % slots 0-2; one wallet 7CTN… ~34 %), k30=1. Rule 2 no (migration 694 slots after create, creator not co-signed). Rule 11 measurable: 0.95 % in migration window, not hit. Pool 8zoFuFDp…, age ~30 min, liq ~30k. No LEAD, no RISK, no ticket. Raw: research/raw-20261109/c290/
