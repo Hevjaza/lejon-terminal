@@ -1,7 +1,7 @@
 {
  "label": "PAPER ledger - SIMULATED (Jupiter quote, desk-side)",
  "equity_start_sol": 10.0,
- "realised_pnl_sol": 0.052964291,
+ "realised_pnl_sol": -0.015160204,
  "daily": {
   "2026-10-29": {
    "realised_pnl_sol": -0.0622403,
@@ -10,14 +10,18 @@
   "2026-11-07": {
    "realised_pnl_sol": 0.115204591,
    "trades_closed": 1
+  },
+  "2026-11-10": {
+   "realised_pnl_sol": -0.068124495,
+   "trades_closed": 1
   }
  },
- "loss_streak": 0,
+ "loss_streak": 1,
  "pause_until_utc": null,
  "halted_dates": [],
- "trades_closed": 2,
+ "trades_closed": 3,
  "wins": 1,
- "losses": 1,
+ "losses": 2,
  "created_utc": "2026-10-28T06:09:21Z",
- "updated_utc": "2026-11-10T19:03:15Z"
+ "updated_utc": "2026-11-10T20:08:59Z"
 }
