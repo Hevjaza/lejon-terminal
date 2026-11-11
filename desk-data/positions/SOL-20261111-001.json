@@ -385,23 +385,39 @@
     "Meteora DLMM"
    ],
    "context_slot": 468182918
+  },
+  {
+   "utc": "2026-11-11T17:05:57Z",
+   "exit_value_sol": 0.15394616,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.04606384,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.04606384,
+   "pct": -23.031,
+   "multiple": 0.7697,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 1.4314903054477707e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 468200918
   }
  ],
  "last_mark": {
-  "utc": "2026-11-11T16:01:37Z",
-  "exit_value_sol": 0.183839852,
+  "utc": "2026-11-11T17:05:57Z",
+  "exit_value_sol": 0.15394616,
   "remaining_cost_basis_sol": 0.20001,
-  "unrealised_pnl_sol": -0.016170148,
+  "unrealised_pnl_sol": -0.04606384,
   "realised_partial_pnl_sol": 0.0,
-  "trade_total_pnl_sol": -0.016170148,
-  "pct": -8.085,
-  "multiple": 0.9192,
+  "trade_total_pnl_sol": -0.04606384,
+  "pct": -23.031,
+  "multiple": 0.7697,
   "tokens_held_frac": 1.0,
-  "price_sol_per_token": 1.709461060236598e-06,
+  "price_sol_per_token": 1.4314903054477707e-06,
   "route": [
-   "Meteora DLMM"
+   "Pump.fun Amm"
   ],
-  "context_slot": 468182918
+  "context_slot": 468200918
  },
  "exit": null,
  "notes": "",
