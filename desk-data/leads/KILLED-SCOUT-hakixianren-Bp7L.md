@@ -1,0 +1,2 @@
+# KILLED-SCOUT 哈基仙人 (Bp7Lk2CfPdK7yfc15gdmqMKSFBsHFbiish1SZ9enpump), cycle 324, 2026-11-11 ~04:07 Stockholm
+Rule 1: creation slot 19 wallets 126.09 % of tradable (top15 121.32 %, k30=2). Rule 2: migration in the creation slot (dslot 0 per rule11), creator EUPwPFYz co-signed. Rule 11: migration slot 26 buyers 111.8 % (k30=4, k80=10). Also DS liquidity 15.8M USD is a price artefact. Hard kill, no LEAD/RISK/ticket.

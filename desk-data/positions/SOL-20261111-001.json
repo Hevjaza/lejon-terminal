@@ -49,19 +49,81 @@
  "checkpoints": {
   "+5m": {
    "due_utc": "2026-11-11T02:17:29Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-11T02:22:19Z",
+   "multiple": 1.1806,
+   "pct": 18.062,
+   "exit_value_sol": 0.236136352,
+   "price_sol_per_token": 2.195747517520426e-06,
+   "lag_sec": 290,
+   "late": true
   },
   "+15m": {
    "due_utc": "2026-11-11T02:27:29Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-11T03:03:19Z",
+   "multiple": 0.7998,
+   "pct": -20.021,
+   "exit_value_sol": 0.159966848,
+   "price_sol_per_token": 1.4874745307387797e-06,
+   "lag_sec": 2149,
+   "late": true
   },
   "+60m": {
    "due_utc": "2026-11-11T03:12:29Z",
    "filled": false
   }
  },
- "marks": [],
- "last_mark": null,
+ "marks": [
+  {
+   "utc": "2026-11-11T02:22:19Z",
+   "exit_value_sol": 0.236136352,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": 0.036126352,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": 0.036126352,
+   "pct": 18.062,
+   "multiple": 1.1806,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 2.195747517520426e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 467953910
+  },
+  {
+   "utc": "2026-11-11T03:03:19Z",
+   "exit_value_sol": 0.159966848,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.040043152,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.040043152,
+   "pct": -20.021,
+   "multiple": 0.7998,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 1.4874745307387797e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 467965349
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-11-11T03:03:19Z",
+  "exit_value_sol": 0.159966848,
+  "remaining_cost_basis_sol": 0.20001,
+  "unrealised_pnl_sol": -0.040043152,
+  "realised_partial_pnl_sol": 0.0,
+  "trade_total_pnl_sol": -0.040043152,
+  "pct": -20.021,
+  "multiple": 0.7998,
+  "tokens_held_frac": 1.0,
+  "price_sol_per_token": 1.4874745307387797e-06,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 467965349
+ },
  "exit": null,
  "notes": "",
  "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
