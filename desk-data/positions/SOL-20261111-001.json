@@ -273,23 +273,39 @@
     "Pump.fun Amm"
    ],
    "context_slot": 468099849
+  },
+  {
+   "utc": "2026-11-11T12:01:04Z",
+   "exit_value_sol": 0.374506848,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": 0.174496848,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": 0.174496848,
+   "pct": 87.244,
+   "multiple": 1.8724,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 3.4824052917968324e-06,
+   "route": [
+    "Whirlpool"
+   ],
+   "context_slot": 468115769
   }
  ],
  "last_mark": {
-  "utc": "2026-11-11T11:04:03Z",
-  "exit_value_sol": 0.328855123,
+  "utc": "2026-11-11T12:01:04Z",
+  "exit_value_sol": 0.374506848,
   "remaining_cost_basis_sol": 0.20001,
-  "unrealised_pnl_sol": 0.128845123,
+  "unrealised_pnl_sol": 0.174496848,
   "realised_partial_pnl_sol": 0.0,
-  "trade_total_pnl_sol": 0.128845123,
-  "pct": 64.419,
-  "multiple": 1.6442,
+  "trade_total_pnl_sol": 0.174496848,
+  "pct": 87.244,
+  "multiple": 1.8724,
   "tokens_held_frac": 1.0,
-  "price_sol_per_token": 3.057906221703316e-06,
+  "price_sol_per_token": 3.4824052917968324e-06,
   "route": [
-   "Pump.fun Amm"
+   "Whirlpool"
   ],
-  "context_slot": 468099849
+  "context_slot": 468115769
  },
  "exit": null,
  "notes": "",
