@@ -1,8 +1,8 @@
 {
- "updated_utc": "2026-11-10T23:29:48Z",
- "stockholm_day": "2026-11-11",
+ "updated_utc": "2026-11-11T23:07:56Z",
+ "stockholm_day": "2026-11-12",
  "source": "Desk-filer: tidiga köpare i risk_*.json och affärer i cachade GeckoTerminal gt_trades_*.json för mynt desken redan sett. Arkham hoppades över (ingen gratistjänst utan nyckel). Poängen är ungefärlig – gratisdata visar sällan 30 hela affärer per plånbok.",
- "wallets_reviewed": 5468,
+ "wallets_reviewed": 5479,
  "qualified": [],
  "reviewed": [
   {
