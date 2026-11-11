@@ -1,0 +1,3 @@
+KILLED-SCOUT BUZZ FvWiHK27haTqetaL5KjRY1UgRnN8sx1cxpDJKui8pump cycle 325 2026-11-11 04:06Z: Rule 1 (4 slot-0 buy txs, 126.09% of tradable, 2 wallets reach 30%; 5-signer buy txs). Raw: research/raw-20261111/c325/. No RISK, no ticket.
+KILLED-SCOUT VEYL GHtnAtTCPFz8MRTMQiEyuEob283EUgqd1d1Fysnhpump cycle 325 2026-11-11 04:06Z: Rule 1 (9 wallets 37.48% in slots 0-2, creation 2026-11-03, 5 wallets reach 30%). Raw: research/raw-20261111/c325/. No RISK, no ticket.
+KILLED-SCOUT HAOBIBI 8tbfkL8LZYUN3ygzWMKfffqVd7tLRpWkuh2fowsepump cycle 325 2026-11-11 04:06Z: Rule 1 (126.09% in slot 0, 2 wallets reach 30%; 10- and 7-signer buy txs). Raw: research/raw-20261111/c325/. No RISK, no ticket.
