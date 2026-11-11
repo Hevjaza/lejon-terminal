@@ -185,8 +185,19 @@
    "4RK13gb4Kpxrk5jgAd8kUw3FRCJmbw7sH1765Gokpump",
    "4iJ7xEQrUvVUQH9KVStvw3FaY2PZDd7RtR4L9zx2pump",
    "6mwuYnY3fHdxed9GnrdY5BkXhJwMi1uz39MPsYUcpump"
+  ],
+  "c322": [
+   "8yLBuP74RnFmjSRS8BGFebvyoTo8uiEjPB71h3Zgpump",
+   "Hg3w7GdPViZ5URuCNnK6EwXLzSTmVwX6UXLeD6Pbpump",
+   "CRhbTris4J34SXobaLFnrEv2RD3dD99ddGdiPPzgpump",
+   "6mwuYnY3fHdxed9GnrdY5BkXhJwMi1uz39MPsYUcpump"
+  ],
+  "c323": [
+   "Hy2TgNJJTpWUVfFMYryCjgAF3rkDyG4KPm11B8Pqpump",
+   "8AAVuQpJcqpvCuutxyBTVvgBEXZJSkZoNv1sExpBpump",
+   "CQ8zNLYwMEAVVBHEswusZrsUraCvc7HjiBPwgTbRpump"
   ]
  },
- "last_run_utc": "2026-11-10T23:29:48Z",
- "last_cycle": "c320"
+ "last_run_utc": "2026-11-11T02:12:35Z",
+ "last_cycle": "c323"
 }
