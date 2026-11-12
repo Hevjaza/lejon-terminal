@@ -1,0 +1,1 @@
+KILLED-SCOUT (cycle 366, 2026-11-12 03:31): X, mint 3Pmrc9W82zF832W1pgTgUoPXvhufyrHueeJ2YgEspump. Rule 1: creator wallet bought 793.1M (100 % of tradable) in creation slot 468346996, 2 buyers total, k30=1. Migration slot +2, creator not co-signed (Rule 2 not hit). Evidence: research/raw-20261112/c366/bundle_x.json
