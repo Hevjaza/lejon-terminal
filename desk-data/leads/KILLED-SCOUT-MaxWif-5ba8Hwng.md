@@ -1,0 +1,2 @@
+# KILLED-SCOUT MaxWif (5ba8HwNgio5t86aFdWJ81w5pNHjbqAKPKejTsVoDpump), cycle 426, 2026-11-12 ~18:40 Stockholm
+Pool AgXRYb1v..., age ~56 min, liq ~29k USD. Rule 1 HIT: 18-19 wallets bought the whole curve in creation slot 468596227 (126 % of tradable incl. pool; top-10 78-99 %, 2 wallets reach 30 %). Rule 2 HIT: migration in the creation slot co-signed by creator. Rule 11 HIT: 27 buyers 113 % of tradable in migration window. No RISK, no ticket. Evidence: research/raw-20261112/c426/.
