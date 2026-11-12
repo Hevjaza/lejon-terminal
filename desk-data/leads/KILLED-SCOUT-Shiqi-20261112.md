@@ -1,0 +1,2 @@
+# KILLED-SCOUT Shiqi (2UMho4zUPqSKb2fbJbKNPf1dU1WKD6SfbNmVkvphpump), cycle 397, 2026-11-12
+Pair 5siBm6iiunV9, ~84 min, liq ~27k. Rule 1 hard KILL: 6 wallets (creator 28.2 %) bought 33.95 % of tradable supply in creation slot (cap 15 wallets, >=30 %); 2 wallets reach 30 %. Rule 2 pass (migration not same slot, creator not cosigned); Rule 11 measurable, pass (0.47 %). Never reached RISK. No ticket. Evidence: research/raw-20261112/c397/
