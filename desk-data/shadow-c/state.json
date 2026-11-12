@@ -551,8 +551,14 @@
    "7z3QB6D8xge7GzKZCsajvnLt8zqT1SvFonY9vZZmpump",
    "FyHakvZH3L4UABSQYK7e9ECEzWV37u7GTkmAbHXspump",
    "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump"
+  ],
+  "c422": [
+   "4FP2GRQS3WYPsZSE2dwaVzqkajrBpHcXyVSTVt83pump",
+   "7z3QB6D8xge7GzKZCsajvnLt8zqT1SvFonY9vZZmpump",
+   "FyHakvZH3L4UABSQYK7e9ECEzWV37u7GTkmAbHXspump",
+   "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump"
   ]
  },
- "last_run_utc": "2026-11-12T16:23:53Z",
- "last_cycle": "c421"
+ "last_run_utc": "2026-11-12T16:32:24Z",
+ "last_cycle": "c422"
 }
