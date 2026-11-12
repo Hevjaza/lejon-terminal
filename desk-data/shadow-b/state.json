@@ -536,8 +536,13 @@
    "4FP2GRQS3WYPsZSE2dwaVzqkajrBpHcXyVSTVt83pump",
    "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
    "4eiNbSrXgtbeuBSvyKLvZjZB1NTz1DsLrUrHXS3Npump"
+  ],
+  "c419": [
+   "4FP2GRQS3WYPsZSE2dwaVzqkajrBpHcXyVSTVt83pump",
+   "6MZZGJutbeEny8KB7Lexu3qxSTe7dHe1kQL3RVwCpump",
+   "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump"
   ]
  },
- "last_run_utc": "2026-11-12T15:35:40Z",
- "last_cycle": "c418"
+ "last_run_utc": "2026-11-12T15:49:06Z",
+ "last_cycle": "c419"
 }
