@@ -1,0 +1,1 @@
+KILLED-SCOUT ZEPHYRON 32Zz5kvbdbg4jNvnhJ5kJCqiDLnr8XVWH7Ye93uipump 2026-11-13 c468: Rule 1, 2 wallets bought 84.87% of tradable in creation slot (dev alone 84.79%, k30=1). Evidence research/raw-20261113/c468/bundle_zeph.json
