@@ -1,0 +1,1 @@
+KILLED-SCOUT JENSWAN EMNsQjn55DFugZ13nFja49CVGJv9r3qPyehqRVFqpump 2026-11-13 c467: Rule 1, 12 wallets bought the whole curve (126% of tradable incl. overshoot, k30=2) in slots 0-2. Evidence research/raw-20261113/c467/bundle_jens.json
