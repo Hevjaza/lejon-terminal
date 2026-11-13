@@ -1,0 +1,1 @@
+KILLED-SCOUT PEACEFROG m7SihqeaWimE1zpBzjHBwKJbbhuaczX5fHvGoNupump (c541): Rule 1 - 5 wallets reach 30 % of tradable supply in first 2 slots (9 buy txs in creation slot incl. dev 8.04 %). Evidence research/raw-20261113/c541/bundle_peace.json.
