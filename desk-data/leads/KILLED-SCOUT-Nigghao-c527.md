@@ -1,0 +1,2 @@
+# KILLED-SCOUT: Nigghao (9J41toneswGA3hZJyfYiWkC9jMm8doMDP3QEBYM1pump) - cycle 527, 2026-11-13 ~20:00 Stockholm
+Rule 1 HIT: 2 distinct wallets bought the whole curve (126 % of tradable) in creation slot; 1 wallet alone = 110 % (AwsHs2p7... 87.2 % of 1B). Migrated 2 slots after creation (Rule 11 pattern). Age 64 min, liq ~25.7k. No RISK, no ticket. Evidence: research/raw-20261113/c527/bundle_Nigghao.json.
