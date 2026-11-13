@@ -1,0 +1,2 @@
+# KILLED-SCOUT: DACAT (91fxZsD9St9CFJJ8yDAwkFRmQVEdUP29E27ARrjapump) - cycle 521, 2026-11-13 ~18:34 Stockholm
+Rule 1 HIT: 18 distinct wallets bought the whole curve in creation slot (slots 0-2 identical); 4 wallets reach 30 %; top10 80.6 %. Rule 11 pattern: 24 buyers = 110.8 % of tradable in the migration window. Rule 2: creator co-signed migration (creator_cosigned true). No RISK, no ticket. Evidence: research/raw-20261113/c521/bundle_dacat.json.
