@@ -1,0 +1,2 @@
+# KILLED-SCOUT: punchhao (C5jaQ3sUjdKJLcyTS4tSnmj2PsiXkYWZXyA3gxm3pump) - cycle 533, 2026-11-13 ~21:35 Stockholm
+Rule 1 HIT: 21 distinct wallets bought the whole curve (126 % of tradable incl. overlap, top10 110.9 %) in the creation slot; 2 wallets reach 30 %; multi-wallet creation txs (Rule 11 pattern). Age 40 min, liq ~26k. No RISK, no ticket. Evidence: research/raw-20261113/c533/bundle_punchhao.json.
