@@ -1,0 +1,2 @@
+# KILLED-SCOUT: SI (CJ28UpzC21EkXDsZaTARLR3VGGQPoXb88u7LAmVJpump) - cycle 520, 2026-11-13 ~18:17 Stockholm
+Rule 1 HIT: 12 distinct wallets bought 126 % of tradable supply (whole curve) in creation slot (slots 0-2 identical); 2 wallets reach 30 %; creator wallet counted. Migration 2 slots after creation (1 s) -> Rule 11 pattern too. Rule 2 not hit (creator did not co-sign migration). Evidence: research/raw-20261113/c520/bundle_si.json. No RISK, no ticket.
