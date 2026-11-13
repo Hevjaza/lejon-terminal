@@ -1,0 +1,1 @@
+KILLED-SCOUT AMD H2SQUiRy8bvAv2yARwajptdLKi9BTYDoWLvu5cbpump 2026-11-13 c464: Rule 1, dev bought 33.79% of tradable in creation slot; 8 wallets bought the whole curve (126% of tradable incl. overshoot) in slots 0-2 (k30=1); migration 3 slots after creation. Evidence research/raw-20261113/c464/bundle_amd.json
