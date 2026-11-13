@@ -13,8 +13,8 @@
  "size_sol": 0.2,
  "entry_fee_sol": 1e-05,
  "cost_sol": 0.20001,
- "tokens_raw": 128113042764,
- "tokens_ui": 128113.042764,
+ "tokens_raw": 64056521382,
+ "tokens_ui": 64056.521382,
  "decimals": 6,
  "entry_price_sol_per_token": 1.5611993571056077e-06,
  "stop_loss_frac": -0.3,
@@ -401,23 +401,39 @@
     "Pump.fun Amm"
    ],
    "context_slot": 468831023
+  },
+  {
+   "utc": "2026-11-13T07:06:35Z",
+   "exit_value_sol": 0.421268789,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": 0.221258789,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": 0.221258789,
+   "pct": 110.624,
+   "multiple": 2.1062,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 3.288258399857296e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 468836779
   }
  ],
  "last_mark": {
-  "utc": "2026-11-13T06:45:57Z",
-  "exit_value_sol": 0.358609372,
+  "utc": "2026-11-13T07:06:35Z",
+  "exit_value_sol": 0.421268789,
   "remaining_cost_basis_sol": 0.20001,
-  "unrealised_pnl_sol": 0.158599372,
+  "unrealised_pnl_sol": 0.221258789,
   "realised_partial_pnl_sol": 0.0,
-  "trade_total_pnl_sol": 0.158599372,
-  "pct": 79.296,
-  "multiple": 1.793,
+  "trade_total_pnl_sol": 0.221258789,
+  "pct": 110.624,
+  "multiple": 2.1062,
   "tokens_held_frac": 1.0,
-  "price_sol_per_token": 2.7991636469098827e-06,
+  "price_sol_per_token": 3.288258399857296e-06,
   "route": [
    "Pump.fun Amm"
   ],
-  "context_slot": 468831023
+  "context_slot": 468836779
  },
  "exit": null,
  "notes": "",
@@ -434,10 +450,39 @@
  "tp2_expected_proceeds_sol": 1.100055,
  "stop_loss_after_tp1_frac": 0.0,
  "stop_loss_after_tp1_price_sol_per_token": 1.5611993571056077e-06,
- "tp1_done": false,
+ "tp1_done": true,
  "tp2_done": false,
- "stake_recovered": false,
- "partial_exits": [],
- "realised_partial_pnl_sol": 0.0,
- "proceeds_so_far_sol": 0.0
+ "stake_recovered": true,
+ "partial_exits": [
+  {
+   "leg": "TP1",
+   "utc": "2026-11-13T07:06:36Z",
+   "stockholm": "2026-11-13 08:06:36",
+   "reason": "TAKE-PROFIT 1 (+100 %, 50 %) triggered at hourly mark (2.1062x)",
+   "tokens_sold_raw": 64056521382,
+   "tokens_sold_ui": 64056.521382,
+   "frac_of_initial": 0.5,
+   "proceeds_sol": 0.210808795,
+   "exit_fee_sol": 1e-05,
+   "cost_basis_sol": 0.100005,
+   "realised_pnl_sol": 0.110803795,
+   "multiple": 2.108,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 468836784,
+   "label": "SIMULATED (Jupiter quote, desk-side)",
+   "fill_source": "fresh token->SOL sell quote",
+   "trigger": {
+    "checkpoint": "hourly mark",
+    "multiple": 2.1062,
+    "pct": 110.624,
+    "utc": "2026-11-13T07:06:35Z"
+   }
+  }
+ ],
+ "realised_partial_pnl_sol": 0.110803795,
+ "proceeds_so_far_sol": 0.210808795,
+ "stake_recovered_ratio": 1.054,
+ "risk_free_note": "stake recovered: TP1 proceeds >= full cost; remaining 50 % is house money"
 }
