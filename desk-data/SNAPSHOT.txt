@@ -1,4 +1,4 @@
-Ögonblicksbild Europe/Stockholm 2026-11-13 09:55
+Ögonblicksbild Europe/Stockholm 2026-11-13 10:07
 KILLED-noter i denna snapshot: 80 (av 668 på desken).
 Shadow-B och Shadow-C ledger ingår om present (paper only).
 Ingen .env, inga nycklar, inget lösenord ingår.
