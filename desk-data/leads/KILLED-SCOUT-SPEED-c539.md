@@ -1,0 +1,2 @@
+# KILLED-SCOUT: SPEED (7csfMgiRcBy9Y4GbGVMz8qJWFUk718KG58xfCKpXpump) - cycle 539, 2026-11-13 ~23:10 Stockholm
+Rule 1 HIT: 3 wallets (creator + co-signer) bought the whole curve (126 % of tradable incl. overlap) in the creation slot; creator dev buy 99.56 % of tradable; 1 wallet reaches 30 %. Age 47 min, liq ~45k, 1h vol 744k. No RISK, no ticket. Evidence: research/raw-20261113/c539/bundle_speed.json.
