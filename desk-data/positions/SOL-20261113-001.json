@@ -481,23 +481,39 @@
     "Pump.fun Amm"
    ],
    "context_slot": 468853598
+  },
+  {
+   "utc": "2026-11-13T08:14:36Z",
+   "exit_value_sol": 0.187933418,
+   "remaining_cost_basis_sol": 0.100005,
+   "unrealised_pnl_sol": 0.087928418,
+   "realised_partial_pnl_sol": 0.110803795,
+   "trade_total_pnl_sol": 0.198732213,
+   "pct": 87.924,
+   "multiple": 1.8792,
+   "tokens_held_frac": 0.5,
+   "price_sol_per_token": 2.9338686201715852e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 468855717
   }
  ],
  "last_mark": {
-  "utc": "2026-11-13T08:06:59Z",
-  "exit_value_sol": 0.190671697,
+  "utc": "2026-11-13T08:14:36Z",
+  "exit_value_sol": 0.187933418,
   "remaining_cost_basis_sol": 0.100005,
-  "unrealised_pnl_sol": 0.090666697,
+  "unrealised_pnl_sol": 0.087928418,
   "realised_partial_pnl_sol": 0.110803795,
-  "trade_total_pnl_sol": 0.201470492,
-  "pct": 90.662,
-  "multiple": 1.9066,
+  "trade_total_pnl_sol": 0.198732213,
+  "pct": 87.924,
+  "multiple": 1.8792,
   "tokens_held_frac": 0.5,
-  "price_sol_per_token": 2.9766164769225058e-06,
+  "price_sol_per_token": 2.9338686201715852e-06,
   "route": [
    "Pump.fun Amm"
   ],
-  "context_slot": 468853598
+  "context_slot": 468855717
  },
  "exit": null,
  "notes": "",
