@@ -1,0 +1,1 @@
+KILLED-SCOUT CSI (CRwB4GxVDM4Bnh8QMqh9Nk8UZNscced3xec824vxpump), c544 2026-11-14. Rule 1: 21 wallets bought the whole curve in creation slot (126 % of tradable), 2 wallets reach 30 %, top10 110.2 %. Migration 2 slots after creation. Raw: research/raw-20261114/c544/
