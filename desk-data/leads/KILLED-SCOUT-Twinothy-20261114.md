@@ -1,0 +1,2 @@
+KILLED-SCOUT Twinothy (9W2NkHVVjS4p1KGrxBX9dJACiW3UtdkDHLAjnkyxpump), pool Cn7F8VmZ5BnJCpEpafFpJNLVUUPtQFfszgvXoeFqpSUb, cycle 571 (2026-11-14 ~07:06 CET). Age 31 min, liq ~25.9k.
+Rule 1 HIT: creation slot 12 wallets bought 126 % of tradable (whole curve), 2 wallets reach 30 %, top-10 119 %. Two multi-wallet txs of 5 recipients each in slot 0. Rule 2: not hit (migration dslot 12, creator not co-signer). No RISK, no buy. Evidence: research/raw-20261114/c571/bundle_tw.json
