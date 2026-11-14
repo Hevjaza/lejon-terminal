@@ -1,0 +1,2 @@
+# KILLED (c591, 2026-11-14) GTA$ (GTA Dollar) 8HdzcabjCJQLQsnnoxEhC7HqEWnbkhmysNXzZbidpump
+Age 33 min, liq ~34.8k, 1h vol 195k. Token-2022 via rapidlaunch.io. Create fee payer D9gQ6R... is a serial launcher (>=1000 txs in ~28 h), curve creator AfH6hN... 318 sigs since 2026-11-06 -> launch-factory pattern (RISK check 8, t39u hard kill). Curve also had 3651 failed (bot) txs. No RISK, no ticket, no buy.
