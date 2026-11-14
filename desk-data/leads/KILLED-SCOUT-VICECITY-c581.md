@@ -1,0 +1,2 @@
+KILLED-SCOUT VICECITY (Ep13piLgesAxM32dB4hVAsmhfWcsTJqVKmQHkYCKpump), pool CB7Hu6stKCDViaEWzbSRiDpH4DKCpXdECzLQ7KbisDf2, cycle 581 (2026-11-14 ~09:37 CET). Age 35 min, liq ~40k.
+Rule 1 HIT: creation slot 2 wallets bought 126 % of tradable (whole curve), dev buy 100 % of tradable, 1 wallet reaches 30 %. Migration dslot 1 after create, creator not co-signer (Rule 2 not hit). No RISK, no buy. Evidence: research/raw-20261114/c581/bundle_vc.json
