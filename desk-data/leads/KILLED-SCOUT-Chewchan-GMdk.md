@@ -1,0 +1,12 @@
+# KILLED-SCOUT Chewchan-GMdk (GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump)
+Cycle 239 (20:08 Stockholm, 2026-11-05), bundler pre-check (rule 1 cap 15 wallets, creator buy counted, rule 2, Rule 11 with fixed c6 locator), measured 2026-11-05T19:09:20Z-2026-11-05T19:09:40Z (UTC; Stockholm = UTC+1). Engagement: paper. No lead ID, no ticket.
+
+- Mint: GMdkBYSKJuWnqd4vGdSnxiELNQTPhMhvdCmPb77dpump
+- PumpSwap pool: H1MHbKjDPqRhCRCKQfDqX1KtieGDeEe9sKneMPSAcd8A (https://dexscreener.com/solana/H1MHbKjDPqRhCRCKQfDqX1KtieGDeEe9sKneMPSAcd8A)
+- DexScreener/GT ~19:08Z: Chewchan, pool H1MHbKjD..., age ~42 min at scan (curve created 2026-11-05 18:26:47Z, creation slot 465806066, creator 2yf2hd...; migrated in the SAME slot), found via scan2.py: DS liq ~26.7k, 1h vol ~247k, h1 +205 %, FDV ~122k. Creation slot: CreateV2 (6 signers, 1.5 %) + two 7-signer BuyV3 (79.1 % + 19.4 %) -> 19 wallets 100 % of tradable, k30 = 3 -> Rule 1 HIT. Authoritative MigrateV2+CreatePool 3byJtY... same slot, signed by the creator 2yf2hd... + DvFAPD... (a creation-slot buyer) -> Rule 2 HIT. Rule 11: window 24 buyers 112.64 %, k80 = 8 (mechanical cap 5 not hit); premig.py: two 7-signer BuyV3 = 98.50 % of the curve in the migration slot -> Rule 11 judgment HIT (hard KILL per t39u). bundle.py locator picked a later no-op MigrateV2 5oiXZG... by 9C4nRv... (+2 slots, known quirk); rule11.py authoritative.
+- Created: 2026-11-05T18:26:47Z, slot 465806066, tx 67DYgU7rmkDxMwmK8Jb7NMqLUxcWkqm1eLnVFoZGWxPDFG9qDKwQW1FTPeZNtDC2Ya4RkAW3iC1Bz7d5AbQDt991; curve wtcm8m1HDgQKcZ4WAReP83nLVex8v8btXLoqwqo8hxM; creator 2yf2hdN9jfKHzz5matTyWXGdnM1c55wpPBqAYUaQ6u6W
+- Rule 1: creation slot 19 buying wallets (creator counted, migration tx and pool excluded), 100.0 % of tradable supply, wallets to reach 30 %: 3; slots 0-2: 19 wallets, 100.0 %. **HIT**
+- Rule 2: migration 3byJtYMQuqNwtcEUVJsSpZtyXbEGjTgDynQ6RwcFtKNJayZNi6WAxmkdWGHL75nim3ZVAdHwb3zrVvpquKvPNH36, same slot as creation, creator co-signed. **HIT**
+- Rule 11: migration slot 465806066 (+0 slots), window +0..+2: 24 buyers, 112.64 % of tradable supply, wallets to reach 80 %: 8. Mechanical not hit; judgment **HIT** (premig.py: two 7-signer BuyV3 = 79.1 % + 19.4 % = 98.50 % of the curve in the migration slot; hard KILL per t39u).
+- Rule hit: **Rule 1, Rule 2, Rule 11 (judgment: two 7-signer BuyV3 = 98.50 % in migration slot)**
+- Raw: research/raw-20261105/c239/bundle_Chewchan-GMdk.json, rule11_Chewchan-GMdk.json, b_*.log, r11log_Chewchan-GMdk.txt

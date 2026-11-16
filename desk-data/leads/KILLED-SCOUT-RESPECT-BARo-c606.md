@@ -1,0 +1,1 @@
+# KILLED-SCOUT RESPECT (BARobVaVawPxpjaHLsvrdLn2SpVJQDFYx4BY2R5Kpump) c606, 2026-11-16 ~08:55 Stockholm. Rule 1 HIT: slots 0-2 12 buying wallets bought 71.1 % of tradable supply (63.1 % in creation slot by 3 wallets; paid RPC). No RISK, no ticket.
