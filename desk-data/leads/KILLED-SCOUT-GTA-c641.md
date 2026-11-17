@@ -1,0 +1,1 @@
+KILLED-SCOUT GTA 2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump (cycle 641): Rule 1, 2 wallets reach 30% of tradable supply in creation slot (bundle.py on-chain, 100% of curve bought in slot 0 by 21 wallets). Migration 3 slots later, creator not cosigned.
