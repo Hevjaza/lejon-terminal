@@ -143,6 +143,7 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 .whale-reason { font-size:0.68rem; color:#8b93a7; line-height:1.3; }
 
 .goal-foot { margin-top:10px; font-size:0.68rem; color:#8b93a7; line-height:1.35; }
+.goal-foot-excl { margin-top:6px; color:#ffd166; }
 
 .login-box { background:#0c0f14; border:1px solid #1c2230; border-radius:22px; padding:18px; margin:18px 0; }
 .foot { color:#5c6578; font-size:0.68rem; text-align:center; margin-top:14px; }
@@ -315,8 +316,85 @@ def load_strategy_stats(desk: Path, kind: str) -> dict[str, Any]:
     return out
 
 
+def _truthy_flag(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return value != 0
+    if isinstance(value, str):
+        return value.strip().lower() in {"true", "yes", "1"}
+    return False
+
+
+def excluded_from_goals(d: dict) -> bool:
+    """True when a position stays in the ledger/equity but is omitted from 'Mål innan live'."""
+    if not isinstance(d, dict):
+        return False
+    return _truthy_flag(d.get("excluded_from_goals"))
+
+
+def _position_realised_pnl(d: dict) -> float | None:
+    ex = d.get("exit") or {}
+    raw = ex.get("realised_pnl_sol")
+    if raw is None:
+        raw = d.get("realised_pnl_sol")
+    try:
+        return float(raw)
+    except (TypeError, ValueError):
+        return None
+
+
+def _exit_day(d: dict) -> str | None:
+    ex = d.get("exit") or {}
+    ts = ex.get("stockholm") or ex.get("utc") or d.get("entry_stockholm") or ""
+    day = str(ts)[:10]
+    return day if len(day) == 10 else None
+
+
+def goals_exclusion_footnote(positions: list[dict]) -> str:
+    rows: list[str] = []
+    for d in positions:
+        if str(d.get("status", "")).upper() != "CLOSED":
+            continue
+        if not excluded_from_goals(d):
+            continue
+        ticket = str(d.get("ticket") or "–")
+        reason = str(d.get("excluded_from_goals_reason") or "excluded from goals").strip()
+        rows.append(f"{ticket} — {reason}")
+    if not rows:
+        return ""
+    n = len(rows)
+    head = "1 stängt paper-köp räknas inte i målen" if n == 1 else f"{n} stängda paper-köp räknas inte i målen"
+    return head + " (syns i boken och i equity): " + "; ".join(rows) + "."
+
+
 def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
-    """Compute read-only 'Mål innan live' from paper ledger/positions only."""
+    """Compute read-only 'Mål innan live' from paper ledger/positions only.
+
+    Positions with excluded_from_goals=true stay in the ledger and in paper
+    equity, but are omitted from closed-count, win rate, goal P/L and the
+    daily-loss goal.
+    """
+    closed = [d for d in positions if str(d.get("status", "")).upper() == "CLOSED"]
+    excluded = [d for d in closed if excluded_from_goals(d)]
+    n_excl = len(excluded)
+    excl_pnl = 0.0
+    excl_wins = 0
+    excl_losses = 0
+    excl_by_day: dict[str, float] = {}
+    for d in excluded:
+        rp = _position_realised_pnl(d)
+        if rp is None:
+            continue
+        excl_pnl += rp
+        if rp > 0:
+            excl_wins += 1
+        else:
+            excl_losses += 1
+        day = _exit_day(d)
+        if day:
+            excl_by_day[day] = excl_by_day.get(day, 0.0) + rp
+
     eq0 = None
     try:
         if ledger.get("equity_start_sol") is not None:
@@ -326,17 +404,17 @@ def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
     pnl = None
     try:
         if ledger.get("realised_pnl_sol") is not None:
-            pnl = float(ledger["realised_pnl_sol"])
+            pnl = float(ledger["realised_pnl_sol"]) - excl_pnl
     except Exception:
         pnl = None
 
-    closed = [d for d in positions if str(d.get("status", "")).upper() == "CLOSED"]
-    # Prefer ledger trades_closed when present
+    # Prefer ledger trades_closed when present, then subtract exclusions
     n_closed = ledger.get("trades_closed")
     try:
         n_closed = int(n_closed) if n_closed is not None else len(closed)
     except Exception:
         n_closed = len(closed)
+    n_closed = max(0, n_closed - n_excl)
 
     wins = ledger.get("wins")
     losses = ledger.get("losses")
@@ -345,6 +423,10 @@ def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
         losses_i = int(losses) if losses is not None else None
     except Exception:
         wins_i = losses_i = None
+    if wins_i is not None:
+        wins_i = max(0, wins_i - excl_wins)
+    if losses_i is not None:
+        losses_i = max(0, losses_i - excl_losses)
     closed_wl = None
     hit = None
     if wins_i is not None and losses_i is not None:
@@ -352,7 +434,7 @@ def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
         if closed_wl > 0:
             hit = 100.0 * wins_i / closed_wl
 
-    # Daily loss vs start equity (2 % limit)
+    # Daily loss vs start equity (2 % limit), excluding goal-excluded trades
     daily = ledger.get("daily") or {}
     worst_pct = None
     days_known = 0
@@ -361,7 +443,7 @@ def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
             if not isinstance(info, dict):
                 continue
             try:
-                d_pnl = float(info.get("realised_pnl_sol") or 0)
+                d_pnl = float(info.get("realised_pnl_sol") or 0) - excl_by_day.get(str(_day), 0.0)
             except Exception:
                 continue
             days_known += 1
@@ -372,14 +454,13 @@ def live_goals(ledger: dict, positions: list[dict]) -> list[dict[str, Any]]:
     if days_known == 0 and eq0 and eq0 > 0:
         by_day: dict[str, float] = {}
         for d in closed:
-            ex = d.get("exit") or {}
-            ts = ex.get("stockholm") or ex.get("utc") or d.get("entry_stockholm") or ""
-            day = str(ts)[:10]
-            if len(day) < 10:
+            if excluded_from_goals(d):
                 continue
-            try:
-                rp = float(ex.get("realised_pnl_sol"))
-            except Exception:
+            day = _exit_day(d)
+            if not day:
+                continue
+            rp = _position_realised_pnl(d)
+            if rp is None:
                 continue
             by_day[day] = by_day.get(day, 0.0) + rp
         for _day, d_pnl in by_day.items():
@@ -845,12 +926,14 @@ for g in goals:
         f'<div class="goal-bar-bg"><div class="{bar_cls}" style="width:{width}%"></div></div>'
         f'</div></div>'
     )
+excl_note = goals_exclusion_footnote(positions)
+excl_html = f'<div class="goal-foot-excl">{excl_note}</div>' if excl_note else ""
 st.markdown(
     f"""
 <div class="card">
   <h3>Mål innan live <span class="meta">paper-bevis</span></h3>
   {''.join(goal_rows)}
-  <div class="goal-foot">Live slås på först när alla är ✅ och Hevar godkänner. Endast paper.</div>
+  <div class="goal-foot">Live slås på först när alla är ✅ och Hevar godkänner. Endast paper.{excl_html}</div>
 </div>
 """,
     unsafe_allow_html=True,

@@ -122,7 +122,7 @@
   "label": "SIMULATED (Jupiter quote, desk-side)",
   "max_loss_breached": false
  },
- "notes": "",
+ "notes": "excluded from goals: rule error (launch factory). Kept in the ledger and in paper equity (honest).",
  "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
  "take_profit_plan": "TP1 +100 % sells 50 % (stake recovered); TP2 +1000 % sells the remaining 50 %",
  "tp1_pct": 100,
@@ -162,5 +162,7 @@
   }
  ],
  "realised_partial_pnl_sol": -0.077566572,
- "proceeds_so_far_sol": 0.122443428
+ "proceeds_so_far_sol": 0.122443428,
+ "excluded_from_goals": true,
+ "excluded_from_goals_reason": "rule error (launch factory)"
 }
