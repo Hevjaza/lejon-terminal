@@ -1,0 +1,1 @@
+VI HricrxBN3QXC3SN5VLtNhaEzoGrYea5ZtaTxQDfKSTNK c708 KILLED-SCOUT (raydium-launchlab): Rule 1-eq 1 wallet >=30% of tradable in slot0 (5 buyers 100%); Rule 2-eq deployer co-signed 98.35%; Rule 11-eq k80=1 / migration window 3 wallets >80%.
