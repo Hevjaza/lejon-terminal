@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 00:03",
+  "generated_at_stockholm": "2026-11-20 00:32",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 00:03",
-      "to": "2026-11-20 00:03",
+      "from": "2026-11-19 00:32",
+      "to": "2026-11-20 00:32",
       "timezone": "Europe/Stockholm",
-      "cycles": 45,
+      "cycles": 44,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 16,
-        "eligible_appearances": 256,
-        "eligible_cycles_measured": 31,
+        "eligible_appearances": 244,
+        "eligible_cycles_measured": 30,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -30,7 +30,7 @@
         "scout_rule11": 3,
         "scout_unique": 10,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 22,
+        "age_or_liq_filter": 21,
         "age_or_liq_filter_complete": false,
         "factory_kill": 5,
         "funding_avoid": 1,
@@ -437,30 +437,20 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 728,
           "time": "2026-11-19 00:34"
-        },
-        {
-          "symbol": "PAPA",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 727,
-          "time": "2026-11-19 00:06"
         }
       ],
       "unknowns": [
-        "4 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 22.",
+        "5 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 21.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 00:03",
-      "to": "2026-11-20 00:03",
+      "from": "2026-11-13 00:32",
+      "to": "2026-11-20 00:32",
       "timezone": "Europe/Stockholm",
-      "cycles": 325,
+      "cycles": 323,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2397,7 +2387,7 @@
         }
       ],
       "unknowns": [
-        "4 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "5 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
@@ -6066,7 +6056,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 19,
+    "lines": 20,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
