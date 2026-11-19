@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 22:30",
+  "generated_at_stockholm": "2026-11-19 23:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 22:30",
-      "to": "2026-11-19 22:30",
+      "from": "2026-11-18 23:02",
+      "to": "2026-11-19 23:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 17,
-        "eligible_appearances": 282,
-        "eligible_cycles_measured": 33,
+        "new_tokens": 16,
+        "eligible_appearances": 268,
+        "eligible_cycles_measured": 32,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -32,7 +32,7 @@
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 6,
+        "factory_kill": 5,
         "funding_avoid": 1,
         "risk_other": 0,
         "skipped_unverified": 0
@@ -477,30 +477,20 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 726,
           "time": "2026-11-18 23:30"
-        },
-        {
-          "symbol": "CRIME",
-          "mint_prefix": "96WnzbBG",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 724,
-          "time": "2026-11-18 22:32"
         }
       ],
       "unknowns": [
-        "1 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "2 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 25.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-12 22:30",
-      "to": "2026-11-19 22:30",
+      "from": "2026-11-12 23:02",
+      "to": "2026-11-19 23:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 329,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -2451,7 +2441,7 @@
         }
       ],
       "unknowns": [
-        "1 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "2 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 50.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
