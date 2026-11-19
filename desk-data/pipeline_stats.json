@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 14:03",
+  "generated_at_stockholm": "2026-11-19 14:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 14:03",
-      "to": "2026-11-19 14:03",
+      "from": "2026-11-18 14:35",
+      "to": "2026-11-19 14:35",
       "timezone": "Europe/Stockholm",
-      "cycles": 46,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 30,
-        "eligible_appearances": 399,
-        "eligible_cycles_measured": 40,
+        "new_tokens": 31,
+        "eligible_appearances": 413,
+        "eligible_cycles_measured": 42,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -32,13 +32,23 @@
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 31,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 6,
+        "factory_kill": 7,
         "funding_avoid": 2,
         "risk_other": 1,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "PIPI",
+          "mint_prefix": "Bd7mSgki",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": 756,
+          "time": "2026-11-19 14:33"
+        },
         {
           "symbol": "Sparrow",
           "mint_prefix": "5a6mAmWb",
@@ -715,10 +725,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 14:03",
-      "to": "2026-11-19 14:03",
+      "from": "2026-11-12 14:35",
+      "to": "2026-11-19 14:35",
       "timezone": "Europe/Stockholm",
-      "cycles": 348,
+      "cycles": 347,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -732,9 +742,9 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 129,
-        "eligible_appearances": 1013,
-        "eligible_cycles_measured": 110,
+        "new_tokens": 130,
+        "eligible_appearances": 1027,
+        "eligible_cycles_measured": 112,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -749,13 +759,23 @@
         "scout_rules_unknown": 18,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 9,
+        "factory_kill": 10,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 5
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "PIPI",
+          "mint_prefix": "Bd7mSgki",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": 756,
+          "time": "2026-11-19 14:33"
+        },
         {
           "symbol": "Sparrow",
           "mint_prefix": "5a6mAmWb",
@@ -6253,6 +6273,11 @@
         "t": "2026-11-19 14:05",
         "cycle": 755,
         "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 14:33",
+        "cycle": 756,
+        "equity": 9.919847
       }
     ]
   },
@@ -6309,7 +6334,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 14,
+    "lines": 16,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
