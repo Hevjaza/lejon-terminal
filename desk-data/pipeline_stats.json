@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 19:37",
+  "generated_at_stockholm": "2026-11-19 20:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 19:37",
-      "to": "2026-11-19 19:37",
+      "from": "2026-11-18 20:02",
+      "to": "2026-11-19 20:02",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,9 +15,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 24,
-        "eligible_appearances": 358,
-        "eligible_cycles_measured": 39,
+        "new_tokens": 22,
+        "eligible_appearances": 342,
+        "eligible_cycles_measured": 38,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 15,
-        "scout_rule2": 4,
+        "scout_rule1": 13,
+        "scout_rule2": 3,
         "scout_rule11": 3,
-        "scout_unique": 15,
+        "scout_unique": 13,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
@@ -545,31 +545,6 @@
           "label": "undvik (finansiering)",
           "cycle": 721,
           "time": "2026-11-18 21:05"
-        },
-        {
-          "symbol": "AI",
-          "mint_prefix": "GUmgNeyZ",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 718,
-          "time": "2026-11-18 19:40"
-        },
-        {
-          "symbol": "FISH",
-          "mint_prefix": "HgDMWzq9",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 718,
-          "time": "2026-11-18 19:40"
         }
       ],
       "unknowns": [
@@ -579,8 +554,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 19:37",
-      "to": "2026-11-19 19:37",
+      "from": "2026-11-12 20:02",
+      "to": "2026-11-19 20:02",
       "timezone": "Europe/Stockholm",
       "cycles": 336,
       "journal_days_present": [
