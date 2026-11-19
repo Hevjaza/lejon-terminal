@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 17:30",
+  "generated_at_stockholm": "2026-11-19 18:01",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 17:30",
-      "to": "2026-11-19 17:30",
+      "from": "2026-11-18 18:01",
+      "to": "2026-11-19 18:01",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,8 +15,8 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 27,
-        "eligible_appearances": 397,
+        "new_tokens": 29,
+        "eligible_appearances": 396,
         "eligible_cycles_measured": 42,
         "sources": {
           "dexscreener": null,
@@ -25,20 +25,43 @@
         }
       },
       "killed": {
-        "scout_rule1": 18,
+        "scout_rule1": 19,
         "scout_rule2": 7,
-        "scout_rule11": 3,
-        "scout_unique": 18,
+        "scout_rule11": 4,
+        "scout_unique": 19,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 6,
+        "factory_kill": 7,
         "funding_avoid": 2,
         "risk_other": 1,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "LOOSY",
+          "mint_prefix": "FtSWWxVm",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 762,
+          "time": "2026-11-19 17:32"
+        },
+        {
+          "symbol": "MORALS",
+          "mint_prefix": "BmGMo3SD",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": 762,
+          "time": "2026-11-19 17:32"
+        },
         {
           "symbol": "PIPI",
           "mint_prefix": "Bd7mSgki",
@@ -618,10 +641,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 17:30",
-      "to": "2026-11-19 17:30",
+      "from": "2026-11-12 18:01",
+      "to": "2026-11-19 18:01",
       "timezone": "Europe/Stockholm",
-      "cycles": 341,
+      "cycles": 339,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -635,9 +658,9 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 127,
-        "eligible_appearances": 1062,
-        "eligible_cycles_measured": 117,
+        "new_tokens": 128,
+        "eligible_appearances": 1072,
+        "eligible_cycles_measured": 118,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -645,20 +668,43 @@
         }
       },
       "killed": {
-        "scout_rule1": 77,
+        "scout_rule1": 78,
         "scout_rule2": 22,
-        "scout_rule11": 18,
+        "scout_rule11": 19,
         "scout_unique": 96,
-        "scout_rules_unknown": 18,
+        "scout_rules_unknown": 17,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 10,
+        "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 5
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "LOOSY",
+          "mint_prefix": "FtSWWxVm",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 762,
+          "time": "2026-11-19 17:32"
+        },
+        {
+          "symbol": "MORALS",
+          "mint_prefix": "BmGMo3SD",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": 762,
+          "time": "2026-11-19 17:32"
+        },
         {
           "symbol": "PIPI",
           "mint_prefix": "Bd7mSgki",
@@ -2560,16 +2606,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 429,
           "time": "2026-11-12 19:15"
-        },
-        {
-          "symbol": "BALLS",
-          "mint_prefix": "5ZA32FxzsxcS",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 424,
-          "time": "2026-11-12 18:00"
         }
       ],
       "unknowns": [
@@ -2577,7 +2613,7 @@
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 50.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "18 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "17 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
@@ -6165,6 +6201,11 @@
         "t": "2026-11-19 17:32",
         "cycle": 762,
         "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 18:02",
+        "cycle": 763,
+        "equity": 9.919847
       }
     ]
   },
@@ -6221,7 +6262,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 16,
+    "lines": 19,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
