@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 18:01",
+  "generated_at_stockholm": "2026-11-19 18:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 18:01",
-      "to": "2026-11-19 18:01",
+      "from": "2026-11-18 18:37",
+      "to": "2026-11-19 18:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 29,
-        "eligible_appearances": 396,
-        "eligible_cycles_measured": 42,
+        "new_tokens": 27,
+        "eligible_appearances": 373,
+        "eligible_cycles_measured": 40,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 19,
-        "scout_rule2": 7,
+        "scout_rule1": 17,
+        "scout_rule2": 6,
         "scout_rule11": 4,
-        "scout_unique": 19,
+        "scout_unique": 17,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
@@ -607,31 +607,6 @@
           "label": "undvik (RISK)",
           "cycle": 717,
           "time": "2026-11-18 19:10"
-        },
-        {
-          "symbol": "APCY",
-          "mint_prefix": "7fZK84wY",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 716,
-          "time": "2026-11-18 18:30"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "97t435T2",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 716,
-          "time": "2026-11-18 18:30"
         }
       ],
       "unknowns": [
@@ -641,8 +616,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 18:01",
-      "to": "2026-11-19 18:01",
+      "from": "2026-11-12 18:37",
+      "to": "2026-11-19 18:37",
       "timezone": "Europe/Stockholm",
       "cycles": 339,
       "journal_days_present": [
@@ -6205,6 +6180,11 @@
       {
         "t": "2026-11-19 18:02",
         "cycle": 763,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 18:40",
+        "cycle": 764,
         "equity": 9.919847
       }
     ]
