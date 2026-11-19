@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 21:30",
+  "generated_at_stockholm": "2026-11-19 22:07",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 21:30",
-      "to": "2026-11-19 21:30",
+      "from": "2026-11-18 22:07",
+      "to": "2026-11-19 22:07",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 20,
-        "eligible_appearances": 306,
-        "eligible_cycles_measured": 35,
+        "new_tokens": 17,
+        "eligible_appearances": 282,
+        "eligible_cycles_measured": 33,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 13,
-        "scout_rule2": 2,
+        "scout_rule1": 10,
+        "scout_rule2": 1,
         "scout_rule11": 3,
-        "scout_unique": 13,
+        "scout_unique": 10,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
@@ -487,43 +487,6 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 724,
           "time": "2026-11-18 22:32"
-        },
-        {
-          "symbol": "DAKITTY",
-          "mint_prefix": "3YyNSd5d",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
-        },
-        {
-          "symbol": "Mabel",
-          "mint_prefix": "EhjRG9DD",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
-        },
-        {
-          "symbol": "GTV",
-          "mint_prefix": "2NDTHcRE",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
         }
       ],
       "unknowns": [
@@ -533,10 +496,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 21:30",
-      "to": "2026-11-19 21:30",
+      "from": "2026-11-12 22:07",
+      "to": "2026-11-19 22:07",
       "timezone": "Europe/Stockholm",
-      "cycles": 333,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
