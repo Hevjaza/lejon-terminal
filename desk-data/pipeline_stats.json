@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 11:02",
+  "generated_at_stockholm": "2026-11-19 11:33",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 11:02",
-      "to": "2026-11-19 11:02",
+      "from": "2026-11-18 11:33",
+      "to": "2026-11-19 11:33",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -16,7 +16,7 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 32,
-        "eligible_appearances": 420,
+        "eligible_appearances": 418,
         "eligible_cycles_measured": 41,
         "sources": {
           "dexscreener": null,
@@ -30,7 +30,7 @@
         "scout_rule11": 4,
         "scout_unique": 21,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 24,
+        "age_or_liq_filter": 28,
         "age_or_liq_filter_complete": false,
         "factory_kill": 7,
         "funding_avoid": 2,
@@ -39,6 +39,46 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "Bottom",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "VICEPAD",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "APEC",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "Sloth",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
         {
           "symbol": "APOCRYCOIN",
           "mint_prefix": "6dy9DhP5",
@@ -661,16 +701,16 @@
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 24.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 28.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-12 11:02",
-      "to": "2026-11-19 11:02",
+      "from": "2026-11-12 11:33",
+      "to": "2026-11-19 11:33",
       "timezone": "Europe/Stockholm",
-      "cycles": 354,
+      "cycles": 353,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -685,8 +725,8 @@
       ],
       "discovered": {
         "new_tokens": 128,
-        "eligible_appearances": 967,
-        "eligible_cycles_measured": 104,
+        "eligible_appearances": 975,
+        "eligible_cycles_measured": 105,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -699,7 +739,7 @@
         "scout_rule11": 18,
         "scout_unique": 98,
         "scout_rules_unknown": 18,
-        "age_or_liq_filter": 43,
+        "age_or_liq_filter": 47,
         "age_or_liq_filter_complete": false,
         "factory_kill": 9,
         "funding_avoid": 4,
@@ -708,6 +748,46 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "Bottom",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "VICEPAD",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "APEC",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
+        {
+          "symbol": "Sloth",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
+        },
         {
           "symbol": "APOCRYCOIN",
           "mint_prefix": "6dy9DhP5",
@@ -2567,7 +2647,7 @@
       ],
       "unknowns": [
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
-        "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 43.",
+        "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 47.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
         "18 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
@@ -6092,6 +6172,11 @@
       {
         "t": "2026-11-19 11:05",
         "cycle": 749,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 11:35",
+        "cycle": 750,
         "equity": 9.919847
       }
     ]
