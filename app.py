@@ -9,6 +9,7 @@ import json
 import os
 import re
 import datetime as dt
+import math
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -144,6 +145,12 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 
 .goal-foot { margin-top:10px; font-size:0.68rem; color:#8b93a7; line-height:1.35; }
 .goal-foot-excl { margin-top:6px; color:#ffd166; }
+
+
+.wl-line { margin: 4px 0 10px; color:#c5cad6; font-size:0.78rem; }
+.wl-line b { color:#fff; font-family:JetBrains Mono, ui-monospace, monospace; }
+.circle-note { color:#8b93a7; font-size:0.68rem; line-height:1.4; margin-top:8px; }
+.circle-unk { color:#ffd166; font-size:0.68rem; line-height:1.4; margin-top:6px; }
 
 .login-box { background:#0c0f14; border:1px solid #1c2230; border-radius:22px; padding:18px; margin:18px 0; }
 .foot { color:#5c6578; font-size:0.68rem; text-align:center; margin-top:14px; }
@@ -758,7 +765,348 @@ def build_logger_events(
     return events[:6]
 
 
+
+def fmt_known(n: Any, digits: int | None = None) -> str:
+    if n is None:
+        return "okänt"
+    if digits is not None:
+        try:
+            return f"{float(n):.{digits}f}"
+        except Exception:
+            return "okänt"
+    return fmt_int(n)
+
+
+def _pipeline_paths() -> list[Path]:
+    return [
+        DESK / "pipeline_stats.json",
+        DESK / "desk-data" / "pipeline_stats.json",
+        APP_DIR / "desk-data" / "pipeline_stats.json",
+        Path("/workspace/trading-desk/var/pipeline_stats.json"),
+    ]
+
+
+def load_pipeline_stats() -> dict[str, Any] | None:
+    for p in _pipeline_paths():
+        d = load_json(p)
+        if isinstance(d, dict) and d.get("windows"):
+            return d
+    # Fallback: rebuild from the full desk when the helper is present
+    try:
+        import importlib.util
+        helper = Path("/workspace/trading-desk/pipeline_stats.py")
+        if helper.is_file() and (DESK / "journal").is_dir():
+            spec = importlib.util.spec_from_file_location("pipeline_stats_desk", helper)
+            if spec and spec.loader:
+                mod = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(mod)
+                return mod.build(DESK if (DESK / "journal").is_dir() else Path("/workspace/trading-desk"))
+    except Exception:
+        return None
+    return None
+
+
+def _sv_unknowns(items: list[str] | None) -> list[str]:
+    """Short, simple Swedish notes. Never invent a number here."""
+    out: list[str] = []
+    for raw in items or []:
+        s = str(raw)
+        sl = s.lower()
+        if "dexscreener" in sl or "geckoterminal" in sl:
+            out.append("Uppdelning mellan DexScreener och GeckoTerminal: okänt.")
+        elif "ingen journal" in sl:
+            # Keep the date(s)
+            out.append(s.replace(" — 7-dagars-/dygnssiffror är bara från dagar som finns.", ".").replace(" 7-dagars-/dygnssiffror är bara från dagar som finns.", "."))
+        elif "utan tokennamn" in sl or "saknar tokennamn" in sl:
+            out.append("Några stopp för ålder eller likviditet saknar namn, så den siffran kan vara högre.")
+        elif "utan ett tydligt antal" in sl:
+            out.append("Några rundor saknar ett tydligt antal godkända tokens.")
+        elif "saknar tydlig regel" in sl or "saknar tydlig Regel" in s:
+            out.append("Några SCOUT-stopp saknar tydlig regel i texten.")
+        elif "saknar klockslag" in sl:
+            out.append("Några journalrader saknar klockslag och räknas inte med.")
+        else:
+            out.append(s)
+    # unique preserve order
+    seen: set[str] = set()
+    uniq: list[str] = []
+    for s in out:
+        if s not in seen:
+            seen.add(s)
+            uniq.append(s)
+    return uniq
+
+
+def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go.Figure | None":
+    if go is None or not isinstance(window, dict):
+        return None
+    killed = window.get("killed") or {}
+    discovered = window.get("discovered") or {}
+    tokens = window.get("tokens") or []
+    if not isinstance(tokens, list):
+        tokens = []
+
+    def _n(val: Any) -> int | None:
+        if val is None:
+            return None
+        try:
+            return int(val)
+        except Exception:
+            return None
+
+    new_n = _n((discovered or {}).get("new_tokens"))
+    filter_n = _n(killed.get("age_or_liq_filter"))
+    r1 = _n(killed.get("scout_rule1"))
+    r2 = _n(killed.get("scout_rule2"))
+    r11 = _n(killed.get("scout_rule11"))
+    scout_u = _n(killed.get("scout_unique"))
+    fac = _n(killed.get("factory_kill"))
+    fund = _n(killed.get("funding_avoid"))
+    risk_o = _n(killed.get("risk_other"))
+    skipped = _n(killed.get("skipped_unverified")) or 0
+    risk_other_n = (risk_o or 0) + skipped
+    # If both risk_o and skipped are missing entirely, show okänt
+    risk_other_val: int | None
+    if killed.get("risk_other") is None and killed.get("skipped_unverified") is None:
+        risk_other_val = None
+    else:
+        risk_other_val = risk_other_n
+    buys = _n(window.get("passed_to_buy"))
+
+    def _st(kind: str) -> dict[str, Any]:
+        d = (strategy or {}).get(kind) or {}
+        return d if isinstance(d, dict) else {}
+
+    sa, sb, sc = _st("A"), _st("B"), _st("C")
+
+    # Layout: center + 6 groups on a ring, sub-nodes further out
+    def xy(r: float, deg: float) -> tuple[float, float]:
+        th = math.radians(deg)
+        return r * math.cos(th), r * math.sin(th)  # 0=right, 90=up
+
+    # Angles (0 = right, 90 = up)
+    groups = [
+        {"id": "upptackt", "label": "Upptäckt", "sub": "DexScreener och GeckoTerminal", "angle": 90, "color": "#3ddeb0", "count": new_n},
+        {"id": "scout", "label": "SCOUT", "sub": "Regel 1, 2 och 11", "angle": 30, "color": "#6b9bff", "count": scout_u},
+        {"id": "risk", "label": "RISK", "sub": "Fabrik, finans, övriga", "angle": 330, "color": "#d291ff", "count": (None if fac is None and fund is None and risk_other_val is None else (fac or 0) + (fund or 0) + (risk_other_val or 0))},
+        {"id": "a", "label": "Strategi A", "sub": "paper-köp", "angle": 270, "color": "#00e676", "count": buys},
+        {"id": "b", "label": "Skugga B", "sub": "följer trenden", "angle": 210, "color": "#ffd166", "count": None},
+        {"id": "c", "label": "Skugga C", "sub": "följer valar", "angle": 150, "color": "#4dd0e1", "count": None},
+    ]
+    # Sub-counts are shown in the list under the figure (too tight on a phone if drawn here).
+    subs: list[dict] = []
+    # A/B/C: snapshot equity as a sub-label, not a counted kill
+    def eq_lbl(stt: dict[str, Any]) -> str:
+        eq = stt.get("equity")
+        op = stt.get("open")
+        cl = stt.get("closed")
+        parts = []
+        if eq is not None:
+            try:
+                parts.append(f"{float(eq):.3f} SOL")
+            except Exception:
+                pass
+        if op is not None or cl is not None:
+            parts.append(f"öppna {fmt_known(op)} · stängda {fmt_known(cl)}")
+        return " · ".join(parts) if parts else "okänt"
+
+    group_xy = {g["id"]: xy(0.82, g["angle"]) for g in groups}
+    parent_of = {g["id"]: g for g in groups}
+    sub_xy = []
+    for s in subs:
+        p = parent_of[s["parent"]]
+        sub_xy.append((s, xy(1.22, p["angle"] + s["dangle"])))
+
+    def size_for(count: int | None, base: float = 18, extra: float = 14) -> float:
+        if not count:
+            return base
+        return base + min(extra, math.sqrt(max(0, count)) * 2.4)
+
+    # Token dots clustered near the stage that handled them
+    def token_angle(kind: str | None) -> float:
+        k = kind or ""
+        if k == "scout_kill":
+            return 30
+        if k in {"factory_kill", "funding_avoid", "risk_other", "skipped_unverified"}:
+            return 330
+        if k == "bought":
+            return 270
+        if k == "filter_age_liq":
+            return 90
+        return 60
+
+    token_cap = 40
+    shown = [tok for tok in tokens if isinstance(tok, dict) and tok.get("symbol")][:token_cap]
+    # Spread tokens around their stage
+    by_ang: dict[float, list[dict]] = {}
+    for tok in shown:
+        by_ang.setdefault(token_angle(tok.get("kind")), []).append(tok)
+    token_pts: list[tuple[dict, float, float]] = []
+    for ang, group in by_ang.items():
+        n = len(group)
+        for i, tok in enumerate(group):
+            spread = (i - (n - 1) / 2) * (10 if n < 10 else 6)
+            rr = 1.42 + (i % 3) * 0.10
+            token_pts.append((tok, *xy(rr, ang + spread)))
+
+    fig = go.Figure()
+    cx, cy = 0.0, 0.0
+
+    def add_glow_line(x0, y0, x1, y1, color: str, width: float = 1.4) -> None:
+        fig.add_trace(go.Scatter(
+            x=[x0, x1], y=[y0, y1], mode="lines",
+            line=dict(color=color, width=width * 4),
+            opacity=0.18, hoverinfo="skip", showlegend=False,
+        ))
+        fig.add_trace(go.Scatter(
+            x=[x0, x1], y=[y0, y1], mode="lines",
+            line=dict(color=color, width=width),
+            opacity=0.85, hoverinfo="skip", showlegend=False,
+        ))
+
+    # Core to groups
+    for g in groups:
+        x, y = group_xy[g["id"]]
+        add_glow_line(cx, cy, x, y, g["color"], 1.6)
+    # Groups to subs
+    for s, (x, y) in sub_xy:
+        px, py = group_xy[s["parent"]]
+        add_glow_line(px, py, x, y, parent_of[s["parent"]]["color"], 1.1)
+    # Tokens to stage group
+    kind_group = {
+        "scout_kill": "scout",
+        "factory_kill": "risk",
+        "funding_avoid": "risk",
+        "risk_other": "risk",
+        "skipped_unverified": "risk",
+        "bought": "a",
+        "filter_age_liq": "upptackt",
+    }
+    color_map = {"red": "#ff6b6b", "yellow": "#ffd166", "green": "#00e676"}
+    for tok, x, y in token_pts:
+        gid = kind_group.get(str(tok.get("kind") or ""), "upptackt")
+        px, py = group_xy[gid]
+        col = color_map.get(str(tok.get("color") or "red"), "#ff6b6b")
+        add_glow_line(px, py, x, y, col, 0.7)
+
+    # Core node
+    fig.add_trace(go.Scatter(
+        x=[cx], y=[cy], mode="markers+text",
+        marker=dict(size=46, color="#062414", line=dict(color="#00e676", width=3)),
+        text=["🦁"], textfont=dict(size=18),
+        hovertext="Lejon kärna · PAPER", hoverinfo="text", showlegend=False,
+    ))
+
+    # Group nodes
+    gx = [group_xy[g["id"]][0] for g in groups]
+    gy = [group_xy[g["id"]][1] for g in groups]
+    gsize = [size_for(g["count"], 22, 16) for g in groups]
+    gcol = [g["color"] for g in groups]
+    ghover = []
+    for g in groups:
+        cnt = "okänt" if g["count"] is None else str(g["count"])
+        extra = ""
+        if g["id"] == "a":
+            extra = f"<br>{eq_lbl(sa)}"
+        elif g["id"] == "b":
+            extra = f"<br>{eq_lbl(sb)}"
+        elif g["id"] == "c":
+            extra = f"<br>{eq_lbl(sc)}"
+        ghover.append(f"{g['label']}<br>{g['sub']}<br>antal: {cnt}{extra}")
+    fig.add_trace(go.Scatter(
+        x=gx, y=gy, mode="markers",
+        marker=dict(size=gsize, color="#0a2416", line=dict(color=gcol, width=2.5)),
+        hovertext=ghover, hoverinfo="text", showlegend=False,
+    ))
+
+    # Sub nodes
+    sx = [xy_[0] for _, xy_ in sub_xy]
+    sy = [xy_[1] for _, xy_ in sub_xy]
+    ssize = [size_for(s["count"], 14, 12) for s, _ in sub_xy]
+    scol = [parent_of[s["parent"]]["color"] for s, _ in sub_xy]
+    shover = [
+        f"{s['label']}: {'okänt' if s['count'] is None else s['count']}"
+        for s, _ in sub_xy
+    ]
+    fig.add_trace(go.Scatter(
+        x=sx, y=sy, mode="markers",
+        marker=dict(size=ssize, color="#07180e", line=dict(color=scol, width=2)),
+        hovertext=shover, hoverinfo="text", showlegend=False,
+    ))
+
+    # Token dots
+    if token_pts:
+        tx = [x for _, x, _ in ((t, x, y) for t, x, y in token_pts)]
+        # unpack properly
+        tx, ty, tcol, thov = [], [], [], []
+        for tok, x, y in token_pts:
+            tx.append(x); ty.append(y)
+            tcol.append(color_map.get(str(tok.get("color") or "red"), "#ff6b6b"))
+            rules = tok.get("rules") or []
+            rule_s = f" · regel {', '.join(str(r) for r in rules)}" if rules else ""
+            when = tok.get("time") or ""
+            cyc = tok.get("cycle")
+            cyc_s = f" · runda {cyc}" if cyc is not None else ""
+            thov.append(f"{tok.get('symbol')}{cyc_s}<br>{tok.get('label') or ''}{rule_s}<br>{when}")
+        fig.add_trace(go.Scatter(
+            x=tx, y=ty, mode="markers",
+            marker=dict(size=8, color=tcol, line=dict(color="#04120a", width=0.6), opacity=0.95),
+            hovertext=thov, hoverinfo="text", showlegend=False,
+        ))
+
+    annotations = [
+        dict(x=0, y=-0.18, text="Lejon kärna", showarrow=False,
+             font=dict(color="#d8ffe9", size=11, family="Inter, sans-serif")),
+    ]
+    for g in groups:
+        x, y = group_xy[g["id"]]
+        cnt = "okänt" if g["count"] is None else str(g["count"])
+        # Place the name between the core and the node so it is not clipped.
+        lx, ly = xy(0.58, g["angle"])
+        shown = g["label"] if g["id"] in {"b", "c"} or g["count"] is None else f"{g['label']}  {cnt}"
+        annotations.append(dict(
+            x=lx, y=ly, text=shown, showarrow=False,
+            font=dict(color=g["color"], size=10, family="Inter, sans-serif"),
+        ))
+    for s, (x, y) in sub_xy:
+        cnt = "okänt" if s["count"] is None else str(s["count"])
+        annotations.append(dict(
+            x=x, y=y - 0.13, text=f"{s['label']} {cnt}", showarrow=False,
+            font=dict(color="#9aa7a0", size=8, family="Inter, sans-serif"),
+        ))
+    # A/B/C equity under the group label
+    for gid, stt in (("a", sa), ("b", sb), ("c", sc)):
+        g = parent_of[gid]
+        eq = stt.get("equity")
+        if eq is None:
+            continue
+        try:
+            txt = f"{float(eq):.3f} SOL"
+        except Exception:
+            continue
+        ex, ey = xy(1.08, g["angle"])
+        annotations.append(dict(
+            x=ex, y=ey, text=txt, showarrow=False,
+            font=dict(color="#8b93a7", size=8, family="JetBrains Mono, monospace"),
+        ))
+
+    fig.update_layout(
+        paper_bgcolor="#04120a",
+        plot_bgcolor="#04120a",
+        margin=dict(l=10, r=10, t=28, b=28),
+        height=520,
+        xaxis=dict(visible=False, range=[-1.75, 1.75], constrain="domain"),
+        yaxis=dict(visible=False, range=[-1.75, 1.75], scaleanchor="x", scaleratio=1),
+        showlegend=False,
+        annotations=annotations,
+        hoverlabel=dict(bgcolor="#0a2416", font_size=11, font_color="#d8ffe9"),
+    )
+    return fig
+
+
+
 # ----- auth -----
+
 require_login()
 
 # ----- load -----
@@ -909,7 +1257,129 @@ else:
     st.caption("Equity-kurva: –")
 
 
+
+# ----- agentcirkel -----
+pipe = load_pipeline_stats()
+# W/L under equity, from live goals (DACT excluded) when available
+_goals_pre = live_goals(ledger, positions)
+_wl_wins = _wl_losses = None
+_goal_pnl = None
+_goal_closed = None
+_goal_hit = None
+for _g in _goals_pre:
+    if _g.get("title", "").startswith("Träffsäkerhet"):
+        # "40 % (2/5)"
+        _m = re.search(r"(\d+)\s*/\s*(\d+)", str(_g.get("sub") or ""))
+        if _m:
+            _wl_wins, _closed_wl = int(_m.group(1)), int(_m.group(2))
+            _wl_losses = _closed_wl - _wl_wins
+        _goal_hit = _g.get("sub")
+    if _g.get("title", "").startswith("Totalt resultat"):
+        _goal_pnl = _g.get("sub")
+    if _g.get("title", "").startswith("Minst 20"):
+        _goal_closed = _g.get("sub")
+_book_w = ledger.get("wins")
+_book_l = ledger.get("losses")
+_wl_bits = []
+if _wl_wins is not None and _wl_losses is not None:
+    _wl_bits.append(f"<b>{_wl_wins}</b> vinster · <b>{_wl_losses}</b> förluster i målen (utan DACT)")
+if _book_w is not None and _book_l is not None:
+    _wl_bits.append(f"bok {_book_w} vinster / {_book_l} förluster")
+if _wl_bits:
+    st.markdown('<div class="wl-line">' + " · ".join(_wl_bits) + "</div>", unsafe_allow_html=True)
+_goal_bits = [x for x in (_goal_closed, _goal_hit, _goal_pnl) if x]
+if _goal_bits:
+    st.markdown(
+        '<div class="wl-line">Mål innan live: ' + " · ".join(_goal_bits) + "</div>",
+        unsafe_allow_html=True,
+    )
+
+st.markdown(
+    """
+<div class="card">
+  <h3>Agentcirkel <span class="meta">riktiga paper-siffror</span></h3>
+  <div class="meta">PAPER – inte riktiga pengar · inte finansiell rådgivning</div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
+_win_label = st.radio(
+    "Tidsfönster",
+    ("Senaste 24 timmarna", "Senaste 7 dagarna"),
+    horizontal=True,
+    label_visibility="collapsed",
+    key="lejon_circle_window",
+)
+_win_key = "24h" if _win_label.startswith("Senaste 24") else "7d"
+_win = None
+if isinstance(pipe, dict):
+    _win = (pipe.get("windows") or {}).get(_win_key)
+if not isinstance(_win, dict):
+    st.caption("Pipeline-siffror: okänt (ingen pipeline_stats.json i ögonblicksbilden).")
+else:
+    _from = _win.get("from") or "okänt"
+    _to = _win.get("to") or "okänt"
+    _cyc = fmt_known(_win.get("cycles"))
+    _disc = (_win.get("discovered") or {}).get("new_tokens")
+    _buy = _win.get("passed_to_buy")
+    st.caption(f"{_from} – {_to} Europe/Stockholm · {_cyc} rundor · {fmt_known(_disc)} nya tokens · {fmt_known(_buy)} paper-köp")
+    _strat = (pipe or {}).get("strategy") if isinstance(pipe, dict) else {}
+    if not isinstance(_strat, dict):
+        _strat = {}
+    _fig = agent_circle_figure(_win, _strat)
+    if _fig is not None:
+        st.plotly_chart(_fig, use_container_width=True, config={"displayModeBar": False, "staticPlot": False})
+    elif go is None:
+        st.caption("Cirkeln behöver plotly.")
+    _k = _win.get("killed") or {}
+    _d = _win.get("discovered") or {}
+    def _kv(label, val):
+        return f'<div class="cmp-kv"><span>{label}</span><b>{fmt_known(val)}</b></div>'
+    _sa = ((_strat or {}).get("A") or {})
+    _sb = ((_strat or {}).get("B") or {})
+    _sc = ((_strat or {}).get("C") or {})
+    def _eq(stt):
+        if not isinstance(stt, dict) or stt.get("equity") is None:
+            return "okänt"
+        try:
+            return f"{float(stt['equity']):.3f} SOL · öppna {fmt_known(stt.get('open'))} · stängda {fmt_known(stt.get('closed'))}"
+        except Exception:
+            return "okänt"
+    st.markdown(
+        '<div class="card" style="margin-top:0">'
+        '<h3>Siffror i cirkeln <span class="meta">samma fönster</span></h3>'
+        + _kv("Upptäckt, nya tokens", _d.get("new_tokens"))
+        + _kv("Stopp för ålder eller likviditet", _k.get("age_or_liq_filter"))
+        + _kv("SCOUT, unika stopp", _k.get("scout_unique"))
+        + _kv("— regel 1", _k.get("scout_rule1"))
+        + _kv("— regel 2", _k.get("scout_rule2"))
+        + _kv("— regel 11", _k.get("scout_rule11"))
+        + _kv("RISK, fabrikskoll", _k.get("factory_kill"))
+        + _kv("RISK, finansiering (undvik)", _k.get("funding_avoid"))
+        + _kv("RISK, övriga", (_k.get("risk_other") or 0) + (_k.get("skipped_unverified") or 0) if (_k.get("risk_other") is not None or _k.get("skipped_unverified") is not None) else None)
+        + _kv("Paper-köp i fönstret (A)", _win.get("passed_to_buy"))
+        + f'<div class="cmp-kv"><span>Skugga B nu</span><b>{_eq(_sb)}</b></div>'
+        + f'<div class="cmp-kv"><span>Skugga C nu</span><b>{_eq(_sc)}</b></div>'
+        + "</div>",
+        unsafe_allow_html=True,
+    )
+    _toks = _win.get("tokens") or []
+    _shown_n = min(40, len(_toks)) if isinstance(_toks, list) else 0
+    _tot_n = len(_toks) if isinstance(_toks, list) else 0
+    if _tot_n > _shown_n:
+        st.caption(f"Visar de {_shown_n} senaste av {_tot_n} namngivna tokens.")
+    st.markdown(
+        '<div class="circle-note">Röd prick = stoppad. Gul prick = undvik. Grön prick = paper-köp. '
+        "B och C visar nuvarande paper-saldo, inte antal i fönstret.</div>",
+        unsafe_allow_html=True,
+    )
+    _unk = _sv_unknowns(list(_win.get("unknowns") or []) + list((pipe or {}).get("unknowns") or []))
+    if _unk:
+        st.markdown('<div class="circle-unk">Okänt / ofullständigt:<br>' + "<br>".join(_unk) + "</div>", unsafe_allow_html=True)
+
+
 # ----- mål innan live -----
+
 goals = live_goals(ledger, positions)
 goal_rows = []
 for g in goals:

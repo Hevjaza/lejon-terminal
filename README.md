@@ -23,7 +23,7 @@ LEJON_PASSWORD = "välj-ett-starkt-lösen"
 3. Deploy. Appen vägrar visa data utan lösenord i Secrets.
 4. Logga in med samma lösenord i webbläsaren.
 
-Data läses från `desk-data/` i repot (ögonblicksbild). Uppdatera den lokalt med
+Data läses från `desk-data/` i repot (ögonblicksbild), inklusive `pipeline_stats.json` för agentcirkeln (24h/7d, bara riktiga paper-siffror). Uppdatera den lokalt med
 `/workspace/trading-desk/sync-lejon.sh` (eller kopiera manuellt) och pusha.
 
 ## Lokalt
