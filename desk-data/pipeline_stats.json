@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-19 16:31",
+  "generated_at_stockholm": "2026-11-19 17:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 16:31",
-      "to": "2026-11-19 16:31",
+      "from": "2026-11-18 17:03",
+      "to": "2026-11-19 17:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 28,
-        "eligible_appearances": 407,
-        "eligible_cycles_measured": 42,
+        "eligible_appearances": 408,
+        "eligible_cycles_measured": 43,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -628,8 +628,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 16:31",
-      "to": "2026-11-19 16:31",
+      "from": "2026-11-12 17:03",
+      "to": "2026-11-19 17:03",
       "timezone": "Europe/Stockholm",
       "cycles": 343,
       "journal_days_present": [
@@ -645,9 +645,9 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 129,
-        "eligible_appearances": 1051,
-        "eligible_cycles_measured": 115,
+        "new_tokens": 128,
+        "eligible_appearances": 1062,
+        "eligible_cycles_measured": 117,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -655,10 +655,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 79,
+        "scout_rule1": 78,
         "scout_rule2": 22,
         "scout_rule11": 18,
-        "scout_unique": 98,
+        "scout_unique": 97,
         "scout_rules_unknown": 18,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
@@ -2592,18 +2592,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 421,
           "time": "2026-11-12 17:22"
-        },
-        {
-          "symbol": "JENFAB",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 419,
-          "time": "2026-11-12 16:47"
         }
       ],
       "unknowns": [
@@ -6188,6 +6176,11 @@
       {
         "t": "2026-11-19 16:32",
         "cycle": 760,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 17:03",
+        "cycle": 761,
         "equity": 9.919847
       }
     ]
