@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 15:02",
+  "generated_at_stockholm": "2026-11-19 15:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 15:02",
-      "to": "2026-11-19 15:02",
+      "from": "2026-11-18 15:35",
+      "to": "2026-11-19 15:35",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -15,8 +15,8 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 29,
-        "eligible_appearances": 402,
+        "new_tokens": 28,
+        "eligible_appearances": 401,
         "eligible_cycles_measured": 41,
         "sources": {
           "dexscreener": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 19,
+        "scout_rule1": 18,
         "scout_rule2": 7,
         "scout_rule11": 3,
-        "scout_unique": 19,
+        "scout_unique": 18,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 31,
         "age_or_liq_filter_complete": false,
@@ -651,6 +651,16 @@
           "time": "2026-11-18 16:08"
         },
         {
+          "symbol": "Doubloon",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 711,
+          "time": "2026-11-18 16:08"
+        },
+        {
           "symbol": "Tomás",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -669,28 +679,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 711,
           "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "JESTER",
-          "mint_prefix": "VAYMVikuYQpW",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 710,
-          "time": "2026-11-18 15:30"
-        },
-        {
-          "symbol": "Doubloon",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 710,
-          "time": "2026-11-18 15:30"
         }
       ],
       "unknowns": [
@@ -700,10 +688,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 15:02",
-      "to": "2026-11-19 15:02",
+      "from": "2026-11-12 15:35",
+      "to": "2026-11-19 15:35",
       "timezone": "Europe/Stockholm",
-      "cycles": 346,
+      "cycles": 345,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -718,8 +706,8 @@
       ],
       "discovered": {
         "new_tokens": 130,
-        "eligible_appearances": 1027,
-        "eligible_cycles_measured": 112,
+        "eligible_appearances": 1036,
+        "eligible_cycles_measured": 113,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6257,6 +6245,11 @@
       {
         "t": "2026-11-19 15:03",
         "cycle": 757,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 15:36",
+        "cycle": 758,
         "equity": 9.919847
       }
     ]
