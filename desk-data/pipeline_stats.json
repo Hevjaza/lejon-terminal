@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 14:35",
+  "generated_at_stockholm": "2026-11-19 15:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 14:35",
-      "to": "2026-11-19 14:35",
+      "from": "2026-11-18 15:02",
+      "to": "2026-11-19 15:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 31,
-        "eligible_appearances": 413,
-        "eligible_cycles_measured": 42,
+        "new_tokens": 29,
+        "eligible_appearances": 402,
+        "eligible_cycles_measured": 41,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 21,
-        "scout_rule2": 8,
+        "scout_rule1": 19,
+        "scout_rule2": 7,
         "scout_rule11": 3,
-        "scout_unique": 21,
+        "scout_unique": 19,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 31,
         "age_or_liq_filter_complete": false,
@@ -691,31 +691,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 710,
           "time": "2026-11-18 15:30"
-        },
-        {
-          "symbol": "Tomás",
-          "mint_prefix": "5ChyeKeH1Hv4",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 709,
-          "time": "2026-11-18 15:00"
-        },
-        {
-          "symbol": "Leonida",
-          "mint_prefix": "9rbKkz2B",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 709,
-          "time": "2026-11-18 15:00"
         }
       ],
       "unknowns": [
@@ -725,10 +700,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 14:35",
-      "to": "2026-11-19 14:35",
+      "from": "2026-11-12 15:02",
+      "to": "2026-11-19 15:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 347,
+      "cycles": 346,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -6277,6 +6252,11 @@
       {
         "t": "2026-11-19 14:33",
         "cycle": 756,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 15:03",
+        "cycle": 757,
         "equity": 9.919847
       }
     ]
