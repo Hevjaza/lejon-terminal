@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 12:34",
+  "generated_at_stockholm": "2026-11-19 13:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 12:34",
-      "to": "2026-11-19 12:34",
+      "from": "2026-11-18 13:02",
+      "to": "2026-11-19 13:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 46,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 33,
-        "eligible_appearances": 424,
-        "eligible_cycles_measured": 42,
+        "new_tokens": 32,
+        "eligible_appearances": 406,
+        "eligible_cycles_measured": 40,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -37,7 +37,7 @@
         "risk_other": 1,
         "skipped_unverified": 0
       },
-      "passed_to_buy": 1,
+      "passed_to_buy": 0,
       "tokens": [
         {
           "symbol": "Sparrow",
@@ -730,16 +730,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 708,
           "time": "2026-11-18 14:00"
-        },
-        {
-          "symbol": "DACT",
-          "mint_prefix": "GZUGmAtu",
-          "kind": "bought",
-          "rules": [],
-          "color": "green",
-          "label": "köpt (paper)",
-          "cycle": 705,
-          "time": "2026-11-18 12:40"
         }
       ],
       "unknowns": [
@@ -749,10 +739,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 12:34",
-      "to": "2026-11-19 12:34",
+      "from": "2026-11-12 13:02",
+      "to": "2026-11-19 13:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 351,
+      "cycles": 350,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -6271,6 +6261,11 @@
       {
         "t": "2026-11-19 12:34",
         "cycle": 752,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 13:05",
+        "cycle": 753,
         "equity": 9.919847
       }
     ]
