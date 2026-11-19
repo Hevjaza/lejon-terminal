@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 21:00",
+  "generated_at_stockholm": "2026-11-19 21:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 21:00",
-      "to": "2026-11-19 21:00",
+      "from": "2026-11-18 21:30",
+      "to": "2026-11-19 21:30",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,9 +15,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 23,
-        "eligible_appearances": 318,
-        "eligible_cycles_measured": 36,
+        "new_tokens": 20,
+        "eligible_appearances": 306,
+        "eligible_cycles_measured": 35,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,15 +25,15 @@
         }
       },
       "killed": {
-        "scout_rule1": 14,
-        "scout_rule2": 3,
+        "scout_rule1": 13,
+        "scout_rule2": 2,
         "scout_rule11": 3,
-        "scout_unique": 14,
+        "scout_unique": 13,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 7,
-        "funding_avoid": 2,
+        "factory_kill": 6,
+        "funding_avoid": 1,
         "risk_other": 0,
         "skipped_unverified": 0
       },
@@ -524,39 +524,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 723,
           "time": "2026-11-18 22:05"
-        },
-        {
-          "symbol": "Founder",
-          "mint_prefix": "Eyp4dHQD",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 721,
-          "time": "2026-11-18 21:05"
-        },
-        {
-          "symbol": "Founder",
-          "mint_prefix": "8HXsCMy8",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 721,
-          "time": "2026-11-18 21:05"
-        },
-        {
-          "symbol": "QUIT",
-          "mint_prefix": "83KEwhix",
-          "kind": "funding_avoid",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (finansiering)",
-          "cycle": 721,
-          "time": "2026-11-18 21:05"
         }
       ],
       "unknowns": [
@@ -566,10 +533,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 21:00",
-      "to": "2026-11-19 21:00",
+      "from": "2026-11-12 21:30",
+      "to": "2026-11-19 21:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 333,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
