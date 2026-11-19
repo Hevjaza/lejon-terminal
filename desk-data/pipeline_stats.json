@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 19:05",
+  "generated_at_stockholm": "2026-11-19 19:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 19:05",
-      "to": "2026-11-19 19:05",
+      "from": "2026-11-18 19:37",
+      "to": "2026-11-19 19:37",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,9 +15,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 27,
-        "eligible_appearances": 373,
-        "eligible_cycles_measured": 40,
+        "new_tokens": 24,
+        "eligible_appearances": 358,
+        "eligible_cycles_measured": 39,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,20 +25,32 @@
         }
       },
       "killed": {
-        "scout_rule1": 17,
-        "scout_rule2": 6,
-        "scout_rule11": 4,
-        "scout_unique": 17,
+        "scout_rule1": 15,
+        "scout_rule2": 4,
+        "scout_rule11": 3,
+        "scout_unique": 15,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
         "factory_kill": 7,
         "funding_avoid": 2,
-        "risk_other": 1,
+        "risk_other": 0,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "KFC",
+          "mint_prefix": "7RZuBWCW",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 765,
+          "time": "2026-11-19 19:05"
+        },
         {
           "symbol": "LOOSY",
           "mint_prefix": "FtSWWxVm",
@@ -558,55 +570,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 718,
           "time": "2026-11-18 19:40"
-        },
-        {
-          "symbol": "APCY",
-          "mint_prefix": "H4BpLUZm",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 717,
-          "time": "2026-11-18 19:10"
-        },
-        {
-          "symbol": "Rocco",
-          "mint_prefix": "6qNMHrsw",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 717,
-          "time": "2026-11-18 19:10"
-        },
-        {
-          "symbol": "LastRide",
-          "mint_prefix": "CC6NEsE5",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 717,
-          "time": "2026-11-18 19:10"
-        },
-        {
-          "symbol": "DCTY",
-          "mint_prefix": "GgyKtbWS",
-          "kind": "risk_other",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (RISK)",
-          "cycle": 717,
-          "time": "2026-11-18 19:10"
         }
       ],
       "unknowns": [
@@ -616,10 +579,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 19:05",
-      "to": "2026-11-19 19:05",
+      "from": "2026-11-12 19:37",
+      "to": "2026-11-19 19:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 337,
+      "cycles": 336,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -633,7 +596,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 128,
+        "new_tokens": 127,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -643,10 +606,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 78,
-        "scout_rule2": 22,
-        "scout_rule11": 19,
-        "scout_unique": 96,
+        "scout_rule1": 77,
+        "scout_rule2": 21,
+        "scout_rule11": 18,
+        "scout_unique": 95,
         "scout_rules_unknown": 17,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
@@ -657,6 +620,18 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "KFC",
+          "mint_prefix": "7RZuBWCW",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 765,
+          "time": "2026-11-19 19:05"
+        },
         {
           "symbol": "LOOSY",
           "mint_prefix": "FtSWWxVm",
@@ -2555,32 +2530,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 441,
           "time": "2026-11-12 22:20"
-        },
-        {
-          "symbol": "HENSEN",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 430,
-          "time": "2026-11-12 19:34"
-        },
-        {
-          "symbol": "DOGGLE",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 429,
-          "time": "2026-11-12 19:15"
         }
       ],
       "unknowns": [
