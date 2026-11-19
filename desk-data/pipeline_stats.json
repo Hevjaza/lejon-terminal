@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 17:03",
+  "generated_at_stockholm": "2026-11-19 17:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 17:03",
-      "to": "2026-11-19 17:03",
+      "from": "2026-11-18 17:30",
+      "to": "2026-11-19 17:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 28,
-        "eligible_appearances": 408,
-        "eligible_cycles_measured": 43,
+        "new_tokens": 27,
+        "eligible_appearances": 397,
+        "eligible_cycles_measured": 42,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -32,7 +32,7 @@
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 7,
+        "factory_kill": 6,
         "funding_avoid": 2,
         "risk_other": 1,
         "skipped_unverified": 0
@@ -609,16 +609,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 716,
           "time": "2026-11-18 18:30"
-        },
-        {
-          "symbol": "Apocrycoin",
-          "mint_prefix": "79rE2ac8JhN3",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 713,
-          "time": "2026-11-18 17:05"
         }
       ],
       "unknowns": [
@@ -628,10 +618,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 17:03",
-      "to": "2026-11-19 17:03",
+      "from": "2026-11-12 17:30",
+      "to": "2026-11-19 17:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 343,
+      "cycles": 341,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -645,7 +635,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 128,
+        "new_tokens": 127,
         "eligible_appearances": 1062,
         "eligible_cycles_measured": 117,
         "sources": {
@@ -655,10 +645,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 78,
+        "scout_rule1": 77,
         "scout_rule2": 22,
         "scout_rule11": 18,
-        "scout_unique": 97,
+        "scout_unique": 96,
         "scout_rules_unknown": 18,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
@@ -2580,18 +2570,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 424,
           "time": "2026-11-12 18:00"
-        },
-        {
-          "symbol": "HUANG",
-          "mint_prefix": "7z3QB6D8",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 421,
-          "time": "2026-11-12 17:22"
         }
       ],
       "unknowns": [
@@ -6181,6 +6159,11 @@
       {
         "t": "2026-11-19 17:03",
         "cycle": 761,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 17:32",
+        "cycle": 762,
         "equity": 9.919847
       }
     ]
