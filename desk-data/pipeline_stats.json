@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-19 13:37",
+  "generated_at_stockholm": "2026-11-19 14:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 13:37",
-      "to": "2026-11-19 13:37",
+      "from": "2026-11-18 14:03",
+      "to": "2026-11-19 14:03",
       "timezone": "Europe/Stockholm",
       "cycles": 46,
       "journal_days_present": [
@@ -15,8 +15,8 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 32,
-        "eligible_appearances": 404,
+        "new_tokens": 30,
+        "eligible_appearances": 399,
         "eligible_cycles_measured": 40,
         "sources": {
           "dexscreener": null,
@@ -25,14 +25,14 @@
         }
       },
       "killed": {
-        "scout_rule1": 22,
-        "scout_rule2": 9,
-        "scout_rule11": 4,
-        "scout_unique": 22,
+        "scout_rule1": 21,
+        "scout_rule2": 8,
+        "scout_rule11": 3,
+        "scout_unique": 21,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 31,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 7,
+        "factory_kill": 6,
         "funding_avoid": 2,
         "risk_other": 1,
         "skipped_unverified": 0
@@ -706,30 +706,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 709,
           "time": "2026-11-18 15:00"
-        },
-        {
-          "symbol": "HUGH",
-          "mint_prefix": "Fpzcd2R1",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 708,
-          "time": "2026-11-18 14:00"
-        },
-        {
-          "symbol": "VI",
-          "mint_prefix": "HricrxBN",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 708,
-          "time": "2026-11-18 14:00"
         }
       ],
       "unknowns": [
@@ -739,8 +715,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 13:37",
-      "to": "2026-11-19 13:37",
+      "from": "2026-11-12 14:03",
+      "to": "2026-11-19 14:03",
       "timezone": "Europe/Stockholm",
       "cycles": 348,
       "journal_days_present": [
@@ -757,8 +733,8 @@
       ],
       "discovered": {
         "new_tokens": 129,
-        "eligible_appearances": 1008,
-        "eligible_cycles_measured": 109,
+        "eligible_appearances": 1013,
+        "eligible_cycles_measured": 110,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6271,6 +6247,11 @@
       {
         "t": "2026-11-19 13:38",
         "cycle": 754,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 14:05",
+        "cycle": 755,
         "equity": 9.919847
       }
     ]
