@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-19 20:02",
+  "generated_at_stockholm": "2026-11-19 20:34",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-18 20:02",
-      "to": "2026-11-19 20:02",
+      "from": "2026-11-18 20:34",
+      "to": "2026-11-19 20:34",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 22,
-        "eligible_appearances": 342,
-        "eligible_cycles_measured": 38,
+        "new_tokens": 23,
+        "eligible_appearances": 318,
+        "eligible_cycles_measured": 36,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 13,
+        "scout_rule1": 14,
         "scout_rule2": 3,
         "scout_rule11": 3,
-        "scout_unique": 13,
+        "scout_unique": 14,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 25,
         "age_or_liq_filter_complete": false,
@@ -39,6 +39,18 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "DATITTY",
+          "mint_prefix": "3guXwT9b",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 767,
+          "time": "2026-11-19 20:05"
+        },
         {
           "symbol": "KFC",
           "mint_prefix": "7RZuBWCW",
@@ -554,10 +566,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-12 20:02",
-      "to": "2026-11-19 20:02",
+      "from": "2026-11-12 20:34",
+      "to": "2026-11-19 20:34",
       "timezone": "Europe/Stockholm",
-      "cycles": 336,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-12",
         "2026-11-13",
@@ -571,7 +583,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 127,
+        "new_tokens": 128,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -581,10 +593,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 77,
+        "scout_rule1": 78,
         "scout_rule2": 21,
         "scout_rule11": 18,
-        "scout_unique": 95,
+        "scout_unique": 96,
         "scout_rules_unknown": 17,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
@@ -595,6 +607,18 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "DATITTY",
+          "mint_prefix": "3guXwT9b",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": 767,
+          "time": "2026-11-19 20:05"
+        },
         {
           "symbol": "KFC",
           "mint_prefix": "7RZuBWCW",
@@ -6109,6 +6133,11 @@
       {
         "t": "2026-11-19 18:40",
         "cycle": 764,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 20:35",
+        "cycle": 768,
         "equity": 9.919847
       }
     ]
