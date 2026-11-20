@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-20 19:35",
+  "generated_at_stockholm": "2026-11-20 20:05",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 19:35",
-      "to": "2026-11-20 19:35",
+      "from": "2026-11-19 20:05",
+      "to": "2026-11-20 20:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 6,
+      "cycles": 4,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 2,
+        "new_tokens": 1,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 1,
+        "scout_rule1": 0,
         "scout_rule2": 0,
         "scout_rule11": 0,
-        "scout_unique": 1,
+        "scout_unique": 0,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 0,
         "age_or_liq_filter_complete": true,
@@ -48,18 +48,6 @@
           "label": "köpt (paper)",
           "cycle": null,
           "time": "2026-11-20 18:07"
-        },
-        {
-          "symbol": "DATITTY",
-          "mint_prefix": "3guXwT9b",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 767,
-          "time": "2026-11-19 20:05"
         }
       ],
       "unknowns": [
@@ -68,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 19:35",
-      "to": "2026-11-20 19:35",
+      "from": "2026-11-13 20:05",
+      "to": "2026-11-20 20:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 247,
+      "cycles": 244,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -85,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 108,
+        "new_tokens": 105,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -95,11 +83,11 @@
         }
       },
       "killed": {
-        "scout_rule1": 66,
+        "scout_rule1": 64,
         "scout_rule2": 20,
-        "scout_rule11": 13,
-        "scout_unique": 76,
-        "scout_rules_unknown": 9,
+        "scout_rule11": 12,
+        "scout_unique": 73,
+        "scout_rules_unknown": 8,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
@@ -1798,41 +1786,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 528,
           "time": "2026-11-13 20:20"
-        },
-        {
-          "symbol": "Nigghao",
-          "mint_prefix": "9J41tone",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 527,
-          "time": "2026-11-13 20:00"
-        },
-        {
-          "symbol": "Nigghao",
-          "mint_prefix": "AwsHs2p7",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 527,
-          "time": "2026-11-13 20:00"
-        },
-        {
-          "symbol": "cashduck",
-          "mint_prefix": "FgGY3F2H",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 525,
-          "time": "2026-11-13 19:37"
         }
       ],
       "unknowns": [
@@ -1841,7 +1794,7 @@
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "9 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "8 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
