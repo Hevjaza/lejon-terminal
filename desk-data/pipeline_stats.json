@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 13:03",
+  "generated_at_stockholm": "2026-11-20 13:32",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 13:03",
-      "to": "2026-11-20 13:03",
+      "from": "2026-11-19 13:32",
+      "to": "2026-11-20 13:32",
       "timezone": "Europe/Stockholm",
-      "cycles": 19,
+      "cycles": 18,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 5,
-        "eligible_appearances": 72,
-        "eligible_cycles_measured": 10,
+        "eligible_appearances": 64,
+        "eligible_cycles_measured": 9,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -98,15 +98,15 @@
         }
       ],
       "unknowns": [
-        "29 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "31 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 13:03",
-      "to": "2026-11-20 13:03",
+      "from": "2026-11-13 13:32",
+      "to": "2026-11-20 13:32",
       "timezone": "Europe/Stockholm",
-      "cycles": 274,
+      "cycles": 272,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -1949,7 +1949,7 @@
         }
       ],
       "unknowns": [
-        "29 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "31 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
@@ -1963,6 +1963,11 @@
     "realised_pnl_sol": -0.080153243,
     "equity_sol": 9.919846757,
     "series": [
+      {
+        "t": null,
+        "cycle": 13,
+        "equity": 9.919847
+      },
       {
         "t": null,
         "cycle": 245,
