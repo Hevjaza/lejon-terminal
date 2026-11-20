@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-20 20:35",
+  "generated_at_stockholm": "2026-11-20 21:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 20:35",
-      "to": "2026-11-20 20:35",
+      "from": "2026-11-19 21:03",
+      "to": "2026-11-20 21:03",
       "timezone": "Europe/Stockholm",
       "cycles": 3,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 20:35",
-      "to": "2026-11-20 20:35",
+      "from": "2026-11-13 21:03",
+      "to": "2026-11-20 21:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 243,
+      "cycles": 241,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 104,
+        "new_tokens": 102,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -83,10 +83,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 63,
+        "scout_rule1": 61,
         "scout_rule2": 20,
         "scout_rule11": 12,
-        "scout_unique": 72,
+        "scout_unique": 70,
         "scout_rules_unknown": 8,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1750,30 +1750,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 533,
           "time": "2026-11-13 21:35"
-        },
-        {
-          "symbol": "AMC",
-          "mint_prefix": "HWya5CpQ",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 529,
-          "time": "2026-11-13 20:40"
-        },
-        {
-          "symbol": "LUCIA",
-          "mint_prefix": "7G9eBFMA",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 529,
-          "time": "2026-11-13 20:40"
         }
       ],
       "unknowns": [
