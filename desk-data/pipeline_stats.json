@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 08:31",
+  "generated_at_stockholm": "2026-11-20 09:04",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 08:31",
-      "to": "2026-11-20 08:31",
+      "from": "2026-11-19 09:04",
+      "to": "2026-11-20 09:04",
       "timezone": "Europe/Stockholm",
-      "cycles": 28,
+      "cycles": 26,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 8,
-        "eligible_appearances": 146,
-        "eligible_cycles_measured": 19,
+        "eligible_appearances": 132,
+        "eligible_cycles_measured": 17,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -107,6 +107,16 @@
           "label": "stoppad av SCOUT",
           "cycle": 751,
           "time": "2026-11-19 12:06"
+        },
+        {
+          "symbol": "DCTY",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 750,
+          "time": "2026-11-19 11:35"
         },
         {
           "symbol": "Sparrow",
@@ -207,16 +217,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 746,
           "time": "2026-11-19 09:30"
-        },
-        {
-          "symbol": "DCTY",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 744,
-          "time": "2026-11-19 08:35"
         }
       ],
       "unknowns": [
@@ -225,10 +225,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 08:31",
-      "to": "2026-11-20 08:31",
+      "from": "2026-11-13 09:04",
+      "to": "2026-11-20 09:04",
       "timezone": "Europe/Stockholm",
-      "cycles": 292,
+      "cycles": 290,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
