@@ -1,19 +1,20 @@
 {
-  "generated_at_stockholm": "2026-11-20 23:37",
+  "generated_at_stockholm": "2026-11-21 00:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 23:37",
-      "to": "2026-11-20 23:37",
+      "from": "2026-11-20 00:02",
+      "to": "2026-11-21 00:02",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
-        "2026-11-19",
         "2026-11-20"
       ],
-      "journal_days_missing": [],
+      "journal_days_missing": [
+        "2026-11-21"
+      ],
       "discovered": {
         "new_tokens": 1,
         "eligible_appearances": null,
@@ -51,17 +52,17 @@
         }
       ],
       "unknowns": [
-        "31 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "Ingen journal för 2026-11-21 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 23:37",
-      "to": "2026-11-20 23:37",
+      "from": "2026-11-14 00:02",
+      "to": "2026-11-21 00:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 231,
+      "cycles": 229,
       "journal_days_present": [
-        "2026-11-13",
         "2026-11-14",
         "2026-11-16",
         "2026-11-17",
@@ -70,10 +71,11 @@
         "2026-11-20"
       ],
       "journal_days_missing": [
-        "2026-11-15"
+        "2026-11-15",
+        "2026-11-21"
       ],
       "discovered": {
-        "new_tokens": 99,
+        "new_tokens": 98,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -83,10 +85,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 58,
+        "scout_rule1": 57,
         "scout_rule2": 20,
         "scout_rule11": 12,
-        "scout_unique": 67,
+        "scout_unique": 66,
         "scout_rules_unknown": 8,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1702,23 +1704,11 @@
           "label": "stoppad av SCOUT",
           "cycle": 544,
           "time": "2026-11-14 00:15"
-        },
-        {
-          "symbol": "PEACEFROG",
-          "mint_prefix": "m7SihqeaWimE",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 541,
-          "time": "2026-11-13 23:40"
         }
       ],
       "unknowns": [
         "31 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
+        "Ingen journal för 2026-11-15, 2026-11-21 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",

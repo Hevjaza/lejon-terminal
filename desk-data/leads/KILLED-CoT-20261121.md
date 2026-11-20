@@ -1,0 +1,1 @@
+KILLED-SCOUT CoT 5kqi4kDq56H9UfHq14jXtmy189zpyxaYdXCQ4qHvDtHW 2026-11-21: Rule 1-eq (1 wallet 30% incl off-pool stash), Rule 2-eq (14 non-deployer wallets 2400% pre-pool), Rule 11-eq (1 wallet >80% at +150 slots). Evidence research/raw-20261121/scout_check/
