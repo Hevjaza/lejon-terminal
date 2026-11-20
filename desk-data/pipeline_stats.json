@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 09:04",
+  "generated_at_stockholm": "2026-11-20 09:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 09:04",
-      "to": "2026-11-20 09:04",
+      "from": "2026-11-19 09:38",
+      "to": "2026-11-20 09:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 26,
+      "cycles": 25,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 8,
-        "eligible_appearances": 132,
-        "eligible_cycles_measured": 17,
+        "eligible_appearances": 123,
+        "eligible_cycles_measured": 16,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 4,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 9,
+        "age_or_liq_filter": 8,
         "age_or_liq_filter_complete": true,
         "factory_kill": 4,
         "funding_avoid": 0,
@@ -207,28 +207,18 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 747,
           "time": "2026-11-19 10:05"
-        },
-        {
-          "symbol": "After",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 746,
-          "time": "2026-11-19 09:30"
         }
       ],
       "unknowns": [
-        "21 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "23 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 09:04",
-      "to": "2026-11-20 09:04",
+      "from": "2026-11-13 09:38",
+      "to": "2026-11-20 09:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 290,
+      "cycles": 287,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2081,7 +2071,7 @@
         }
       ],
       "unknowns": [
-        "21 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "23 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
