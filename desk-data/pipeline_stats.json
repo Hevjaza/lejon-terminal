@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-20 18:31",
+  "generated_at_stockholm": "2026-11-20 19:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 18:31",
-      "to": "2026-11-20 18:31",
+      "from": "2026-11-19 19:08",
+      "to": "2026-11-20 19:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 8,
+      "cycles": 6,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 3,
+        "new_tokens": 2,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 2,
+        "scout_rule1": 1,
         "scout_rule2": 0,
         "scout_rule11": 0,
-        "scout_unique": 2,
+        "scout_unique": 1,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 0,
         "age_or_liq_filter_complete": true,
@@ -60,18 +60,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 767,
           "time": "2026-11-19 20:05"
-        },
-        {
-          "symbol": "KFC",
-          "mint_prefix": "7RZuBWCW",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 765,
-          "time": "2026-11-19 19:05"
         }
       ],
       "unknowns": [
@@ -80,10 +68,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 18:31",
-      "to": "2026-11-20 18:31",
+      "from": "2026-11-13 19:08",
+      "to": "2026-11-20 19:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 251,
+      "cycles": 248,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -97,7 +85,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 110,
+        "new_tokens": 109,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -107,10 +95,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 68,
+        "scout_rule1": 67,
         "scout_rule2": 20,
         "scout_rule11": 14,
-        "scout_unique": 78,
+        "scout_unique": 77,
         "scout_rules_unknown": 9,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1858,18 +1846,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 524,
           "time": "2026-11-13 19:19"
-        },
-        {
-          "symbol": "DACAT",
-          "mint_prefix": "91fxZsD9",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 521,
-          "time": "2026-11-13 18:34"
         }
       ],
       "unknowns": [
