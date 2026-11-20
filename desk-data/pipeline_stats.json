@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 12:07",
+  "generated_at_stockholm": "2026-11-20 12:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 12:07",
-      "to": "2026-11-20 12:07",
+      "from": "2026-11-19 12:36",
+      "to": "2026-11-20 12:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 20,
+      "cycles": 19,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 5,
-        "eligible_appearances": 81,
-        "eligible_cycles_measured": 11,
+        "eligible_appearances": 72,
+        "eligible_cycles_measured": 10,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -98,15 +98,15 @@
         }
       ],
       "unknowns": [
-        "27 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 12:07",
-      "to": "2026-11-20 12:07",
+      "from": "2026-11-13 12:36",
+      "to": "2026-11-20 12:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 277,
+      "cycles": 275,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -1949,7 +1949,7 @@
         }
       ],
       "unknowns": [
-        "27 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
