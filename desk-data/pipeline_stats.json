@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 10:01",
+  "generated_at_stockholm": "2026-11-20 10:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 10:01",
-      "to": "2026-11-20 10:01",
+      "from": "2026-11-19 10:38",
+      "to": "2026-11-20 10:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 25,
+      "cycles": 23,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 8,
-        "eligible_appearances": 123,
-        "eligible_cycles_measured": 16,
+        "new_tokens": 6,
+        "eligible_appearances": 105,
+        "eligible_cycles_measured": 14,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -30,9 +30,9 @@
         "scout_rule11": 1,
         "scout_unique": 4,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 8,
+        "age_or_liq_filter": 9,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 4,
+        "factory_kill": 2,
         "funding_avoid": 0,
         "risk_other": 0,
         "skipped_unverified": 0
@@ -190,23 +190,13 @@
         },
         {
           "symbol": "APOCRYCOIN",
-          "mint_prefix": "6dy9DhP5",
-          "kind": "factory_kill",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
           "rules": [],
           "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 747,
-          "time": "2026-11-19 10:05"
-        },
-        {
-          "symbol": "APOCRYCOIN",
-          "mint_prefix": "3hwL6shc",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 747,
-          "time": "2026-11-19 10:05"
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
         }
       ],
       "unknowns": [
@@ -215,10 +205,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 10:01",
-      "to": "2026-11-20 10:01",
+      "from": "2026-11-13 10:38",
+      "to": "2026-11-20 10:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 286,
+      "cycles": 283,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
