@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 03:02",
+  "generated_at_stockholm": "2026-11-20 03:31",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 03:02",
-      "to": "2026-11-20 03:02",
+      "from": "2026-11-19 03:31",
+      "to": "2026-11-20 03:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 39,
+      "cycles": 38,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 12,
-        "eligible_appearances": 186,
-        "eligible_cycles_measured": 25,
+        "new_tokens": 11,
+        "eligible_appearances": 174,
+        "eligible_cycles_measured": 24,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 7,
+        "scout_rule1": 6,
         "scout_rule2": 1,
         "scout_rule11": 2,
-        "scout_unique": 7,
+        "scout_unique": 6,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 19,
         "age_or_liq_filter_complete": false,
@@ -361,32 +361,20 @@
           "label": "undvik (finansiering)",
           "cycle": 734,
           "time": "2026-11-19 03:40"
-        },
-        {
-          "symbol": "FNDR",
-          "mint_prefix": "64Uf4fkA",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 733,
-          "time": "2026-11-19 03:05"
         }
       ],
       "unknowns": [
-        "9 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "10 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 19.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 03:02",
-      "to": "2026-11-20 03:02",
+      "from": "2026-11-13 03:31",
+      "to": "2026-11-20 03:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 314,
+      "cycles": 312,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2293,7 +2281,7 @@
         }
       ],
       "unknowns": [
-        "9 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "10 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
