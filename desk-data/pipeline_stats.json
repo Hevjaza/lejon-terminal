@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-20 12:36",
+  "generated_at_stockholm": "2026-11-20 13:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 12:36",
-      "to": "2026-11-20 12:36",
+      "from": "2026-11-19 13:03",
+      "to": "2026-11-20 13:03",
       "timezone": "Europe/Stockholm",
       "cycles": 19,
       "journal_days_present": [
@@ -98,15 +98,15 @@
         }
       ],
       "unknowns": [
-        "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "29 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 12:36",
-      "to": "2026-11-20 12:36",
+      "from": "2026-11-13 13:03",
+      "to": "2026-11-20 13:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 275,
+      "cycles": 274,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -1949,7 +1949,7 @@
         }
       ],
       "unknowns": [
-        "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "29 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
