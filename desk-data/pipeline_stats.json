@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 11:31",
+  "generated_at_stockholm": "2026-11-20 12:07",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 11:31",
-      "to": "2026-11-20 11:31",
+      "from": "2026-11-19 12:07",
+      "to": "2026-11-20 12:07",
       "timezone": "Europe/Stockholm",
-      "cycles": 22,
+      "cycles": 20,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 6,
-        "eligible_appearances": 97,
-        "eligible_cycles_measured": 13,
+        "new_tokens": 5,
+        "eligible_appearances": 81,
+        "eligible_cycles_measured": 11,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 4,
+        "scout_rule1": 3,
         "scout_rule2": 0,
         "scout_rule11": 1,
-        "scout_unique": 4,
+        "scout_unique": 3,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 5,
+        "age_or_liq_filter": 0,
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 0,
@@ -95,68 +95,6 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 756,
           "time": "2026-11-19 14:33"
-        },
-        {
-          "symbol": "Sparrow",
-          "mint_prefix": "5a6mAmWb",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 751,
-          "time": "2026-11-19 12:06"
-        },
-        {
-          "symbol": "DCTY",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 750,
-          "time": "2026-11-19 11:35"
-        },
-        {
-          "symbol": "Sparrow",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 750,
-          "time": "2026-11-19 11:35"
-        },
-        {
-          "symbol": "APOCRYCOIN",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 750,
-          "time": "2026-11-19 11:35"
-        },
-        {
-          "symbol": "jingyu",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 750,
-          "time": "2026-11-19 11:35"
-        },
-        {
-          "symbol": "APCY",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 750,
-          "time": "2026-11-19 11:35"
         }
       ],
       "unknowns": [
@@ -165,10 +103,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 11:31",
-      "to": "2026-11-20 11:31",
+      "from": "2026-11-13 12:07",
+      "to": "2026-11-20 12:07",
       "timezone": "Europe/Stockholm",
-      "cycles": 280,
+      "cycles": 277,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
