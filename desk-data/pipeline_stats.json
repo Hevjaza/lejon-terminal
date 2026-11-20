@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-20 18:08",
+  "generated_at_stockholm": "2026-11-20 18:31",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 18:08",
-      "to": "2026-11-20 18:08",
+      "from": "2026-11-19 18:31",
+      "to": "2026-11-20 18:31",
       "timezone": "Europe/Stockholm",
       "cycles": 8,
       "journal_days_present": [
@@ -80,10 +80,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 18:08",
-      "to": "2026-11-20 18:08",
+      "from": "2026-11-13 18:31",
+      "to": "2026-11-20 18:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 252,
+      "cycles": 251,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -97,7 +97,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 111,
+        "new_tokens": 110,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -107,10 +107,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 69,
+        "scout_rule1": 68,
         "scout_rule2": 20,
-        "scout_rule11": 15,
-        "scout_unique": 79,
+        "scout_rule11": 14,
+        "scout_unique": 78,
         "scout_rules_unknown": 9,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1870,19 +1870,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 521,
           "time": "2026-11-13 18:34"
-        },
-        {
-          "symbol": "SI",
-          "mint_prefix": "CJ28UpzC",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 520,
-          "time": "2026-11-13 18:17"
         }
       ],
       "unknowns": [
@@ -1897,8 +1884,8 @@
   },
   "equity": {
     "start_sol": 10.0,
-    "realised_pnl_sol": -0.080153243,
-    "equity_sol": 9.919846757,
+    "realised_pnl_sol": -0.161841701,
+    "equity_sol": 9.838158299,
     "series": [
       {
         "t": null,
@@ -5514,13 +5501,13 @@
   },
   "strategy": {
     "A": {
-      "equity": 9.919846757,
-      "pnl": -0.080153243,
-      "closed": 6,
+      "equity": 9.838158299,
+      "pnl": -0.161841701,
+      "closed": 7,
       "wins": 2,
-      "losses": 4,
-      "open": 1,
-      "win_rate_pct": 33.333333333333336
+      "losses": 5,
+      "open": 0,
+      "win_rate_pct": 28.571428571428573
     },
     "B": {
       "equity": 9.923021474654378,
@@ -5542,12 +5529,12 @@
     }
   },
   "goals": {
-    "closed": 5,
+    "closed": 6,
     "closed_target": 20,
     "wins": 2,
-    "losses": 3,
-    "win_rate_pct": 40.0,
-    "goal_pnl_sol": -0.0025866709999999987,
+    "losses": 4,
+    "win_rate_pct": 33.333333333333336,
+    "goal_pnl_sol": -0.084275129,
     "worst_day_pct": -0.9737768900000001,
     "excluded": [
       {
@@ -5556,11 +5543,11 @@
         "pnl_sol": -0.077566572
       }
     ],
-    "book_closed": 6,
+    "book_closed": 7,
     "book_wins": 2,
-    "book_losses": 4,
-    "book_pnl_sol": -0.080153243,
-    "book_equity_sol": 9.919846757,
+    "book_losses": 5,
+    "book_pnl_sol": -0.161841701,
+    "book_equity_sol": 9.838158299,
     "equity_start_sol": 10.0
   },
   "screened_txt": {

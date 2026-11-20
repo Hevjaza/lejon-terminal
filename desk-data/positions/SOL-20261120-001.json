@@ -1,7 +1,7 @@
 {
  "ticket": "SOL-20261120-001",
  "mint": "3umHFkiMHyphCkLxtbf8Aabie8r5hxn86QeBAovTpump",
- "status": "OPEN",
+ "status": "CLOSED",
  "label": "SIMULATED (Jupiter quote, desk-side)",
  "caveat": "optimistic: ignores bots/MEV, failed or delayed txs and quote drift; no real transaction",
  "approved_method": "desk-side simulated fill approved by Hevar t22u (2026-10-28); repo paper path unavailable, repo untouched",
@@ -13,8 +13,8 @@
  "size_sol": 0.2,
  "entry_fee_sol": 1e-05,
  "cost_sol": 0.20001,
- "tokens_raw": 82258291333,
- "tokens_ui": 82258.291333,
+ "tokens_raw": 0,
+ "tokens_ui": 0.0,
  "decimals": 6,
  "entry_price_sol_per_token": 2.431487413108482e-06,
  "stop_loss_frac": -0.3,
@@ -49,7 +49,14 @@
  "checkpoints": {
   "+5m": {
    "due_utc": "2026-11-20T17:12:57Z",
-   "filled": false
+   "filled": true,
+   "utc": "2026-11-20T17:12:58Z",
+   "multiple": 0.5916,
+   "pct": -40.842,
+   "exit_value_sol": 0.118321542,
+   "price_sol_per_token": 1.4384147796239516e-06,
+   "lag_sec": 0,
+   "late": false
   },
   "+15m": {
    "due_utc": "2026-11-20T17:22:57Z",
@@ -60,9 +67,59 @@
    "filled": false
   }
  },
- "marks": [],
- "last_mark": null,
- "exit": null,
+ "marks": [
+  {
+   "utc": "2026-11-20T17:12:58Z",
+   "exit_value_sol": 0.118321542,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.081688458,
+   "realised_partial_pnl_sol": 0.0,
+   "trade_total_pnl_sol": -0.081688458,
+   "pct": -40.842,
+   "multiple": 0.5916,
+   "tokens_held_frac": 1.0,
+   "price_sol_per_token": 1.4384147796239516e-06,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 471816730
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-11-20T17:12:58Z",
+  "exit_value_sol": 0.118321542,
+  "remaining_cost_basis_sol": 0.20001,
+  "unrealised_pnl_sol": -0.081688458,
+  "realised_partial_pnl_sol": 0.0,
+  "trade_total_pnl_sol": -0.081688458,
+  "pct": -40.842,
+  "multiple": 0.5916,
+  "tokens_held_frac": 1.0,
+  "price_sol_per_token": 1.4384147796239516e-06,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 471816730
+ },
+ "exit": {
+  "utc": "2026-11-20T17:12:58Z",
+  "stockholm": "2026-11-20 18:12:58",
+  "reason": "STOP-LOSS -30 % vs entry (whole holding; simulated sell at token->SOL quote)",
+  "final_leg": "SL",
+  "proceeds_sol": 0.118321542,
+  "final_leg_proceeds_sol": 0.118321542,
+  "exit_fee_sol": 1e-05,
+  "legs": 1,
+  "realised_pnl_sol": -0.081688458,
+  "realised_pnl_pct": -40.842,
+  "multiple": 0.5916,
+  "route": [
+   "Pump.fun Amm"
+  ],
+  "context_slot": 471816730,
+  "label": "SIMULATED (Jupiter quote, desk-side)",
+  "max_loss_breached": false
+ },
  "notes": "",
  "rules_version": "moonshot-50/50 t34u (TP1 +100 % sells 50 %, TP2 +1000 % sells rest, SL -30 % vs entry)",
  "take_profit_plan": "TP1 +100 % sells 50 % (stake recovered); TP2 +1000 % sells the remaining 50 %",
@@ -80,7 +137,28 @@
  "tp1_done": false,
  "tp2_done": false,
  "stake_recovered": false,
- "partial_exits": [],
- "realised_partial_pnl_sol": 0.0,
- "proceeds_so_far_sol": 0.0
+ "partial_exits": [
+  {
+   "leg": "SL",
+   "utc": "2026-11-20T17:12:58Z",
+   "stockholm": "2026-11-20 18:12:58",
+   "reason": "STOP-LOSS -30 % vs entry (whole holding; simulated sell at token->SOL quote)",
+   "tokens_sold_raw": 82258291333,
+   "tokens_sold_ui": 82258.291333,
+   "frac_of_initial": 1.0,
+   "proceeds_sol": 0.118321542,
+   "exit_fee_sol": 1e-05,
+   "cost_basis_sol": 0.20001,
+   "realised_pnl_sol": -0.081688458,
+   "multiple": 0.5916,
+   "route": [
+    "Pump.fun Amm"
+   ],
+   "context_slot": 471816730,
+   "label": "SIMULATED (Jupiter quote, desk-side)",
+   "fill_source": "mark quote"
+  }
+ ],
+ "realised_partial_pnl_sol": -0.081688458,
+ "proceeds_so_far_sol": 0.118321542
 }
