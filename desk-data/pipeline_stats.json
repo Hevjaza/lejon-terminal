@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-20 17:34",
+  "generated_at_stockholm": "2026-11-20 18:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 17:34",
-      "to": "2026-11-20 17:34",
+      "from": "2026-11-19 18:08",
+      "to": "2026-11-20 18:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 9,
+      "cycles": 8,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 2,
+        "new_tokens": 3,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -37,8 +37,18 @@
         "risk_other": 0,
         "skipped_unverified": 0
       },
-      "passed_to_buy": 0,
+      "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "SOL-20261120-001",
+          "mint_prefix": "3umHFkiMHyph",
+          "kind": "bought",
+          "rules": [],
+          "color": "green",
+          "label": "köpt (paper)",
+          "cycle": null,
+          "time": "2026-11-20 18:07"
+        },
         {
           "symbol": "DATITTY",
           "mint_prefix": "3guXwT9b",
@@ -70,10 +80,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 17:34",
-      "to": "2026-11-20 17:34",
+      "from": "2026-11-13 18:08",
+      "to": "2026-11-20 18:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 254,
+      "cycles": 252,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -87,7 +97,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 110,
+        "new_tokens": 111,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -109,8 +119,18 @@
         "risk_other": 2,
         "skipped_unverified": 5
       },
-      "passed_to_buy": 1,
+      "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "SOL-20261120-001",
+          "mint_prefix": "3umHFkiMHyph",
+          "kind": "bought",
+          "rules": [],
+          "color": "green",
+          "label": "köpt (paper)",
+          "cycle": null,
+          "time": "2026-11-20 18:07"
+        },
         {
           "symbol": "DATITTY",
           "mint_prefix": "3guXwT9b",
@@ -5499,7 +5519,7 @@
       "closed": 6,
       "wins": 2,
       "losses": 4,
-      "open": 0,
+      "open": 1,
       "win_rate_pct": 33.333333333333336
     },
     "B": {
