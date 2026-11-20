@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-20 04:30",
+  "generated_at_stockholm": "2026-11-20 05:00",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 04:30",
-      "to": "2026-11-20 04:30",
+      "from": "2026-11-19 05:00",
+      "to": "2026-11-20 05:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 36,
+      "cycles": 35,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 9,
+        "new_tokens": 8,
         "eligible_appearances": 163,
         "eligible_cycles_measured": 23,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 5,
-        "scout_rule2": 1,
-        "scout_rule11": 2,
-        "scout_unique": 5,
+        "scout_rule1": 4,
+        "scout_rule2": 0,
+        "scout_rule11": 1,
+        "scout_unique": 4,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 18,
+        "age_or_liq_filter": 16,
         "age_or_liq_filter_complete": false,
         "factory_kill": 4,
         "funding_avoid": 0,
@@ -295,54 +295,20 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 739,
           "time": "2026-11-19 06:01"
-        },
-        {
-          "symbol": "Founder",
-          "mint_prefix": "AAb2Jkm",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 736,
-          "time": "2026-11-19 04:32"
-        },
-        {
-          "symbol": "gamercat",
-          "mint_prefix": "8fmMzJZq",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 736,
-          "time": "2026-11-19 04:32"
-        },
-        {
-          "symbol": "DCTC",
-          "mint_prefix": "BM5wUne5",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 736,
-          "time": "2026-11-19 04:32"
         }
       ],
       "unknowns": [
-        "12 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 18.",
-        "4 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
+        "13 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 16.",
+        "3 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 04:30",
-      "to": "2026-11-20 04:30",
+      "from": "2026-11-13 05:00",
+      "to": "2026-11-20 05:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 308,
+      "cycles": 306,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2215,7 +2181,7 @@
         }
       ],
       "unknowns": [
-        "12 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "13 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
