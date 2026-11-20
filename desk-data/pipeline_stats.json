@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 01:29",
+  "generated_at_stockholm": "2026-11-20 02:04",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 01:29",
-      "to": "2026-11-20 01:29",
+      "from": "2026-11-19 02:04",
+      "to": "2026-11-20 02:04",
       "timezone": "Europe/Stockholm",
-      "cycles": 42,
+      "cycles": 40,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 15,
-        "eligible_appearances": 221,
-        "eligible_cycles_measured": 28,
+        "new_tokens": 13,
+        "eligible_appearances": 198,
+        "eligible_cycles_measured": 26,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 9,
+        "scout_rule1": 7,
         "scout_rule2": 1,
-        "scout_rule11": 3,
-        "scout_unique": 9,
+        "scout_rule11": 2,
+        "scout_unique": 7,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 21,
+        "age_or_liq_filter": 20,
         "age_or_liq_filter_complete": false,
         "factory_kill": 5,
         "funding_avoid": 1,
@@ -393,55 +393,20 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 732,
           "time": "2026-11-19 02:31"
-        },
-        {
-          "symbol": "Mandy",
-          "mint_prefix": "2xCd5qHX",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 731,
-          "time": "2026-11-19 02:00"
-        },
-        {
-          "symbol": "BabyTrump",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 731,
-          "time": "2026-11-19 02:00"
-        },
-        {
-          "symbol": "GTASZN",
-          "mint_prefix": "A4jXnWk1",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 730,
-          "time": "2026-11-19 01:31"
         }
       ],
       "unknowns": [
-        "7 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 21.",
+        "8 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 20.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 01:29",
-      "to": "2026-11-20 01:29",
+      "from": "2026-11-13 02:04",
+      "to": "2026-11-20 02:04",
       "timezone": "Europe/Stockholm",
-      "cycles": 320,
+      "cycles": 318,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2378,7 +2343,7 @@
         }
       ],
       "unknowns": [
-        "7 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "8 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
@@ -6047,7 +6012,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 20,
+    "lines": 22,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
