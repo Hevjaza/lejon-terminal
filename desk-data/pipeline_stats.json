@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 01:03",
+  "generated_at_stockholm": "2026-11-20 01:29",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 01:03",
-      "to": "2026-11-20 01:03",
+      "from": "2026-11-19 01:29",
+      "to": "2026-11-20 01:29",
       "timezone": "Europe/Stockholm",
-      "cycles": 43,
+      "cycles": 42,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 15,
-        "eligible_appearances": 232,
-        "eligible_cycles_measured": 29,
+        "eligible_appearances": 221,
+        "eligible_cycles_measured": 28,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -431,17 +431,17 @@
         }
       ],
       "unknowns": [
-        "6 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "7 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 21.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 01:03",
-      "to": "2026-11-20 01:03",
+      "from": "2026-11-13 01:29",
+      "to": "2026-11-20 01:29",
       "timezone": "Europe/Stockholm",
-      "cycles": 321,
+      "cycles": 320,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2378,7 +2378,7 @@
         }
       ],
       "unknowns": [
-        "6 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "7 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
