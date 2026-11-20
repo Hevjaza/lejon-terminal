@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-20 04:05",
+  "generated_at_stockholm": "2026-11-20 04:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 04:05",
-      "to": "2026-11-20 04:05",
+      "from": "2026-11-19 04:30",
+      "to": "2026-11-20 04:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 37,
+      "cycles": 36,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 10,
+        "new_tokens": 9,
         "eligible_appearances": 163,
         "eligible_cycles_measured": 23,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 6,
+        "scout_rule1": 5,
         "scout_rule2": 1,
         "scout_rule11": 2,
-        "scout_unique": 6,
+        "scout_unique": 5,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 19,
+        "age_or_liq_filter": 18,
         "age_or_liq_filter_complete": false,
         "factory_kill": 4,
         "funding_avoid": 0,
@@ -321,50 +321,28 @@
           "time": "2026-11-19 04:32"
         },
         {
-          "symbol": "NASDUCK",
-          "mint_prefix": "7qgvmEdQ",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 735,
-          "time": "2026-11-19 04:10"
-        },
-        {
-          "symbol": "AI",
-          "mint_prefix": "CegV8Phw",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 735,
-          "time": "2026-11-19 04:10"
-        },
-        {
           "symbol": "DCTC",
           "mint_prefix": "BM5wUne5",
           "kind": "filter_age_liq",
           "rules": [],
           "color": "red",
           "label": "stopp för ålder/likviditet",
-          "cycle": 735,
-          "time": "2026-11-19 04:10"
+          "cycle": 736,
+          "time": "2026-11-19 04:32"
         }
       ],
       "unknowns": [
         "12 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 19.",
-        "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 18.",
+        "4 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 04:05",
-      "to": "2026-11-20 04:05",
+      "from": "2026-11-13 04:30",
+      "to": "2026-11-20 04:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 309,
+      "cycles": 308,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -378,7 +356,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 120,
+        "new_tokens": 119,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -388,10 +366,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 74,
+        "scout_rule1": 73,
         "scout_rule2": 20,
         "scout_rule11": 17,
-        "scout_unique": 89,
+        "scout_unique": 88,
         "scout_rules_unknown": 14,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -2234,18 +2212,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 467,
           "time": "2026-11-13 05:01"
-        },
-        {
-          "symbol": "AMD",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 464,
-          "time": "2026-11-13 04:19"
         }
       ],
       "unknowns": [
