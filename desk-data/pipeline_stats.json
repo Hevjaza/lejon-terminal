@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 10:38",
+  "generated_at_stockholm": "2026-11-20 11:05",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 10:38",
-      "to": "2026-11-20 10:38",
+      "from": "2026-11-19 11:05",
+      "to": "2026-11-20 11:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 23,
+      "cycles": 22,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 6,
-        "eligible_appearances": 105,
-        "eligible_cycles_measured": 14,
+        "eligible_appearances": 97,
+        "eligible_cycles_measured": 13,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 4,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 9,
+        "age_or_liq_filter": 5,
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 0,
@@ -129,6 +129,16 @@
           "time": "2026-11-19 11:35"
         },
         {
+          "symbol": "APOCRYCOIN",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 750,
+          "time": "2026-11-19 11:35"
+        },
+        {
           "symbol": "jingyu",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -147,68 +157,18 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 750,
           "time": "2026-11-19 11:35"
-        },
-        {
-          "symbol": "Bottom",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 749,
-          "time": "2026-11-19 11:05"
-        },
-        {
-          "symbol": "VICEPAD",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 749,
-          "time": "2026-11-19 11:05"
-        },
-        {
-          "symbol": "APEC",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 749,
-          "time": "2026-11-19 11:05"
-        },
-        {
-          "symbol": "Sloth",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 749,
-          "time": "2026-11-19 11:05"
-        },
-        {
-          "symbol": "APOCRYCOIN",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 749,
-          "time": "2026-11-19 11:05"
         }
       ],
       "unknowns": [
-        "24 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "26 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 10:38",
-      "to": "2026-11-20 10:38",
+      "from": "2026-11-13 11:05",
+      "to": "2026-11-20 11:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 283,
+      "cycles": 281,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -2051,7 +2011,7 @@
         }
       ],
       "unknowns": [
-        "24 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "26 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
