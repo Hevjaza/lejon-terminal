@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 05:31",
+  "generated_at_stockholm": "2026-11-20 06:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 05:31",
-      "to": "2026-11-20 05:31",
+      "from": "2026-11-19 06:08",
+      "to": "2026-11-20 06:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 34,
+      "cycles": 32,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 4,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 16,
+        "age_or_liq_filter": 14,
         "age_or_liq_filter_complete": false,
         "factory_kill": 4,
         "funding_avoid": 0,
@@ -272,43 +272,19 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 740,
           "time": "2026-11-19 06:40"
-        },
-        {
-          "symbol": "MANDY",
-          "mint_prefix": "EkTfN4Pb",
-          "kind": "filter_age_liq",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 739,
-          "time": "2026-11-19 06:01"
-        },
-        {
-          "symbol": "MAGACITY",
-          "mint_prefix": "8zHjeXjf",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 739,
-          "time": "2026-11-19 06:01"
         }
       ],
       "unknowns": [
-        "15 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 16.",
-        "2 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
+        "16 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 14.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-13 05:31",
-      "to": "2026-11-20 05:31",
+      "from": "2026-11-13 06:08",
+      "to": "2026-11-20 06:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 304,
+      "cycles": 301,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -322,7 +298,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 117,
+        "new_tokens": 116,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -335,8 +311,8 @@
         "scout_rule1": 73,
         "scout_rule2": 20,
         "scout_rule11": 17,
-        "scout_unique": 86,
-        "scout_rules_unknown": 12,
+        "scout_unique": 85,
+        "scout_rules_unknown": 11,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
@@ -2161,12 +2137,12 @@
         }
       ],
       "unknowns": [
-        "15 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
+        "16 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Ingen journal för 2026-11-15 — 7-dagars-/dygnssiffror är bara från dagar som finns.",
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "12 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "11 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
