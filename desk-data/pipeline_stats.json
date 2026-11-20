@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 17:06",
+  "generated_at_stockholm": "2026-11-20 17:34",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 17:06",
-      "to": "2026-11-20 17:06",
+      "from": "2026-11-19 17:34",
+      "to": "2026-11-20 17:34",
       "timezone": "Europe/Stockholm",
-      "cycles": 10,
+      "cycles": 9,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 4,
-        "eligible_appearances": 10,
-        "eligible_cycles_measured": 1,
+        "new_tokens": 2,
+        "eligible_appearances": null,
+        "eligible_cycles_measured": 0,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -25,14 +25,14 @@
         }
       },
       "killed": {
-        "scout_rule1": 3,
+        "scout_rule1": 2,
         "scout_rule2": 0,
-        "scout_rule11": 1,
-        "scout_unique": 3,
+        "scout_rule11": 0,
+        "scout_unique": 2,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 0,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 1,
+        "factory_kill": 0,
         "funding_avoid": 0,
         "risk_other": 0,
         "skipped_unverified": 0
@@ -62,29 +62,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 765,
           "time": "2026-11-19 19:05"
-        },
-        {
-          "symbol": "LOOSY",
-          "mint_prefix": "FtSWWxVm",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 762,
-          "time": "2026-11-19 17:32"
-        },
-        {
-          "symbol": "MORALS",
-          "mint_prefix": "BmGMo3SD",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 762,
-          "time": "2026-11-19 17:32"
         }
       ],
       "unknowns": [
@@ -93,10 +70,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 17:06",
-      "to": "2026-11-20 17:06",
+      "from": "2026-11-13 17:34",
+      "to": "2026-11-20 17:34",
       "timezone": "Europe/Stockholm",
-      "cycles": 257,
+      "cycles": 254,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
