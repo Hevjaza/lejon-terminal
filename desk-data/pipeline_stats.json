@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-20 15:02",
+  "generated_at_stockholm": "2026-11-20 15:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 15:02",
-      "to": "2026-11-20 15:02",
+      "from": "2026-11-19 15:36",
+      "to": "2026-11-20 15:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 15,
+      "cycles": 13,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 4,
-        "eligible_appearances": 45,
-        "eligible_cycles_measured": 6,
+        "eligible_appearances": 28,
+        "eligible_cycles_measured": 4,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -93,10 +93,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 15:02",
-      "to": "2026-11-20 15:02",
+      "from": "2026-11-13 15:36",
+      "to": "2026-11-20 15:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 266,
+      "cycles": 262,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
@@ -110,7 +110,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 115,
+        "new_tokens": 114,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -120,10 +120,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 73,
+        "scout_rule1": 72,
         "scout_rule2": 20,
         "scout_rule11": 17,
-        "scout_unique": 84,
+        "scout_unique": 83,
         "scout_rules_unknown": 10,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1924,18 +1924,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 512,
           "time": "2026-11-13 16:20"
-        },
-        {
-          "symbol": "WANTED",
-          "mint_prefix": "BeLVQE2t",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 509,
-          "time": "2026-11-13 15:36"
         }
       ],
       "unknowns": [
