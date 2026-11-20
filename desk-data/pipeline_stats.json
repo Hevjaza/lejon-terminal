@@ -1,23 +1,23 @@
 {
-  "generated_at_stockholm": "2026-11-20 14:31",
+  "generated_at_stockholm": "2026-11-20 15:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-19 14:31",
-      "to": "2026-11-20 14:31",
+      "from": "2026-11-19 15:02",
+      "to": "2026-11-20 15:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 16,
+      "cycles": 15,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 5,
-        "eligible_appearances": 53,
-        "eligible_cycles_measured": 7,
+        "new_tokens": 4,
+        "eligible_appearances": 45,
+        "eligible_cycles_measured": 6,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -32,7 +32,7 @@
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 0,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 2,
+        "factory_kill": 1,
         "funding_avoid": 0,
         "risk_other": 0,
         "skipped_unverified": 0
@@ -85,16 +85,6 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 762,
           "time": "2026-11-19 17:32"
-        },
-        {
-          "symbol": "PIPI",
-          "mint_prefix": "Bd7mSgki",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 756,
-          "time": "2026-11-19 14:33"
         }
       ],
       "unknowns": [
@@ -103,10 +93,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-13 14:31",
-      "to": "2026-11-20 14:31",
+      "from": "2026-11-13 15:02",
+      "to": "2026-11-20 15:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 268,
+      "cycles": 266,
       "journal_days_present": [
         "2026-11-13",
         "2026-11-14",
