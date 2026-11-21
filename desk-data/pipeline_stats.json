@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 05:31",
+  "generated_at_stockholm": "2026-11-21 06:01",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 05:31",
-      "to": "2026-11-21 05:31",
+      "from": "2026-11-20 06:01",
+      "to": "2026-11-21 06:01",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 05:31",
-      "to": "2026-11-21 05:31",
+      "from": "2026-11-14 06:01",
+      "to": "2026-11-21 06:01",
       "timezone": "Europe/Stockholm",
-      "cycles": 207,
+      "cycles": 205,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 91,
+        "new_tokens": 90,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -86,8 +86,8 @@
         "scout_rule1": 52,
         "scout_rule2": 19,
         "scout_rule11": 9,
-        "scout_unique": 60,
-        "scout_rules_unknown": 8,
+        "scout_unique": 59,
+        "scout_rules_unknown": 7,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
@@ -1608,16 +1608,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 567,
           "time": "2026-11-14 06:03"
-        },
-        {
-          "symbol": "ASTRALIS",
-          "mint_prefix": "2n6PJx",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 565,
-          "time": "2026-11-14 05:34"
         }
       ],
       "unknowns": [
@@ -1626,7 +1616,7 @@
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "8 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "7 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
