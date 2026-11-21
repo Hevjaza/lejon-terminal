@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 09:29",
+  "generated_at_stockholm": "2026-11-21 10:06",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 09:29",
-      "to": "2026-11-21 09:29",
+      "from": "2026-11-20 10:06",
+      "to": "2026-11-21 10:06",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 09:29",
-      "to": "2026-11-21 09:29",
+      "from": "2026-11-14 10:06",
+      "to": "2026-11-21 10:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 191,
+      "cycles": 189,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 87,
+        "new_tokens": 85,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -83,11 +83,11 @@
         }
       },
       "killed": {
-        "scout_rule1": 50,
+        "scout_rule1": 49,
         "scout_rule2": 19,
         "scout_rule11": 9,
-        "scout_unique": 57,
-        "scout_rules_unknown": 7,
+        "scout_unique": 55,
+        "scout_rules_unknown": 6,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
@@ -1552,28 +1552,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 589,
           "time": "2026-11-14 11:30"
-        },
-        {
-          "symbol": "VICECITY",
-          "mint_prefix": "Ep13piL",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 581,
-          "time": "2026-11-14 09:37"
-        },
-        {
-          "symbol": "VICECITY",
-          "mint_prefix": "Ep13piLgesAx",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 581,
-          "time": "2026-11-14 09:37"
         }
       ],
       "unknowns": [
@@ -1582,7 +1560,7 @@
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "7 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "6 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
