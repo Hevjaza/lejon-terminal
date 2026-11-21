@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 12:59",
+  "generated_at_stockholm": "2026-11-21 13:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 12:59",
-      "to": "2026-11-21 12:59",
+      "from": "2026-11-20 13:38",
+      "to": "2026-11-21 13:38",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 12:59",
-      "to": "2026-11-21 12:59",
+      "from": "2026-11-14 13:38",
+      "to": "2026-11-21 13:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 177,
+      "cycles": 174,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 82,
+        "new_tokens": 81,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -90,7 +90,7 @@
         "scout_rules_unknown": 6,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 10,
+        "factory_kill": 9,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 4
@@ -1490,16 +1490,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 601,
           "time": "2026-11-14 14:35"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "BivxoZ",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 596,
-          "time": "2026-11-14 13:20"
         }
       ],
       "unknowns": [
