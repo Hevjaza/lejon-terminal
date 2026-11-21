@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 16:37",
+  "generated_at_stockholm": "2026-11-21 17:01",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 16:37",
-      "to": "2026-11-21 16:37",
+      "from": "2026-11-20 17:01",
+      "to": "2026-11-21 17:01",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,8 +56,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 16:37",
-      "to": "2026-11-21 16:37",
+      "from": "2026-11-14 17:01",
+      "to": "2026-11-21 17:01",
       "timezone": "Europe/Stockholm",
       "cycles": 166,
       "journal_days_present": [
@@ -5162,7 +5162,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 22,
+    "lines": 24,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
