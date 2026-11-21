@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 05:04",
+  "generated_at_stockholm": "2026-11-21 05:31",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 05:04",
-      "to": "2026-11-21 05:04",
+      "from": "2026-11-20 05:31",
+      "to": "2026-11-21 05:31",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 05:04",
-      "to": "2026-11-21 05:04",
+      "from": "2026-11-14 05:31",
+      "to": "2026-11-21 05:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 209,
+      "cycles": 207,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 92,
+        "new_tokens": 91,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -83,10 +83,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 53,
+        "scout_rule1": 52,
         "scout_rule2": 19,
         "scout_rule11": 9,
-        "scout_unique": 61,
+        "scout_unique": 60,
         "scout_rules_unknown": 8,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
@@ -1618,18 +1618,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 565,
           "time": "2026-11-14 05:34"
-        },
-        {
-          "symbol": "JENSLA",
-          "mint_prefix": "9RZH5NbSW27K",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 563,
-          "time": "2026-11-14 05:08"
         }
       ],
       "unknowns": [
