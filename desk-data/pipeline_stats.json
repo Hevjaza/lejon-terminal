@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 08:36",
+  "generated_at_stockholm": "2026-11-21 09:05",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 08:36",
-      "to": "2026-11-21 08:36",
+      "from": "2026-11-20 09:05",
+      "to": "2026-11-21 09:05",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 08:36",
-      "to": "2026-11-21 08:36",
+      "from": "2026-11-14 09:05",
+      "to": "2026-11-21 09:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 194,
+      "cycles": 192,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 88,
+        "new_tokens": 87,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -1574,16 +1574,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 581,
           "time": "2026-11-14 09:37"
-        },
-        {
-          "symbol": "SCRAP",
-          "mint_prefix": "RA23GF9J",
-          "kind": "unknown",
-          "rules": [],
-          "color": "red",
-          "label": "okänt",
-          "cycle": 579,
-          "time": "2026-11-14 09:05"
         }
       ],
       "unknowns": [
