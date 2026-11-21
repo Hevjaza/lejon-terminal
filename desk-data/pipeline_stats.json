@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 03:59",
+  "generated_at_stockholm": "2026-11-21 04:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 03:59",
-      "to": "2026-11-21 03:59",
+      "from": "2026-11-20 04:38",
+      "to": "2026-11-21 04:38",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 03:59",
-      "to": "2026-11-21 03:59",
+      "from": "2026-11-14 04:38",
+      "to": "2026-11-21 04:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 213,
+      "cycles": 210,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 93,
+        "new_tokens": 92,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -85,7 +85,7 @@
       "killed": {
         "scout_rule1": 53,
         "scout_rule2": 19,
-        "scout_rule11": 10,
+        "scout_rule11": 9,
         "scout_unique": 61,
         "scout_rules_unknown": 8,
         "age_or_liq_filter": 51,
@@ -93,7 +93,7 @@
         "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 2,
-        "skipped_unverified": 5
+        "skipped_unverified": 4
       },
       "passed_to_buy": 2,
       "tokens": [
@@ -1630,16 +1630,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 563,
           "time": "2026-11-14 05:08"
-        },
-        {
-          "symbol": "SWJ",
-          "mint_prefix": null,
-          "kind": "skipped_unverified",
-          "rules": [],
-          "color": "yellow",
-          "label": "hoppad (obekräftad)",
-          "cycle": 560,
-          "time": "2026-11-14 04:18"
         }
       ],
       "unknowns": [
