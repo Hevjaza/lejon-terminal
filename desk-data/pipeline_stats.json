@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 12:08",
+  "generated_at_stockholm": "2026-11-21 12:34",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 12:08",
-      "to": "2026-11-21 12:08",
+      "from": "2026-11-20 12:34",
+      "to": "2026-11-21 12:34",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 12:08",
-      "to": "2026-11-21 12:08",
+      "from": "2026-11-14 12:34",
+      "to": "2026-11-21 12:34",
       "timezone": "Europe/Stockholm",
-      "cycles": 181,
+      "cycles": 178,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 83,
+        "new_tokens": 82,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -90,7 +90,7 @@
         "scout_rules_unknown": 6,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 11,
+        "factory_kill": 10,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 4
@@ -1500,26 +1500,6 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 596,
           "time": "2026-11-14 13:20"
-        },
-        {
-          "symbol": "DCYC",
-          "mint_prefix": "22hXYVLh",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 592,
-          "time": "2026-11-14 12:19"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "D9gQ6R",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 591,
-          "time": "2026-11-14 12:10"
         }
       ],
       "unknowns": [
