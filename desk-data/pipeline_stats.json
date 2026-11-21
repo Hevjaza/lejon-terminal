@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 11:35",
+  "generated_at_stockholm": "2026-11-21 12:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 11:35",
-      "to": "2026-11-21 11:35",
+      "from": "2026-11-20 12:08",
+      "to": "2026-11-21 12:08",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -56,10 +56,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-14 11:35",
-      "to": "2026-11-21 11:35",
+      "from": "2026-11-14 12:08",
+      "to": "2026-11-21 12:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 182,
+      "cycles": 181,
       "journal_days_present": [
         "2026-11-14",
         "2026-11-16",
@@ -73,7 +73,7 @@
         "2026-11-15"
       ],
       "discovered": {
-        "new_tokens": 84,
+        "new_tokens": 83,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -1520,26 +1520,6 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 591,
           "time": "2026-11-14 12:10"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "8Hdzcab",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 590,
-          "time": "2026-11-14 11:52"
-        },
-        {
-          "symbol": "LGND",
-          "mint_prefix": "GPiHbgb",
-          "kind": "unknown",
-          "rules": [],
-          "color": "red",
-          "label": "okänt",
-          "cycle": 590,
-          "time": "2026-11-14 11:52"
         }
       ],
       "unknowns": [
