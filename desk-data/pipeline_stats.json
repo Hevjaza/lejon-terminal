@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-21 18:05",
+  "generated_at_stockholm": "2026-11-21 18:34",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-20 18:05",
-      "to": "2026-11-21 18:05",
+      "from": "2026-11-20 18:34",
+      "to": "2026-11-21 18:34",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 1,
+        "new_tokens": 0,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -37,27 +37,16 @@
         "risk_other": 0,
         "skipped_unverified": 0
       },
-      "passed_to_buy": 1,
-      "tokens": [
-        {
-          "symbol": "SOL-20261120-001",
-          "mint_prefix": "3umHFkiMHyph",
-          "kind": "bought",
-          "rules": [],
-          "color": "green",
-          "label": "köpt (paper)",
-          "cycle": null,
-          "time": "2026-11-20 18:07"
-        }
-      ],
+      "passed_to_buy": 0,
+      "tokens": [],
       "unknowns": [
         "28 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-14 18:05",
-      "to": "2026-11-21 18:05",
+      "from": "2026-11-14 18:34",
+      "to": "2026-11-21 18:34",
       "timezone": "Europe/Stockholm",
       "cycles": 166,
       "journal_days_present": [
