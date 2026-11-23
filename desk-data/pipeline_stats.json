@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-23 08:30",
+  "generated_at_stockholm": "2026-11-23 09:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 08:30",
-      "to": "2026-11-23 08:30",
+      "from": "2026-11-22 09:08",
+      "to": "2026-11-23 09:08",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -44,10 +44,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 08:30",
-      "to": "2026-11-23 08:30",
+      "from": "2026-11-16 09:08",
+      "to": "2026-11-23 09:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 166,
+      "cycles": 165,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -60,7 +60,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 80,
+        "new_tokens": 78,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -73,8 +73,8 @@
         "scout_rule1": 48,
         "scout_rule2": 19,
         "scout_rule11": 9,
-        "scout_unique": 53,
-        "scout_rules_unknown": 5,
+        "scout_unique": 51,
+        "scout_rules_unknown": 3,
         "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 9,
@@ -1447,26 +1447,6 @@
           "label": "okänt",
           "cycle": 607,
           "time": "2026-11-16 09:33"
-        },
-        {
-          "symbol": "RESPECT",
-          "mint_prefix": "BARobVaVawPx",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 606,
-          "time": "2026-11-16 08:50"
-        },
-        {
-          "symbol": "Marvin",
-          "mint_prefix": "HkRQ6Qcadi5y",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 606,
-          "time": "2026-11-16 08:50"
         }
       ],
       "unknowns": [
@@ -1474,7 +1454,7 @@
         "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "5 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "3 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
