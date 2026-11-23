@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-23 22:03",
+  "generated_at_stockholm": "2026-11-23 22:32",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 22:03",
-      "to": "2026-11-23 22:03",
+      "from": "2026-11-22 22:32",
+      "to": "2026-11-23 22:32",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 19,
+        "new_tokens": 18,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 15,
-        "scout_rule2": 9,
+        "scout_rule1": 14,
+        "scout_rule2": 8,
         "scout_rule11": 5,
-        "scout_unique": 16,
+        "scout_unique": 15,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
@@ -280,19 +280,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-22 23:05"
-        },
-        {
-          "symbol": "cateball",
-          "mint_prefix": "4npJ3a",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-22 22:30"
         }
       ],
       "unknowns": [
@@ -300,8 +287,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 22:03",
-      "to": "2026-11-23 22:03",
+      "from": "2026-11-16 22:32",
+      "to": "2026-11-23 22:32",
       "timezone": "Europe/Stockholm",
       "cycles": 331,
       "journal_days_present": [
@@ -6183,6 +6170,11 @@
       },
       {
         "t": "2026-11-23 22:02",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 22:31",
         "cycle": null,
         "equity": 9.838158
       }
