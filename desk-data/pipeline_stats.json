@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-23 15:32",
+  "generated_at_stockholm": "2026-11-23 16:00",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 15:32",
-      "to": "2026-11-23 15:32",
+      "from": "2026-11-22 16:00",
+      "to": "2026-11-23 16:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 13,
+        "new_tokens": 14,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 8,
+        "scout_rule1": 9,
         "scout_rule2": 4,
         "scout_rule11": 3,
-        "scout_unique": 9,
+        "scout_unique": 10,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
@@ -39,6 +39,18 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "JACKET",
+          "mint_prefix": "DJVZ9h",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 15:35"
+        },
         {
           "symbol": "MCAT",
           "mint_prefix": "BzPyyY",
@@ -219,10 +231,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 15:32",
-      "to": "2026-11-23 15:32",
+      "from": "2026-11-16 16:00",
+      "to": "2026-11-23 16:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 332,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -235,7 +247,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 99,
+        "new_tokens": 100,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -245,10 +257,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 61,
+        "scout_rule1": 62,
         "scout_rule2": 25,
         "scout_rule11": 13,
-        "scout_unique": 65,
+        "scout_unique": 66,
         "scout_rules_unknown": 3,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
@@ -259,6 +271,18 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "JACKET",
+          "mint_prefix": "DJVZ9h",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 15:35"
+        },
         {
           "symbol": "MCAT",
           "mint_prefix": "BzPyyY",
