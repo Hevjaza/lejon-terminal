@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-23 14:08",
+  "generated_at_stockholm": "2026-11-23 14:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 14:08",
-      "to": "2026-11-23 14:08",
+      "from": "2026-11-22 14:30",
+      "to": "2026-11-23 14:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
@@ -219,10 +219,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 14:08",
-      "to": "2026-11-23 14:08",
+      "from": "2026-11-16 14:30",
+      "to": "2026-11-23 14:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 332,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
