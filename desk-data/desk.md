@@ -74,3 +74,10 @@ Paper only: still no live mode, no wallet, no keys, no real money. Phase 2 Ancho
 
 ### Decision 2026-11-02 09:15 (Hevar t39u): insider/funding/launch-factory kills stay HARD
 - Judgment-based KILLs stay KILLs, no softening: deployer launch-factory (RISK check 8), hidden funding via pass-through wallets (e.g. USDF), and Rule 11 pre-migration concentration (e.g. MUTTAPE: one wallet bought 97.8 % of the curve 3 slots before migration). Such tokens never go on to RISK as "flag only". Express-mode thresholds from 2026-11-01 stay as they are.
+
+### Amendment 2026-11-23 (Stockholm) - Check 8 top-10 funding tightening (explicitly approved by Hevar t150s640)
+- Tightening only, no limit loosened. risk-limits.md unchanged (this rule lives in the RISK procedure, not in that file).
+- Strategy A RISK check 8: if the funding of the top-10 holder wallets (excluding the pool) was not traced or not verified, the check is AVOID and the overall RISK verdict must be AVOID, never CLEAR and never PASS. Residual-only notes such as "top-10 holder funding not traced" or "top-10-plånböckernas finansiering inte spårade" under a CLEAR are forbidden. Precedent: HUSS SOL-20261120-001 (2026-11-20) was marked CLEAR despite that residual; that is no longer allowed.
+- Unresolved funding of the deployer/create-signer remains AVOID (already in the check 8 funding clause; BRAVO c667, ANT c692, Calypso c695). Hidden / pass-through / sybil / identical-amount funding remains a hard KILL (t39u). All other A rules and hard kills stay as they are.
+- Shadow D: untraced/unverified top-10 funding is not D's soft reason (b). Reason (b) is only a funding chain that was traced and ends at a large hub (≥ 1,000 txs) with no pass-through and no sybil/identical amounts. Shadows B and C follow A's verdicts as before.
+- paperfill.py refuses to simulate a buy when the RISK file notes untraced/unverified top-10 holder funding, even if the heading says CLEAR.
