@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-23 20:06",
+  "generated_at_stockholm": "2026-11-23 20:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 20:06",
-      "to": "2026-11-23 20:06",
+      "from": "2026-11-22 20:38",
+      "to": "2026-11-23 20:38",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 20,
+        "new_tokens": 19,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -293,16 +293,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-22 22:30"
-        },
-        {
-          "symbol": "OpenIndex",
-          "mint_prefix": "FuKY3d",
-          "kind": "pass_to_risk",
-          "rules": [],
-          "color": "yellow",
-          "label": "vidare till RISK",
-          "cycle": null,
-          "time": "2026-11-22 20:30"
         }
       ],
       "unknowns": [
@@ -310,10 +300,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 20:06",
-      "to": "2026-11-23 20:06",
+      "from": "2026-11-16 20:38",
+      "to": "2026-11-23 20:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
