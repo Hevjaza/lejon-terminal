@@ -2,7 +2,7 @@
 """Build an honest pipeline_stats.json from desk files.
 
 Sources: journal/*.md, leads/, research/screened.txt (optional notes),
-positions/ledger.json, positions/*.json, shadow-b/, shadow-c/.
+positions/ledger.json, positions/*.json, shadow-b/, shadow-c/, shadow-d/.
 
 Never invent numbers. Fields that cannot be measured are set to null
 and listed under "unknowns" (the UI shows them as "okänt").
@@ -106,8 +106,10 @@ def _truthy(value: Any) -> bool:
 def parse_cycle_time(day: str, title: str) -> datetime | None:
     """Parse cycle timestamps in several journal formats (Europe/Stockholm)."""
     # Cycle 353 (2026-11-12 00:06-00:10 Stockholm)  /  (2026-11-12 ~23:53 Stockholm)
+    # Zone words: "Stockholm", "CET" or "CEST" (journal headings switched to CET around 2026-11-19/20).
+    # CET/CEST are read as Europe/Stockholm local wall-clock time (identical in practice for this desk).
     tm = re.search(
-        r"(?:\(|\s)(\d{4}-\d{2}-\d{2})\s+~?(\d{1,2}):(\d{2})(?:\s*-\s*~?\d{1,2}:\d{2})?\s*Stockholm",
+        r"(?:\(|\s)(\d{4}-\d{2}-\d{2})\s+~?(\d{1,2}):(\d{2})(?:\s*-\s*~?\d{1,2}:\d{2})?\s*(?:Stockholm|CEST|CET)\b",
         title,
     )
     if tm:
@@ -120,8 +122,10 @@ def parse_cycle_time(day: str, title: str) -> datetime | None:
             pass
     # Cycle 727 (~00:06 Stockholm)  /  (~00:15-00:35 Stockholm, 2026-11-14)
     # Cycle 607 (09:33 Stockholm, 2026-11-16)  /  (08:50-08:58 Stockholm, 2026-11-16)
+    # Cycle ~05:05 CET (2026-11-21) PumpGrok PAPER  /  05:05 CET hourly PAPER cycle  /  (~09:10 CET, Stockholm)
     tm = re.search(
-        r"\(?~?(\d{1,2}):(\d{2})(?:\s*-\s*~?\d{1,2}:\d{2})?\s*Stockholm(?:,\s*(\d{4}-\d{2}-\d{2}))?",
+        r"\(?~?(\d{1,2}):(\d{2})(?:\s*-\s*~?\d{1,2}:\d{2})?\s*(?:Stockholm|CEST|CET)\b(?:,\s*Stockholm)?"
+        r"(?:,?\s*\(?(\d{4}-\d{2}-\d{2})\)?)?",
         title,
     )
     if tm:
@@ -148,6 +152,14 @@ def parse_cycle_time(day: str, title: str) -> datetime | None:
             return utc.astimezone(TZ)
         except Exception:
             pass
+    # Plain local time without a zone word: "05:05 hourly PAPER cycle" / "Cycle ~05:05 (2026-11-21)" — Stockholm
+    tm = re.search(r"(?:^|\s|\(|~)(\d{1,2}):(\d{2})(?!\d|Z|\s*\(?\d{1,2}:\d{2}Z)(?:[^\n]*?\(?(\d{4}-\d{2}-\d{2})\)?)?", title)
+    if tm:
+        date = tm.group(3) or day
+        try:
+            return datetime(int(date[0:4]), int(date[5:7]), int(date[8:10]), int(tm.group(1)), int(tm.group(2)), tzinfo=TZ)
+        except Exception:
+            pass
     return None
 
 
@@ -165,10 +177,16 @@ def iter_journal_cycles(journal_dir: Path) -> list[dict[str, Any]]:
             if not lines:
                 continue
             title = lines[0].strip()
-            cm = re.search(r"(?:paper cycle|Cycle)\s+(\d+)", title, re.I)
-            if not cm:
+            # "Cycle 812 (...)" has a number; since ~2026-11-20 headings are often number-less:
+            # "Cycle ~05:05 CET (2026-11-21) PumpGrok PAPER (exec)" / "05:05 CET hourly PAPER cycle".
+            # (?![\d:]) stops "Cycle 12:30 CET" from being read as cycle 12.
+            cm = re.search(r"(?:paper cycle|Cycle)\s+(\d+)(?![\d:])", title, re.I)
+            if cm:
+                cycle = int(cm.group(1))
+            elif re.search(r"\bcycle\b", title, re.I) and not re.search(r"paperfill|shadow", title, re.I):
+                cycle = None
+            else:
                 continue
-            cycle = int(cm.group(1))
             body = " ".join(ln.strip() for ln in lines[1:] if ln.strip())
             # Flatten whitespace
             body = re.sub(r"\s+", " ", body).strip()
@@ -180,7 +198,8 @@ def iter_journal_cycles(journal_dir: Path) -> list[dict[str, Any]]:
                 "time": ts,
                 "body": body,
             })
-    out.sort(key=lambda r: (r["time"] or datetime(1970, 1, 1, tzinfo=TZ), r["cycle"]))
+    out = [r for r in out if r["cycle"] is not None or r["time"] is not None]
+    out.sort(key=lambda r: (r["time"] or datetime(1970, 1, 1, tzinfo=TZ), r["cycle"] or 0))
     return out
 
 
@@ -721,14 +740,21 @@ def load_strategy(root: Path, kind: str) -> dict[str, Any]:
                 if isinstance(d, dict):
                     positions.append(d)
     else:
-        led = _load_json(root / "shadow-c" / "ledger.json") or {}
+        # C = shadow-c/C-*.json; D = shadow-d/D-*.json (Shadow D "lösare A", PAPER, added 2026-11-23)
+        sub, pref = ("shadow-d", "D") if kind == "D" else ("shadow-c", "C")
+        led = _load_json(root / sub / "ledger.json") or {}
         positions = []
-        pdir = root / "shadow-c" / "positions"
+        pdir = root / sub / "positions"
         if pdir.is_dir():
-            for p in pdir.glob("C-*.json"):
+            for p in pdir.glob(f"{pref}-*.json"):
                 d = _load_json(p)
                 if isinstance(d, dict):
                     positions.append(d)
+        if kind == "D":
+            out["label"] = "PAPER – inte riktiga pengar"
+            out["counts_toward_live_goals"] = False
+            cats = led.get("by_category") if isinstance(led, dict) else None
+            out["by_category"] = cats if isinstance(cats, dict) else {}
     if not isinstance(led, dict) or not led:
         return out
     try:
@@ -1238,6 +1264,7 @@ def build(src: Path) -> dict[str, Any]:
     stats_a = load_strategy(src, "A")
     stats_b = load_strategy(src, "B")
     stats_c = load_strategy(src, "C")
+    stats_d = load_strategy(src, "D")
 
     win_24h = aggregate_window(cycles, now - timedelta(hours=24), now, lead_by_cycle, positions, journal_dir)
     win_7d = aggregate_window(cycles, now - timedelta(days=7), now, lead_by_cycle, positions, journal_dir)
@@ -1256,7 +1283,7 @@ def build(src: Path) -> dict[str, Any]:
             "equity_sol": goals.get("book_equity_sol"),
             "series": series,
         },
-        "strategy": {"A": stats_a, "B": stats_b, "C": stats_c},
+        "strategy": {"A": stats_a, "B": stats_b, "C": stats_c, "D": stats_d},
         "goals": goals,
         "screened_txt": screened_info,
         "unknowns": unknowns_global,

@@ -137,6 +137,11 @@ header, #MainMenu, footer { visibility:hidden; height:0; }
 .cmp-col h4 { margin:0 0 6px; font-size:0.78rem; color:#fff; }
 .cmp-kv { display:flex; justify-content:space-between; font-size:0.68rem; padding:2px 0; color:#c5cad6; }
 .cmp-kv b { color:#e8ecf5; font-family:JetBrains Mono, ui-monospace, monospace; }
+.d-paper { display:inline-block; font-size:0.62rem; color:#ffd166; border:1px solid #5a4a1a; border-radius:8px; padding:1px 6px; margin-left:6px; }
+.d-cat-row { display:grid; grid-template-columns: 1fr 2.2rem 2.6rem 4.4rem; gap:6px; font-size:0.68rem; color:#c5cad6; padding:5px 0; border-bottom:1px solid #161b26; }
+.d-cat-row b { font-family:JetBrains Mono, ui-monospace, monospace; color:#e8ecf5; text-align:right; }
+.d-cat-head { color:#8b93a7; font-size:0.62rem; }
+.d-pos { font-size:0.68rem; color:#c5cad6; padding:4px 0; border-bottom:1px solid #161b26; }
 .whale-row { display:grid; grid-template-columns: 4.6rem 2.4rem 1fr; gap:8px; align-items:start; padding:7px 0; border-bottom:1px solid #161b26; }
 .whale-row:last-child { border-bottom:none; }
 .whale-addr { font-family:JetBrains Mono, ui-monospace, monospace; font-size:0.72rem; color:#e8ecf5; font-weight:700; }
@@ -276,7 +281,7 @@ def _shadow_dir(desk: Path, name: str) -> Path:
 
 
 def load_strategy_stats(desk: Path, kind: str) -> dict[str, Any]:
-    """kind A = main desk positions/; B = shadow-b/; C = shadow-c/."""
+    """kind A = main desk positions/; B = shadow-b/; C = shadow-c/; D = shadow-d/ (lösare A, PAPER)."""
     out: dict[str, Any] = {
         "equity": None, "pnl": None, "closed": None, "win_rate": None, "open": None, "label": kind,
     }
@@ -287,6 +292,10 @@ def load_strategy_stats(desk: Path, kind: str) -> dict[str, Any]:
         root = _shadow_dir(desk, "shadow-c")
         led = load_json(root / "ledger.json") or {}
         pos_glob = str(root / "positions" / "C-*.json")
+    elif kind == "D":
+        root = _shadow_dir(desk, "shadow-d")
+        led = load_json(root / "ledger.json") or {}
+        pos_glob = str(root / "positions" / "D-*.json")
     else:
         root = _shadow_dir(desk, "shadow-b")
         led = load_json(root / "ledger.json") or {}
@@ -877,7 +886,7 @@ def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go
         d = (strategy or {}).get(kind) or {}
         return d if isinstance(d, dict) else {}
 
-    sa, sb, sc = _st("A"), _st("B"), _st("C")
+    sa, sb, sc, sd = _st("A"), _st("B"), _st("C"), _st("D")
 
     # Layout: center + 6 groups on a ring, sub-nodes further out
     def xy(r: float, deg: float) -> tuple[float, float]:
@@ -890,7 +899,8 @@ def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go
         {"id": "scout", "label": "SCOUT", "sub": "Regel 1, 2 och 11", "angle": 30, "color": "#6b9bff", "count": scout_u},
         {"id": "risk", "label": "RISK", "sub": "Fabrik, finans, övriga", "angle": 330, "color": "#d291ff", "count": (None if fac is None and fund is None and risk_other_val is None else (fac or 0) + (fund or 0) + (risk_other_val or 0))},
         {"id": "a", "label": "Strategi A", "sub": "paper-köp", "angle": 270, "color": "#00e676", "count": buys},
-        {"id": "b", "label": "Skugga B", "sub": "följer trenden", "angle": 210, "color": "#ffd166", "count": None},
+        {"id": "d", "label": "Skugga D", "sub": "lösare A", "angle": 235, "color": "#ff9f6b", "count": None},
+        {"id": "b", "label": "Skugga B", "sub": "följer trenden", "angle": 200, "color": "#ffd166", "count": None},
         {"id": "c", "label": "Skugga C", "sub": "följer valar", "angle": 150, "color": "#4dd0e1", "count": None},
     ]
     # Sub-counts are shown in the list under the figure (too tight on a phone if drawn here).
@@ -1012,6 +1022,8 @@ def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go
             extra = f"<br>{eq_lbl(sb)}"
         elif g["id"] == "c":
             extra = f"<br>{eq_lbl(sc)}"
+        elif g["id"] == "d":
+            extra = f"<br>{eq_lbl(sd)}<br>PAPER – inte riktiga pengar"
         ghover.append(f"{g['label']}<br>{g['sub']}<br>antal: {cnt}{extra}")
     fig.add_trace(go.Scatter(
         x=gx, y=gy, mode="markers",
@@ -1063,7 +1075,7 @@ def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go
         cnt = "okänt" if g["count"] is None else str(g["count"])
         # Place the name between the core and the node so it is not clipped.
         lx, ly = xy(0.58, g["angle"])
-        shown = g["label"] if g["id"] in {"b", "c"} or g["count"] is None else f"{g['label']}  {cnt}"
+        shown = g["label"] if g["id"] in {"b", "c", "d"} or g["count"] is None else f"{g['label']}  {cnt}"
         annotations.append(dict(
             x=lx, y=ly, text=shown, showarrow=False,
             font=dict(color=g["color"], size=10, family="Inter, sans-serif"),
@@ -1075,7 +1087,7 @@ def agent_circle_figure(window: dict[str, Any], strategy: dict[str, Any]) -> "go
             font=dict(color="#9aa7a0", size=8, family="Inter, sans-serif"),
         ))
     # A/B/C equity under the group label
-    for gid, stt in (("a", sa), ("b", sb), ("c", sc)):
+    for gid, stt in (("a", sa), ("b", sb), ("c", sc), ("d", sd)):
         g = parent_of[gid]
         eq = stt.get("equity")
         if eq is None:
@@ -1338,6 +1350,7 @@ else:
     _sa = ((_strat or {}).get("A") or {})
     _sb = ((_strat or {}).get("B") or {})
     _sc = ((_strat or {}).get("C") or {})
+    _sd = ((_strat or {}).get("D") or {})
     def _eq(stt):
         if not isinstance(stt, dict) or stt.get("equity") is None:
             return "okänt"
@@ -1360,6 +1373,7 @@ else:
         + _kv("Paper-köp i fönstret (A)", _win.get("passed_to_buy"))
         + f'<div class="cmp-kv"><span>Skugga B nu</span><b>{_eq(_sb)}</b></div>'
         + f'<div class="cmp-kv"><span>Skugga C nu</span><b>{_eq(_sc)}</b></div>'
+        + f'<div class="cmp-kv"><span>Skugga D nu (paper)</span><b>{_eq(_sd)}</b></div>'
         + "</div>",
         unsafe_allow_html=True,
     )
@@ -1370,7 +1384,7 @@ else:
         st.caption(f"Visar de {_shown_n} senaste av {_tot_n} namngivna tokens.")
     st.markdown(
         '<div class="circle-note">Röd prick = stoppad. Gul prick = undvik. Grön prick = paper-köp. '
-        "B och C visar nuvarande paper-saldo, inte antal i fönstret.</div>",
+        "B, C och D visar nuvarande paper-saldo, inte antal i fönstret.</div>",
         unsafe_allow_html=True,
     )
     _unk = _sv_unknowns(list(_win.get("unknowns") or []) + list((pipe or {}).get("unknowns") or []))
@@ -1414,6 +1428,7 @@ st.markdown(
 stats_a = load_strategy_stats(DESK, "A")
 stats_b = load_strategy_stats(DESK, "B")
 stats_c = load_strategy_stats(DESK, "C")
+stats_d = load_strategy_stats(DESK, "D")
 
 def _cmp_val(v, kind="num"):
     if v is None:
@@ -1440,12 +1455,74 @@ def _cmp_col(title: str, stt: dict) -> str:
 st.markdown(
     f"""
 <div class="card">
-  <h3>Jämförelse A, B och C <span class="meta">paper</span></h3>
-  <div class="cmp-grid cmp-grid-3">
+  <h3>Jämförelse A, B, C och D <span class="meta">paper</span></h3>
+  <div class="cmp-grid">
     {_cmp_col("A · desk", stats_a)}
     {_cmp_col("B · shadow", stats_b)}
     {_cmp_col("C · valar", stats_c)}
+    {_cmp_col("D · lösare A", stats_d)}
   </div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
+
+# ----- Skugga D (lösare A) -----
+_d_root = _shadow_dir(DESK, "shadow-d")
+_d_led = load_json(_d_root / "ledger.json") or {}
+_d_pos = []
+for _p in sorted(glob.glob(str(_d_root / "positions" / "D-*.json"))):
+    _x = load_json(Path(_p))
+    if isinstance(_x, dict):
+        _d_pos.append(_x)
+_D_CAT_SV = {"a": "Regel 1 nära gränsen", "b": "Finansiering via stor hub", "c": "Likviditet 20–25k"}
+_d_cats = _d_led.get("by_category") if isinstance(_d_led, dict) else None
+if not isinstance(_d_cats, dict):
+    _d_cats = {}
+_d_rows = ['<div class="d-cat-row d-cat-head"><span>Mjuk regel som släpptes</span><b>köp</b><b>V/F</b><b>P/L SOL</b></div>']
+for _k in ("a", "b", "c"):
+    _c = _d_cats.get(_k) or {}
+    try:
+        _pl = f"{float(_c.get('realised_pnl_sol') or 0):+.4f}"
+    except Exception:
+        _pl = "–"
+    _d_rows.append(
+        f'<div class="d-cat-row"><span>{_k} · {_c.get("label_sv") or _D_CAT_SV[_k]}</span>'
+        f'<b>{fmt_known(_c.get("bought"))}</b><b>{fmt_known(_c.get("wins"))}/{fmt_known(_c.get("losses"))}</b><b>{_pl}</b></div>'
+    )
+_d_open_html = []
+_d_closed_html = []
+for _x in sorted(_d_pos, key=lambda z: str(z.get("entry_utc") or ""), reverse=True):
+    _sym = _x.get("symbol") or str(_x.get("mint") or "")[:6]
+    _cat = _x.get("d_category") or "?"
+    if str(_x.get("status", "")).upper() == "OPEN":
+        _lm = _x.get("last_mark") or {}
+        _mult = _lm.get("multiple")
+        _d_open_html.append(f'<div class="d-pos">🟡 {_x.get("ticket")} · {_sym} · kategori {_cat} · '
+                            f'{(str(_mult) + "x") if _mult is not None else "ingen kurs än"} · köpt {_x.get("entry_stockholm") or "–"}</div>')
+    elif len(_d_closed_html) < 8:
+        _ex = _x.get("exit") or {}
+        try:
+            _r = float(_ex.get("realised_pnl_sol"))
+            _icon = "🟢" if _r > 0 else ("🔴" if _r < 0 else "⚪")
+            _rs = f"{_r:+.4f} SOL ({float(_ex.get('realised_pnl_pct') or 0):+.1f} %)"
+        except Exception:
+            _icon, _rs = "⚪", "–"
+        _d_closed_html.append(f'<div class="d-pos">{_icon} {_x.get("ticket")} · {_sym} · kategori {_cat} · {_rs} · {_ex.get("stockholm") or "–"}</div>')
+_d_eq = stats_d.get("equity")
+_d_head = (f"{float(_d_eq):.4f} SOL" if _d_eq is not None else "väntar på start")
+_d_wl = f"{fmt_known(_d_led.get('wins') if isinstance(_d_led, dict) else None)}/{fmt_known(_d_led.get('losses') if isinstance(_d_led, dict) else None)}"
+st.markdown(
+    f"""
+<div class="card">
+  <h3>Skugga D · lösare A <span class="d-paper">PAPER – inte riktiga pengar</span></h3>
+  <div class="cmp-kv"><span>Saldo (start 10 SOL)</span><b>{_d_head}</b></div>
+  <div class="cmp-kv"><span>Öppna / max</span><b>{fmt_known(stats_d.get('open'))} / 3</b></div>
+  <div class="cmp-kv"><span>Stängda · vinst/förlust</span><b>{fmt_known(stats_d.get('closed'))} · {_d_wl}</b></div>
+  <div style="margin-top:8px">{''.join(_d_rows)}</div>
+  <div style="margin-top:8px">{''.join(_d_open_html) or '<div class="d-pos">Inga öppna D-köp.</div>'}</div>
+  <div style="margin-top:4px">{''.join(_d_closed_html)}</div>
+  <div class="goal-foot">D köper bara tokens som A stoppade för exakt en mjuk regel. Hårda stopp (fabrik, dold finansiering, regel 2 och 11) gäller fullt ut. D räknas inte i "Mål innan live" och skickar inga notiser. Inte finansiell rådgivning.</div>
 </div>
 """,
     unsafe_allow_html=True,
