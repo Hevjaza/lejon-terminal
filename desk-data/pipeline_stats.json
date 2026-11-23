@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-23 09:36",
+  "generated_at_stockholm": "2026-11-23 10:06",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 09:36",
-      "to": "2026-11-23 09:36",
+      "from": "2026-11-22 10:06",
+      "to": "2026-11-23 10:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 0,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 0,
+        "new_tokens": 13,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,29 +25,204 @@
         }
       },
       "killed": {
-        "scout_rule1": 0,
-        "scout_rule2": 0,
-        "scout_rule11": 0,
-        "scout_unique": 0,
+        "scout_rule1": 8,
+        "scout_rule2": 4,
+        "scout_rule11": 3,
+        "scout_unique": 9,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 0,
+        "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 0,
+        "factory_kill": 1,
         "funding_avoid": 0,
         "risk_other": 0,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
-      "tokens": [],
+      "tokens": [
+        {
+          "symbol": "MCAT",
+          "mint_prefix": "BzPyyY",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-23 09:10"
+        },
+        {
+          "symbol": "hCAT",
+          "mint_prefix": "2FYs4v",
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-23 07:35"
+        },
+        {
+          "symbol": "PumpMeme",
+          "mint_prefix": "93uamr",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 07:00"
+        },
+        {
+          "symbol": "Fly",
+          "mint_prefix": "84tAcS",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 05:05"
+        },
+        {
+          "symbol": "PEACH",
+          "mint_prefix": "61yuZf",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 04:40"
+        },
+        {
+          "symbol": "BIRDMAGA",
+          "mint_prefix": "J9Avtv",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 03:35"
+        },
+        {
+          "symbol": "Hedge",
+          "mint_prefix": "7S8k5q",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 03:00"
+        },
+        {
+          "symbol": "snowball",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-23 02:36"
+        },
+        {
+          "symbol": "ZOL",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 02:05"
+        },
+        {
+          "symbol": "CUNTS",
+          "mint_prefix": "7CvW68",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 00:35"
+        },
+        {
+          "symbol": "COCKROACH",
+          "mint_prefix": null,
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-22 23:30"
+        },
+        {
+          "symbol": "MINELIUS",
+          "mint_prefix": "E9rWKj",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 23:05"
+        },
+        {
+          "symbol": "cateball",
+          "mint_prefix": "4npJ3a",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 22:30"
+        },
+        {
+          "symbol": "OpenIndex",
+          "mint_prefix": "FuKY3d",
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-22 20:30"
+        },
+        {
+          "symbol": "IF",
+          "mint_prefix": "3hi7qB",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-22 20:00"
+        }
+      ],
       "unknowns": [
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-16 09:36",
-      "to": "2026-11-23 09:36",
+      "from": "2026-11-16 10:06",
+      "to": "2026-11-23 10:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 164,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -60,7 +235,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 76,
+        "new_tokens": 99,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -70,20 +245,252 @@
         }
       },
       "killed": {
-        "scout_rule1": 48,
-        "scout_rule2": 19,
-        "scout_rule11": 9,
-        "scout_unique": 51,
+        "scout_rule1": 61,
+        "scout_rule2": 25,
+        "scout_rule11": 13,
+        "scout_unique": 65,
         "scout_rules_unknown": 3,
-        "age_or_liq_filter": 51,
+        "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 9,
+        "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 4
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "MCAT",
+          "mint_prefix": "BzPyyY",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-23 09:10"
+        },
+        {
+          "symbol": "hCAT",
+          "mint_prefix": "2FYs4v",
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-23 07:35"
+        },
+        {
+          "symbol": "PumpMeme",
+          "mint_prefix": "93uamr",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 07:00"
+        },
+        {
+          "symbol": "Fly",
+          "mint_prefix": "84tAcS",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 05:05"
+        },
+        {
+          "symbol": "PEACH",
+          "mint_prefix": "61yuZf",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 04:40"
+        },
+        {
+          "symbol": "BIRDMAGA",
+          "mint_prefix": "J9Avtv",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 03:35"
+        },
+        {
+          "symbol": "Hedge",
+          "mint_prefix": "7S8k5q",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 03:00"
+        },
+        {
+          "symbol": "ZOL",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 02:05"
+        },
+        {
+          "symbol": "CUNTS",
+          "mint_prefix": "7CvW68",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 00:35"
+        },
+        {
+          "symbol": "COCKROACH",
+          "mint_prefix": null,
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-22 23:30"
+        },
+        {
+          "symbol": "MINELIUS",
+          "mint_prefix": "E9rWKj",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 23:05"
+        },
+        {
+          "symbol": "cateball",
+          "mint_prefix": "4npJ3a",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 22:30"
+        },
+        {
+          "symbol": "OpenIndex",
+          "mint_prefix": "FuKY3d",
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-22 20:30"
+        },
+        {
+          "symbol": "IF",
+          "mint_prefix": "3hi7qB",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-22 20:00"
+        },
+        {
+          "symbol": "snowball",
+          "mint_prefix": null,
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-22 08:10"
+        },
+        {
+          "symbol": "KILLs",
+          "mint_prefix": null,
+          "kind": "unknown",
+          "rules": [],
+          "color": "red",
+          "label": "okänt",
+          "cycle": null,
+          "time": "2026-11-22 03:30"
+        },
+        {
+          "symbol": "STREETS",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 02:05"
+        },
+        {
+          "symbol": "RIZZMAS3",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 02:05"
+        },
+        {
+          "symbol": "time",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-22 02:05"
+        },
+        {
+          "symbol": "GenX",
+          "mint_prefix": null,
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-20 22:38"
+        },
         {
           "symbol": "SOL-20261120-001",
           "mint_prefix": "3umHFkiMHyph",
@@ -93,6 +500,71 @@
           "label": "köpt (paper)",
           "cycle": null,
           "time": "2026-11-20 18:07"
+        },
+        {
+          "symbol": "ANT",
+          "mint_prefix": "ANTBTZ",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-20 15:05"
+        },
+        {
+          "symbol": "RUDY",
+          "mint_prefix": null,
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-20 14:10"
+        },
+        {
+          "symbol": "SWJ",
+          "mint_prefix": null,
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-20 13:30"
+        },
+        {
+          "symbol": "AI",
+          "mint_prefix": null,
+          "kind": "pass_to_risk",
+          "rules": [],
+          "color": "yellow",
+          "label": "vidare till RISK",
+          "cycle": null,
+          "time": "2026-11-20 13:30"
+        },
+        {
+          "symbol": "GTACAT",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 795,
+          "time": "2026-11-20 10:05"
+        },
+        {
+          "symbol": "DATITTY",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 774,
+          "time": "2026-11-19 23:36"
         },
         {
           "symbol": "DATITTY",
@@ -1430,8 +1902,7 @@
         }
       ],
       "unknowns": [
-        "31 journalrunda(or) i fönstret saknar klockslag och räknas inte med",
-        "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
+        "8 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 53.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
         "3 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
@@ -1443,271 +1914,6 @@
     "realised_pnl_sol": -0.161841701,
     "equity_sol": 9.838158299,
     "series": [
-      {
-        "t": null,
-        "cycle": 13,
-        "equity": 9.919847
-      },
-      {
-        "t": null,
-        "cycle": 245,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 246,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 247,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 248,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 249,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 250,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 251,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 252,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 253,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 254,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 255,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 256,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 257,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 258,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 259,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 260,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 261,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 262,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 263,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 264,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 265,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 266,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 267,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 268,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 269,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 270,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 271,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 272,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 273,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 274,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 275,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 276,
-        "equity": 9.9377597
-      },
-      {
-        "t": null,
-        "cycle": 277,
-        "equity": 10.062434
-      },
-      {
-        "t": null,
-        "cycle": 278,
-        "equity": 10.062434
-      },
-      {
-        "t": null,
-        "cycle": 279,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 280,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 281,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 282,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 283,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 284,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 285,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 286,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 287,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 288,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 289,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 290,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 291,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 292,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 293,
-        "equity": 10.052964
-      },
-      {
-        "t": null,
-        "cycle": 329,
-        "equity": 9.98484
-      },
-      {
-        "t": null,
-        "cycle": 772,
-        "equity": 9.919847
-      },
-      {
-        "t": null,
-        "cycle": 785,
-        "equity": 9.919847
-      },
       {
         "t": "2026-10-28 07:09",
         "cycle": 36,
@@ -2744,6 +2950,11 @@
         "equity": 9.9377597
       },
       {
+        "t": "2026-11-06 00:05",
+        "cycle": 264,
+        "equity": 9.9377597
+      },
+      {
         "t": "2026-11-06 00:06",
         "cycle": 243,
         "equity": 9.9377597
@@ -2752,6 +2963,246 @@
         "t": "2026-11-06 01:06",
         "cycle": 244,
         "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 02:03",
+        "cycle": 245,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 03:07",
+        "cycle": 246,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 04:05",
+        "cycle": 247,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 05:01",
+        "cycle": 248,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 06:03",
+        "cycle": 249,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 07:03",
+        "cycle": 250,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 08:07",
+        "cycle": 251,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 09:05",
+        "cycle": 252,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 10:02",
+        "cycle": 253,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 11:09",
+        "cycle": 254,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 12:01",
+        "cycle": 255,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 13:04",
+        "cycle": 256,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 14:00",
+        "cycle": 257,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 15:04",
+        "cycle": 258,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 17:06",
+        "cycle": 259,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 18:07",
+        "cycle": 260,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 19:07",
+        "cycle": 261,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 22:07",
+        "cycle": 262,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-06 23:01",
+        "cycle": 263,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 02:09",
+        "cycle": 265,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 03:07",
+        "cycle": 266,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 04:00",
+        "cycle": 267,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 05:10",
+        "cycle": 268,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 06:04",
+        "cycle": 269,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 07:00",
+        "cycle": 270,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 08:04",
+        "cycle": 271,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 09:02",
+        "cycle": 272,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 10:05",
+        "cycle": 273,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 11:10",
+        "cycle": 274,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 12:04",
+        "cycle": 275,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 13:08",
+        "cycle": 276,
+        "equity": 9.9377597
+      },
+      {
+        "t": "2026-11-07 14:02",
+        "cycle": 277,
+        "equity": 10.062434
+      },
+      {
+        "t": "2026-11-07 15:08",
+        "cycle": 278,
+        "equity": 10.062434
+      },
+      {
+        "t": "2026-11-07 16:08",
+        "cycle": 279,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-07 17:09",
+        "cycle": 280,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 09:05",
+        "cycle": 281,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 10:05",
+        "cycle": 282,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 11:05",
+        "cycle": 283,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 12:09",
+        "cycle": 284,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 13:02",
+        "cycle": 285,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 14:10",
+        "cycle": 286,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 15:09",
+        "cycle": 287,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 16:09",
+        "cycle": 288,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 17:09",
+        "cycle": 289,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 18:04",
+        "cycle": 290,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 19:00",
+        "cycle": 291,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 20:03",
+        "cycle": 292,
+        "equity": 10.052964
+      },
+      {
+        "t": "2026-11-09 21:08",
+        "cycle": 293,
+        "equity": 10.052964
       },
       {
         "t": "2026-11-09 22:03",
@@ -2901,6 +3352,11 @@
       {
         "t": "2026-11-11 08:10",
         "cycle": 328,
+        "equity": 9.98484
+      },
+      {
+        "t": "2026-11-11 09:12",
+        "cycle": 329,
         "equity": 9.98484
       },
       {
@@ -5052,6 +5508,461 @@
         "t": "2026-11-19 20:35",
         "cycle": 768,
         "equity": 9.919847
+      },
+      {
+        "t": "2026-11-19 22:31",
+        "cycle": 772,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-20 05:00",
+        "cycle": 785,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-20 13:30",
+        "cycle": null,
+        "equity": 9.919847
+      },
+      {
+        "t": "2026-11-21 02:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 03:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 04:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 05:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 05:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 06:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 07:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 16:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 17:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 17:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 18:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 18:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 19:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 19:34",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 20:03",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 20:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 21:06",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 21:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 22:04",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 22:34",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 23:06",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-21 23:37",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 00:07",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 01:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 01:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 01:32",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 02:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 02:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 03:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 03:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 04:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 04:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 05:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 05:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 06:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 06:34",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 07:02",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 07:31",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 08:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 08:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 09:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 09:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 10:03",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 10:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 11:07",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 11:37",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 12:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 12:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 13:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 13:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 14:01",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 14:37",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 15:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 15:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 16:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 16:34",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 17:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 17:38",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 18:01",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 18:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 19:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 19:33",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 20:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 20:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 21:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 21:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 22:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 22:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 23:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-22 23:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 00:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 00:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 01:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 02:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 03:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 04:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 04:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 05:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 05:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 06:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 06:36",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 07:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 07:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 08:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 08:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 09:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 09:36",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 10:07",
+        "cycle": null,
+        "equity": 9.838158
       }
     ]
   },
@@ -5082,6 +5993,46 @@
       "losses": 0,
       "open": 0,
       "win_rate_pct": null
+    },
+    "D": {
+      "equity": 10.0,
+      "pnl": 0.0,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0,
+      "open": 0,
+      "win_rate_pct": null,
+      "label": "PAPER – inte riktiga pengar",
+      "counts_toward_live_goals": false,
+      "by_category": {
+        "a": {
+          "label": "a-rule1-nearmiss",
+          "label_sv": "Regel 1 nära gränsen",
+          "bought": 0,
+          "closed": 0,
+          "wins": 0,
+          "losses": 0,
+          "realised_pnl_sol": 0.0
+        },
+        "b": {
+          "label": "b-funding-hub",
+          "label_sv": "Finansiering via stor hub",
+          "bought": 0,
+          "closed": 0,
+          "wins": 0,
+          "losses": 0,
+          "realised_pnl_sol": 0.0
+        },
+        "c": {
+          "label": "c-liq-20-25k",
+          "label_sv": "Likviditet 20–25k",
+          "bought": 0,
+          "closed": 0,
+          "wins": 0,
+          "losses": 0,
+          "realised_pnl_sol": 0.0
+        }
+      }
     }
   },
   "goals": {
