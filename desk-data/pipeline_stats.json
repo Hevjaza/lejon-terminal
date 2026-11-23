@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-23 16:00",
+  "generated_at_stockholm": "2026-11-23 16:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 16:00",
-      "to": "2026-11-23 16:00",
+      "from": "2026-11-22 16:37",
+      "to": "2026-11-23 16:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 14,
+        "new_tokens": 15,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 9,
-        "scout_rule2": 4,
-        "scout_rule11": 3,
-        "scout_unique": 10,
+        "scout_rule1": 10,
+        "scout_rule2": 5,
+        "scout_rule11": 4,
+        "scout_unique": 11,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
@@ -39,6 +39,20 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "JENSEN",
+          "mint_prefix": "CjPoozfB2Vub",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 16:37"
+        },
         {
           "symbol": "JACKET",
           "mint_prefix": "DJVZ9h",
@@ -231,10 +245,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 16:00",
-      "to": "2026-11-23 16:00",
+      "from": "2026-11-16 16:37",
+      "to": "2026-11-23 16:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -247,7 +261,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 100,
+        "new_tokens": 101,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -257,10 +271,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 62,
-        "scout_rule2": 25,
-        "scout_rule11": 13,
-        "scout_unique": 66,
+        "scout_rule1": 63,
+        "scout_rule2": 26,
+        "scout_rule11": 14,
+        "scout_unique": 67,
         "scout_rules_unknown": 3,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
@@ -271,6 +285,20 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "JENSEN",
+          "mint_prefix": "CjPoozfB2Vub",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 16:37"
+        },
         {
           "symbol": "JACKET",
           "mint_prefix": "DJVZ9h",
@@ -6010,6 +6038,11 @@
       },
       {
         "t": "2026-11-23 15:02",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 16:37",
         "cycle": null,
         "equity": 9.838158
       }
