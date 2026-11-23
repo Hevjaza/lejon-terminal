@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-23 09:08",
+  "generated_at_stockholm": "2026-11-23 09:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 09:08",
-      "to": "2026-11-23 09:08",
+      "from": "2026-11-22 09:36",
+      "to": "2026-11-23 09:36",
       "timezone": "Europe/Stockholm",
       "cycles": 0,
       "journal_days_present": [
@@ -44,10 +44,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 09:08",
-      "to": "2026-11-23 09:08",
+      "from": "2026-11-16 09:36",
+      "to": "2026-11-23 09:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 165,
+      "cycles": 164,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -60,7 +60,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 78,
+        "new_tokens": 76,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -1427,26 +1427,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 634,
           "time": "2026-11-16 23:10"
-        },
-        {
-          "symbol": "WIGGLES",
-          "mint_prefix": null,
-          "kind": "unknown",
-          "rules": [],
-          "color": "red",
-          "label": "okänt",
-          "cycle": 607,
-          "time": "2026-11-16 09:33"
-        },
-        {
-          "symbol": "Socks",
-          "mint_prefix": null,
-          "kind": "unknown",
-          "rules": [],
-          "color": "red",
-          "label": "okänt",
-          "cycle": 607,
-          "time": "2026-11-16 09:33"
         }
       ],
       "unknowns": [
