@@ -1517,7 +1517,7 @@ st.markdown(
 <div class="card">
   <h3>Skugga D · lösare A <span class="d-paper">PAPER – inte riktiga pengar</span></h3>
   <div class="cmp-kv"><span>Saldo (start 10 SOL)</span><b>{_d_head}</b></div>
-  <div class="cmp-kv"><span>Öppna / max</span><b>{fmt_known(stats_d.get('open'))} / 3</b></div>
+  <div class="cmp-kv"><span>Öppna / max</span><b>{fmt_known(stats_d.get('open'))} / 10</b></div>
   <div class="cmp-kv"><span>Stängda · vinst/förlust</span><b>{fmt_known(stats_d.get('closed'))} · {_d_wl}</b></div>
   <div style="margin-top:8px">{''.join(_d_rows)}</div>
   <div style="margin-top:8px">{''.join(_d_open_html) or '<div class="d-pos">Inga öppna D-köp.</div>'}</div>
