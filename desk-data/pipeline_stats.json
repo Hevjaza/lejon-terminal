@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-23 23:03",
+  "generated_at_stockholm": "2026-11-23 23:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 23:03",
-      "to": "2026-11-23 23:03",
+      "from": "2026-11-22 23:37",
+      "to": "2026-11-23 23:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-22",
         "2026-11-23"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 19,
+        "new_tokens": 17,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 15,
-        "scout_rule2": 8,
-        "scout_rule11": 5,
-        "scout_unique": 16,
+        "scout_rule1": 14,
+        "scout_rule2": 7,
+        "scout_rule11": 4,
+        "scout_unique": 15,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
@@ -268,30 +268,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-23 00:35"
-        },
-        {
-          "symbol": "COCKROACH",
-          "mint_prefix": null,
-          "kind": "pass_to_risk",
-          "rules": [],
-          "color": "yellow",
-          "label": "vidare till RISK",
-          "cycle": null,
-          "time": "2026-11-22 23:30"
-        },
-        {
-          "symbol": "MINELIUS",
-          "mint_prefix": "E9rWKj",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-22 23:05"
         }
       ],
       "unknowns": [
@@ -299,10 +275,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 23:03",
-      "to": "2026-11-23 23:03",
+      "from": "2026-11-16 23:37",
+      "to": "2026-11-23 23:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -315,7 +291,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 108,
+        "new_tokens": 107,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -328,8 +304,8 @@
         "scout_rule1": 69,
         "scout_rule2": 30,
         "scout_rule11": 15,
-        "scout_unique": 73,
-        "scout_rules_unknown": 3,
+        "scout_unique": 72,
+        "scout_rules_unknown": 2,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
@@ -2082,23 +2058,13 @@
           "label": "stoppad av SCOUT",
           "cycle": 636,
           "time": "2026-11-17 00:07"
-        },
-        {
-          "symbol": "CHOP",
-          "mint_prefix": "7XpsCaMBnWrY",
-          "kind": "scout_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 634,
-          "time": "2026-11-16 23:10"
         }
       ],
       "unknowns": [
         "8 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 53.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen.",
-        "3 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
+        "2 SCOUT-stopp saknar tydlig Regel 1/2/11 i texten."
       ]
     }
   },
@@ -6199,6 +6165,11 @@
       },
       {
         "t": "2026-11-23 22:31",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-23 23:38",
         "cycle": null,
         "equity": 9.838158
       }
