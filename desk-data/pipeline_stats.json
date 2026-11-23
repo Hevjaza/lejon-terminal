@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-23 18:36",
+  "generated_at_stockholm": "2026-11-23 19:06",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-22 18:36",
-      "to": "2026-11-23 18:36",
+      "from": "2026-11-22 19:06",
+      "to": "2026-11-23 19:06",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 18,
+        "new_tokens": 19,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,20 +25,33 @@
         }
       },
       "killed": {
-        "scout_rule1": 12,
-        "scout_rule2": 6,
+        "scout_rule1": 13,
+        "scout_rule2": 7,
         "scout_rule11": 4,
-        "scout_unique": 13,
+        "scout_unique": 14,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 1,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 1,
+        "factory_kill": 2,
         "funding_avoid": 0,
         "risk_other": 1,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "NBI",
+          "mint_prefix": "B9RrES",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 19:05"
+        },
         {
           "symbol": "NVDA",
           "mint_prefix": "37corVS",
@@ -280,10 +293,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-16 18:36",
-      "to": "2026-11-23 18:36",
+      "from": "2026-11-16 19:06",
+      "to": "2026-11-23 19:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-16",
         "2026-11-17",
@@ -296,7 +309,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 104,
+        "new_tokens": 105,
         "eligible_appearances": 1072,
         "eligible_cycles_measured": 118,
         "sources": {
@@ -306,10 +319,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 65,
-        "scout_rule2": 27,
+        "scout_rule1": 66,
+        "scout_rule2": 28,
         "scout_rule11": 14,
-        "scout_unique": 69,
+        "scout_unique": 70,
         "scout_rules_unknown": 3,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
@@ -320,6 +333,19 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "NBI",
+          "mint_prefix": "B9RrES",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-23 19:05"
+        },
         {
           "symbol": "NVDA",
           "mint_prefix": "37corVS",
