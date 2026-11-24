@@ -45,7 +45,7 @@
  "counts_toward_live_goals": false,
  "pings_user": false,
  "created_utc": "2026-11-23T09:05:28Z",
- "updated_utc": "2026-11-24T07:33:45Z",
+ "updated_utc": "2026-11-24T07:59:07Z",
  "rules": {
   "entry": "A rejected for exactly ONE soft reason (a Rule 1 near-miss / b funding ends at >=1000-tx hub / c liquidity 20-25k); everything else as A; hard kills unchanged",
   "exit": "A exits: SL -30 %, TP1 +100 % sells 50 % then break-even stop, TP2 +1000 %",
