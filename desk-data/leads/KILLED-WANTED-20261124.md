@@ -1,0 +1,1 @@
+KILLED-SCOUT Wanted 2M3CsCP97Le187KQC5jhZG3c6bFzCZ51NP8bscrupump 2026-11-24: scout_check KILL Rule 1 (3 wallets >=30% in slot0, top15 109.02%, 19 buyers, creator 22.96%) + Rule 2 (migration in creation slot, creator co-signed). R11 k80=8 no hit.
