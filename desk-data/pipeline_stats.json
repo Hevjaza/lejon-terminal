@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-24 07:07",
+  "generated_at_stockholm": "2026-11-24 07:29",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 07:07",
-      "to": "2026-11-24 07:07",
+      "from": "2026-11-23 07:29",
+      "to": "2026-11-24 07:29",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-23",
         "2026-11-24"
@@ -259,8 +259,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 07:07",
-      "to": "2026-11-24 07:07",
+      "from": "2026-11-17 07:29",
+      "to": "2026-11-24 07:29",
       "timezone": "Europe/Stockholm",
       "cycles": 331,
       "journal_days_present": [
@@ -276,8 +276,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 93,
-        "eligible_appearances": 944,
-        "eligible_cycles_measured": 104,
+        "eligible_appearances": 935,
+        "eligible_cycles_measured": 103,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -1955,6 +1955,26 @@
           "time": "2026-11-17 09:05"
         },
         {
+          "symbol": "MEOWL",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 654,
+          "time": "2026-11-17 09:05"
+        },
+        {
+          "symbol": "VI",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 654,
+          "time": "2026-11-17 09:05"
+        },
+        {
           "symbol": "COGE",
           "mint_prefix": null,
           "kind": "scout_kill",
@@ -1965,26 +1985,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 652,
           "time": "2026-11-17 08:00"
-        },
-        {
-          "symbol": "MEOWL",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 651,
-          "time": "2026-11-17 07:28"
-        },
-        {
-          "symbol": "VI",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 651,
-          "time": "2026-11-17 07:28"
         }
       ],
       "unknowns": [
@@ -6171,6 +6171,11 @@
       },
       {
         "t": "2026-11-24 07:07",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 07:29",
         "cycle": null,
         "equity": 9.838158
       }
