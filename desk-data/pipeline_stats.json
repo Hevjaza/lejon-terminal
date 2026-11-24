@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 16:06",
+  "generated_at_stockholm": "2026-11-24 16:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 16:06",
-      "to": "2026-11-24 16:06",
+      "from": "2026-11-23 16:38",
+      "to": "2026-11-24 16:38",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 9,
+        "new_tokens": 8,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 8,
-        "scout_rule2": 5,
-        "scout_rule11": 3,
-        "scout_unique": 8,
+        "scout_rule1": 7,
+        "scout_rule2": 4,
+        "scout_rule11": 2,
+        "scout_unique": 7,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
@@ -248,20 +248,6 @@
           "label": "undvik (RISK)",
           "cycle": null,
           "time": "2026-11-23 18:35"
-        },
-        {
-          "symbol": "JENSEN",
-          "mint_prefix": "CjPoozfB2Vub",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 16:37"
         }
       ],
       "unknowns": [
@@ -270,8 +256,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 16:06",
-      "to": "2026-11-24 16:06",
+      "from": "2026-11-17 16:38",
+      "to": "2026-11-24 16:38",
       "timezone": "Europe/Stockholm",
       "cycles": 330,
       "journal_days_present": [
@@ -287,8 +273,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 89,
-        "eligible_appearances": 770,
-        "eligible_cycles_measured": 87,
+        "eligible_appearances": 758,
+        "eligible_cycles_measured": 86,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6119,6 +6105,11 @@
       },
       {
         "t": "2026-11-24 16:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 16:40",
         "cycle": null,
         "equity": 9.838158
       }
