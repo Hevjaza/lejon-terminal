@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 06:31",
+  "generated_at_stockholm": "2026-11-24 07:07",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 06:31",
-      "to": "2026-11-24 06:31",
+      "from": "2026-11-23 07:07",
+      "to": "2026-11-24 07:07",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 11,
+        "new_tokens": 10,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 9,
-        "scout_rule2": 6,
+        "scout_rule1": 8,
+        "scout_rule2": 5,
         "scout_rule11": 2,
-        "scout_unique": 9,
+        "scout_unique": 8,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 8,
         "age_or_liq_filter_complete": false,
@@ -251,19 +251,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": null,
           "time": "2026-11-23 07:35"
-        },
-        {
-          "symbol": "PumpMeme",
-          "mint_prefix": "93uamr",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 07:00"
         }
       ],
       "unknowns": [
@@ -272,8 +259,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 06:31",
-      "to": "2026-11-24 06:31",
+      "from": "2026-11-17 07:07",
+      "to": "2026-11-24 07:07",
       "timezone": "Europe/Stockholm",
       "cycles": 331,
       "journal_days_present": [
@@ -288,9 +275,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 94,
-        "eligible_appearances": 963,
-        "eligible_cycles_measured": 106,
+        "new_tokens": 93,
+        "eligible_appearances": 944,
+        "eligible_cycles_measured": 104,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -303,12 +290,12 @@
         "scout_rule11": 15,
         "scout_unique": 64,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 61,
+        "age_or_liq_filter": 59,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 3,
-        "skipped_unverified": 2
+        "skipped_unverified": 1
       },
       "passed_to_buy": 2,
       "tokens": [
@@ -1998,40 +1985,10 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 651,
           "time": "2026-11-17 07:28"
-        },
-        {
-          "symbol": "TRADITION",
-          "mint_prefix": null,
-          "kind": "skipped_unverified",
-          "rules": [],
-          "color": "yellow",
-          "label": "hoppad (obekräftad)",
-          "cycle": 650,
-          "time": "2026-11-17 07:02"
-        },
-        {
-          "symbol": "OPG",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 649,
-          "time": "2026-11-17 06:38"
-        },
-        {
-          "symbol": "MELNOK",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 649,
-          "time": "2026-11-17 06:38"
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 61.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 59.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6209,6 +6166,11 @@
       },
       {
         "t": "2026-11-24 06:32",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 07:07",
         "cycle": null,
         "equity": 9.838158
       }
