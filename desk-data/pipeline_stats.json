@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 01:29",
+  "generated_at_stockholm": "2026-11-24 02:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 01:29",
-      "to": "2026-11-24 01:29",
+      "from": "2026-11-23 02:02",
+      "to": "2026-11-24 02:02",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -284,10 +284,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 01:29",
-      "to": "2026-11-24 01:29",
+      "from": "2026-11-17 02:02",
+      "to": "2026-11-24 02:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -301,8 +301,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 103,
-        "eligible_appearances": 1058,
-        "eligible_cycles_measured": 116,
+        "eligible_appearances": 1043,
+        "eligible_cycles_measured": 114,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -315,7 +315,7 @@
         "scout_rule11": 15,
         "scout_unique": 68,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 56,
+        "age_or_liq_filter": 54,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
         "funding_avoid": 4,
@@ -2055,20 +2055,10 @@
           "label": "stoppad av SCOUT",
           "cycle": 641,
           "time": "2026-11-17 02:36"
-        },
-        {
-          "symbol": "LUCIA",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 640,
-          "time": "2026-11-17 02:00"
         }
       ],
       "unknowns": [
-        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 56.",
+        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 54.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6196,6 +6186,11 @@
       },
       {
         "t": "2026-11-24 01:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 02:05",
         "cycle": null,
         "equity": 9.838158
       }
