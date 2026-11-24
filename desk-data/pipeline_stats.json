@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 22:07",
+  "generated_at_stockholm": "2026-11-24 22:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 22:07",
-      "to": "2026-11-24 22:07",
+      "from": "2026-11-23 22:35",
+      "to": "2026-11-24 22:35",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -181,8 +181,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 22:07",
-      "to": "2026-11-24 22:07",
+      "from": "2026-11-17 22:35",
+      "to": "2026-11-24 22:35",
       "timezone": "Europe/Stockholm",
       "cycles": 330,
       "journal_days_present": [
@@ -197,9 +197,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 83,
-        "eligible_appearances": 675,
-        "eligible_cycles_measured": 75,
+        "new_tokens": 81,
+        "eligible_appearances": 667,
+        "eligible_cycles_measured": 74,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -207,10 +207,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 56,
+        "scout_rule1": 54,
         "scout_rule2": 26,
-        "scout_rule11": 14,
-        "scout_unique": 57,
+        "scout_rule11": 13,
+        "scout_unique": 55,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -1663,31 +1663,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 684,
           "time": "2026-11-18 00:03"
-        },
-        {
-          "symbol": "KATIA",
-          "mint_prefix": "6eNZ6FSc",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 681,
-          "time": "2026-11-17 22:35"
-        },
-        {
-          "symbol": "LUNO",
-          "mint_prefix": "EVbsBwxq",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 681,
-          "time": "2026-11-17 22:35"
         }
       ],
       "unknowns": [
