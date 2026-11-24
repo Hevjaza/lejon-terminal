@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-24 18:02",
+  "generated_at_stockholm": "2026-11-24 18:39",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 18:02",
-      "to": "2026-11-24 18:02",
+      "from": "2026-11-23 18:39",
+      "to": "2026-11-24 18:39",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-23",
         "2026-11-24"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 8,
+        "new_tokens": 5,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,16 +25,16 @@
         }
       },
       "killed": {
-        "scout_rule1": 7,
-        "scout_rule2": 4,
+        "scout_rule1": 5,
+        "scout_rule2": 3,
         "scout_rule11": 2,
-        "scout_unique": 7,
+        "scout_unique": 5,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
         "factory_kill": 0,
         "funding_avoid": 0,
-        "risk_other": 1,
+        "risk_other": 0,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
@@ -213,41 +213,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-23 19:05"
-        },
-        {
-          "symbol": "NVDA",
-          "mint_prefix": "37corVS",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 18:35"
-        },
-        {
-          "symbol": "HUANG",
-          "mint_prefix": "4kFR6G",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 18:35"
-        },
-        {
-          "symbol": "NINO",
-          "mint_prefix": "BqekG1",
-          "kind": "risk_other",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (RISK)",
-          "cycle": null,
-          "time": "2026-11-23 18:35"
         }
       ],
       "unknowns": [
@@ -256,10 +221,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 18:02",
-      "to": "2026-11-24 18:02",
+      "from": "2026-11-17 18:39",
+      "to": "2026-11-24 18:39",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -272,9 +237,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 89,
-        "eligible_appearances": 740,
-        "eligible_cycles_measured": 84,
+        "new_tokens": 88,
+        "eligible_appearances": 723,
+        "eligible_cycles_measured": 82,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -282,10 +247,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 61,
-        "scout_rule2": 30,
-        "scout_rule11": 16,
-        "scout_unique": 62,
+        "scout_rule1": 60,
+        "scout_rule2": 29,
+        "scout_rule11": 15,
+        "scout_unique": 61,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -1815,20 +1780,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 676,
           "time": "2026-11-17 20:02"
-        },
-        {
-          "symbol": "JVOLT",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 672,
-          "time": "2026-11-17 18:08"
         }
       ],
       "unknowns": [
