@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 19:07",
+  "generated_at_stockholm": "2026-11-24 19:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 19:07",
-      "to": "2026-11-24 19:07",
+      "from": "2026-11-23 19:35",
+      "to": "2026-11-24 19:35",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 4,
+        "new_tokens": 2,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 4,
-        "scout_rule2": 2,
-        "scout_rule11": 2,
-        "scout_unique": 4,
+        "scout_rule1": 2,
+        "scout_rule2": 0,
+        "scout_rule11": 1,
+        "scout_unique": 2,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
@@ -173,33 +173,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-23 23:03"
-        },
-        {
-          "symbol": "JENSEN",
-          "mint_prefix": "HKiMA2",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 19:35"
-        },
-        {
-          "symbol": "HUANG",
-          "mint_prefix": "2pCeTX",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 19:35"
         }
       ],
       "unknowns": [
@@ -208,8 +181,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 19:07",
-      "to": "2026-11-24 19:07",
+      "from": "2026-11-17 19:35",
+      "to": "2026-11-24 19:35",
       "timezone": "Europe/Stockholm",
       "cycles": 331,
       "journal_days_present": [
@@ -225,8 +198,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 88,
-        "eligible_appearances": 717,
-        "eligible_cycles_measured": 81,
+        "eligible_appearances": 711,
+        "eligible_cycles_measured": 80,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6070,6 +6043,11 @@
         "t": "2026-11-24 19:05",
         "cycle": null,
         "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 19:35",
+        "cycle": null,
+        "equity": 9.838158
       }
     ]
   },
@@ -6166,7 +6144,7 @@
   },
   "screened_txt": {
     "path": "research/screened.txt",
-    "lines": 26,
+    "lines": 27,
     "note": "Det här är en aktuell lista över redan screenade mint-adresser, inte en logg för 24 timmar eller 7 dagar. Den används inte som antal upptäckta tokens."
   },
   "unknowns": []
