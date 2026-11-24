@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 02:38",
+  "generated_at_stockholm": "2026-11-24 03:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 02:38",
-      "to": "2026-11-24 02:38",
+      "from": "2026-11-23 03:03",
+      "to": "2026-11-24 03:03",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 15,
+        "new_tokens": 14,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 13,
+        "scout_rule1": 12,
         "scout_rule2": 7,
         "scout_rule11": 3,
-        "scout_unique": 13,
+        "scout_unique": 12,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 2,
         "age_or_liq_filter_complete": false,
@@ -242,18 +242,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-23 03:35"
-        },
-        {
-          "symbol": "Hedge",
-          "mint_prefix": "7S8k5q",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 03:00"
         }
       ],
       "unknowns": [
@@ -262,8 +250,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 02:38",
-      "to": "2026-11-24 02:38",
+      "from": "2026-11-17 03:03",
+      "to": "2026-11-24 03:03",
       "timezone": "Europe/Stockholm",
       "cycles": 330,
       "journal_days_present": [
@@ -278,9 +266,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 102,
-        "eligible_appearances": 1033,
-        "eligible_cycles_measured": 113,
+        "new_tokens": 101,
+        "eligible_appearances": 1022,
+        "eligible_cycles_measured": 112,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -298,7 +286,7 @@
         "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 3,
-        "skipped_unverified": 6
+        "skipped_unverified": 5
       },
       "passed_to_buy": 2,
       "tokens": [
@@ -2024,16 +2012,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 643,
           "time": "2026-11-17 03:35"
-        },
-        {
-          "symbol": "AGI",
-          "mint_prefix": null,
-          "kind": "skipped_unverified",
-          "rules": [],
-          "color": "yellow",
-          "label": "hoppad (obekräftad)",
-          "cycle": 642,
-          "time": "2026-11-17 03:00"
         }
       ],
       "unknowns": [
@@ -6175,6 +6153,11 @@
       },
       {
         "t": "2026-11-24 02:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 03:05",
         "cycle": null,
         "equity": 9.838158
       }
