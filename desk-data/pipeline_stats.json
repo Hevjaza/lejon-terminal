@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-24 23:08",
+  "generated_at_stockholm": "2026-11-24 23:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 23:08",
-      "to": "2026-11-24 23:08",
+      "from": "2026-11-23 23:36",
+      "to": "2026-11-24 23:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-23",
         "2026-11-24"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 1,
+        "new_tokens": 2,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 1,
-        "scout_rule2": 0,
+        "scout_rule1": 2,
+        "scout_rule2": 1,
         "scout_rule11": 1,
-        "scout_unique": 1,
+        "scout_unique": 2,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
@@ -39,6 +39,19 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Squirrel",
+          "mint_prefix": "CkwFr1G8EPLL",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-24 23:10"
+        },
         {
           "symbol": "SHHFT",
           "mint_prefix": "GqMg4TRt5U5H",
@@ -169,10 +182,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 23:08",
-      "to": "2026-11-24 23:08",
+      "from": "2026-11-17 23:36",
+      "to": "2026-11-24 23:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 330,
+      "cycles": 332,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -185,7 +198,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 81,
+        "new_tokens": 82,
         "eligible_appearances": 667,
         "eligible_cycles_measured": 74,
         "sources": {
@@ -195,10 +208,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 54,
-        "scout_rule2": 26,
+        "scout_rule1": 55,
+        "scout_rule2": 27,
         "scout_rule11": 13,
-        "scout_unique": 55,
+        "scout_unique": 56,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -209,6 +222,19 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "Squirrel",
+          "mint_prefix": "CkwFr1G8EPLL",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-24 23:10"
+        },
         {
           "symbol": "SHHFT",
           "mint_prefix": "GqMg4TRt5U5H",
@@ -5987,6 +6013,11 @@
       },
       {
         "t": "2026-11-24 23:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 23:36",
         "cycle": null,
         "equity": 9.838158
       }
