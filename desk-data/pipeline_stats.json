@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-24 00:34",
+  "generated_at_stockholm": "2026-11-24 01:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 00:34",
-      "to": "2026-11-24 00:34",
+      "from": "2026-11-23 01:08",
+      "to": "2026-11-24 01:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-23",
         "2026-11-24"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 17,
+        "new_tokens": 16,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,13 +25,13 @@
         }
       },
       "killed": {
-        "scout_rule1": 14,
+        "scout_rule1": 13,
         "scout_rule2": 7,
         "scout_rule11": 4,
-        "scout_unique": 15,
+        "scout_unique": 14,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 1,
-        "age_or_liq_filter_complete": true,
+        "age_or_liq_filter": 3,
+        "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
         "risk_other": 1,
@@ -39,6 +39,26 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "JIMMY",
+          "mint_prefix": "38M2z4",
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-24 00:35"
+        },
+        {
+          "symbol": "THANKS",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-24 00:35"
+        },
         {
           "symbol": "JENSEN",
           "mint_prefix": "DrJjCn",
@@ -256,29 +276,18 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-23 02:05"
-        },
-        {
-          "symbol": "CUNTS",
-          "mint_prefix": "7CvW68",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 00:35"
         }
       ],
       "unknowns": [
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 3.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-17 00:34",
-      "to": "2026-11-24 00:34",
+      "from": "2026-11-17 01:08",
+      "to": "2026-11-24 01:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -291,9 +300,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 105,
-        "eligible_appearances": 1072,
-        "eligible_cycles_measured": 118,
+        "new_tokens": 103,
+        "eligible_appearances": 1058,
+        "eligible_cycles_measured": 116,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -301,20 +310,40 @@
         }
       },
       "killed": {
-        "scout_rule1": 69,
+        "scout_rule1": 67,
         "scout_rule2": 30,
         "scout_rule11": 15,
-        "scout_unique": 70,
+        "scout_unique": 68,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 53,
+        "age_or_liq_filter": 56,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
         "funding_avoid": 4,
         "risk_other": 3,
-        "skipped_unverified": 4
+        "skipped_unverified": 6
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "JIMMY",
+          "mint_prefix": "38M2z4",
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-24 00:35"
+        },
+        {
+          "symbol": "THANKS",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-24 00:35"
+        },
         {
           "symbol": "JENSEN",
           "mint_prefix": "DrJjCn",
@@ -1726,6 +1755,16 @@
           "time": "2026-11-17 15:35"
         },
         {
+          "symbol": "ETF",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 667,
+          "time": "2026-11-17 15:35"
+        },
+        {
           "symbol": "SEYMOUR",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -2026,32 +2065,10 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 640,
           "time": "2026-11-17 02:00"
-        },
-        {
-          "symbol": "ETF",
-          "mint_prefix": null,
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 638,
-          "time": "2026-11-17 01:07"
-        },
-        {
-          "symbol": "LEOSTAR",
-          "mint_prefix": null,
-          "kind": "unknown",
-          "rules": [],
-          "color": "red",
-          "label": "okänt",
-          "cycle": 637,
-          "time": "2026-11-17 00:36"
         }
       ],
       "unknowns": [
-        "8 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 53.",
+        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 56.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6169,6 +6186,11 @@
       },
       {
         "t": "2026-11-24 00:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 01:10",
         "cycle": null,
         "equity": 9.838158
       }
