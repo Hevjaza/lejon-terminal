@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 22:35",
+  "generated_at_stockholm": "2026-11-24 23:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 22:35",
-      "to": "2026-11-24 22:35",
+      "from": "2026-11-23 23:08",
+      "to": "2026-11-24 23:08",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 2,
+        "new_tokens": 1,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 2,
+        "scout_rule1": 1,
         "scout_rule2": 0,
         "scout_rule11": 1,
-        "scout_unique": 2,
+        "scout_unique": 1,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
@@ -161,18 +161,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": null,
           "time": "2026-11-24 00:35"
-        },
-        {
-          "symbol": "JENSEN",
-          "mint_prefix": "DrJjCn",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-23 23:03"
         }
       ],
       "unknowns": [
@@ -181,8 +169,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 22:35",
-      "to": "2026-11-24 22:35",
+      "from": "2026-11-17 23:08",
+      "to": "2026-11-24 23:08",
       "timezone": "Europe/Stockholm",
       "cycles": 330,
       "journal_days_present": [
@@ -5994,6 +5982,11 @@
       },
       {
         "t": "2026-11-24 22:08",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 23:10",
         "cycle": null,
         "equity": 9.838158
       }
