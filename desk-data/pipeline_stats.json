@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-24 13:34",
+  "generated_at_stockholm": "2026-11-24 14:02",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 13:34",
-      "to": "2026-11-24 13:34",
+      "from": "2026-11-23 14:02",
+      "to": "2026-11-24 14:02",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 9,
+        "new_tokens": 10,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 8,
+        "scout_rule1": 9,
         "scout_rule2": 5,
-        "scout_rule11": 2,
-        "scout_unique": 8,
+        "scout_rule11": 3,
+        "scout_unique": 9,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
@@ -39,6 +39,19 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "SHHFT",
+          "mint_prefix": "GqMg4TRt5U5H",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-24 13:35"
+        },
         {
           "symbol": "ATX",
           "mint_prefix": null,
@@ -269,10 +282,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 13:34",
-      "to": "2026-11-24 13:34",
+      "from": "2026-11-17 14:02",
+      "to": "2026-11-24 14:02",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -285,9 +298,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 89,
-        "eligible_appearances": 830,
-        "eligible_cycles_measured": 93,
+        "new_tokens": 90,
+        "eligible_appearances": 810,
+        "eligible_cycles_measured": 91,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -295,12 +308,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 61,
+        "scout_rule1": 62,
         "scout_rule2": 30,
-        "scout_rule11": 15,
-        "scout_unique": 62,
+        "scout_rule11": 16,
+        "scout_unique": 63,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 55,
+        "age_or_liq_filter": 54,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
         "funding_avoid": 4,
@@ -309,6 +322,19 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "SHHFT",
+          "mint_prefix": "GqMg4TRt5U5H",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-24 13:35"
+        },
         {
           "symbol": "ATX",
           "mint_prefix": null,
@@ -1841,6 +1867,16 @@
           "time": "2026-11-17 16:05"
         },
         {
+          "symbol": "CHAR",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 668,
+          "time": "2026-11-17 16:05"
+        },
+        {
           "symbol": "GEKKO",
           "mint_prefix": null,
           "kind": "scout_kill",
@@ -1883,38 +1919,18 @@
           "time": "2026-11-17 15:07"
         },
         {
-          "symbol": "SOYOUARE",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 663,
-          "time": "2026-11-17 13:35"
-        },
-        {
-          "symbol": "CHAR",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 663,
-          "time": "2026-11-17 13:35"
-        },
-        {
           "symbol": "COGE",
           "mint_prefix": null,
           "kind": "filter_age_liq",
           "rules": [],
           "color": "red",
           "label": "stopp för ålder/likviditet",
-          "cycle": 663,
-          "time": "2026-11-17 13:35"
+          "cycle": 665,
+          "time": "2026-11-17 14:40"
         }
       ],
       "unknowns": [
-        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 55.",
+        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 54.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6162,6 +6178,11 @@
       },
       {
         "t": "2026-11-24 13:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 14:03",
         "cycle": null,
         "equity": 9.838158
       }
