@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-24 20:08",
+  "generated_at_stockholm": "2026-11-24 20:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-23 20:08",
-      "to": "2026-11-24 20:08",
+      "from": "2026-11-23 20:36",
+      "to": "2026-11-24 20:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-23",
         "2026-11-24"
@@ -181,10 +181,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-17 20:08",
-      "to": "2026-11-24 20:08",
+      "from": "2026-11-17 20:36",
+      "to": "2026-11-24 20:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 330,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-17",
         "2026-11-18",
@@ -197,9 +197,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 86,
-        "eligible_appearances": 706,
-        "eligible_cycles_measured": 79,
+        "new_tokens": 85,
+        "eligible_appearances": 699,
+        "eligible_cycles_measured": 78,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -207,10 +207,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 58,
-        "scout_rule2": 28,
-        "scout_rule11": 15,
-        "scout_unique": 59,
+        "scout_rule1": 57,
+        "scout_rule2": 27,
+        "scout_rule11": 14,
+        "scout_unique": 58,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -1701,20 +1701,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 678,
           "time": "2026-11-17 21:15"
-        },
-        {
-          "symbol": "JALU",
-          "mint_prefix": "BSsmLA6U",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 677,
-          "time": "2026-11-17 20:33"
         }
       ],
       "unknowns": [
@@ -6026,6 +6012,11 @@
       },
       {
         "t": "2026-11-24 20:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-24 20:36",
         "cycle": null,
         "equity": 9.838158
       }
