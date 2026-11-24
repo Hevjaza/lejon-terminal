@@ -1,0 +1,4 @@
+KILLED-RISK CHRISTMAS 6jmhyHEy1rDyYHyRkr1rbVVQnckKpMYWh3zoX7zLpump 2026-11-24 19:1x CET (pool 3UTNVf1p, PumpSwap, age ~36 min, liq 35.5k, vol1h 752k). No ticket.
+SCOUT: PASS-FLAG (Misstänkt bundling: creation slot 2 buyers 21.92 %, creator 3.78 %; R2/R11 no hit).
+RISK: mint/freeze null PASS; Token-2022 metadata only; top-10 ex-pool 22.06 % (limit 35 %) PASS; factory_check PASS (1 mint, 340 sigs).
+Check 8 KILL (t39u hidden pass-through funding): deployer 5bqyw2mD funded 2026-10-08 0.1145 SOL by 2-tx pass-through wallet CWDes8kq (17 s span), which was funded by hub iGdFcQoy (1000+ txs); top-10 holder 81GZdiiL funded 0.1478 SOL by 2-tx pass-through wallet DnQMo1nh (35 s), also funded by the SAME hub iGdFcQoy; top-10 holder 5qEWTMcC funded directly by iGdFcQoy; DSnm8ZE6 funded by BmFdpraQ hub (known). Common hidden funder across deployer and holders = KILL.
