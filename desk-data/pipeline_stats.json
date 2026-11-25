@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 04:37",
+  "generated_at_stockholm": "2026-11-25 05:00",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 04:37",
-      "to": "2026-11-25 04:37",
+      "from": "2026-11-24 05:00",
+      "to": "2026-11-25 05:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 9,
+        "new_tokens": 10,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -34,11 +34,21 @@
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
-        "risk_other": 1,
+        "risk_other": 2,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Manlet",
+          "mint_prefix": "6Luwyvmt",
+          "kind": "risk_other",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (RISK)",
+          "cycle": null,
+          "time": "2026-11-25 04:40"
+        },
         {
           "symbol": "PERRO",
           "mint_prefix": "4Di56UJzpnb7",
@@ -216,10 +226,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 04:37",
-      "to": "2026-11-25 04:37",
+      "from": "2026-11-18 05:00",
+      "to": "2026-11-25 05:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -232,7 +242,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 84,
+        "new_tokens": 85,
         "eligible_appearances": 605,
         "eligible_cycles_measured": 65,
         "sources": {
@@ -251,11 +261,21 @@
         "age_or_liq_filter_complete": false,
         "factory_kill": 12,
         "funding_avoid": 4,
-        "risk_other": 3,
+        "risk_other": 4,
         "skipped_unverified": 0
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "Manlet",
+          "mint_prefix": "6Luwyvmt",
+          "kind": "risk_other",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (RISK)",
+          "cycle": null,
+          "time": "2026-11-25 04:40"
+        },
         {
           "symbol": "PERRO",
           "mint_prefix": "4Di56UJzpnb7",
