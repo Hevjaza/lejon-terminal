@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 00:31",
+  "generated_at_stockholm": "2026-11-25 01:00",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 00:31",
-      "to": "2026-11-25 00:31",
+      "from": "2026-11-24 01:00",
+      "to": "2026-11-25 01:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 2,
+        "new_tokens": 4,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,20 +25,43 @@
         }
       },
       "killed": {
-        "scout_rule1": 2,
-        "scout_rule2": 1,
+        "scout_rule1": 3,
+        "scout_rule2": 2,
         "scout_rule11": 1,
-        "scout_unique": 2,
+        "scout_unique": 3,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 12,
+        "age_or_liq_filter": 10,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 0,
+        "factory_kill": 1,
         "funding_avoid": 0,
         "risk_other": 0,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Jimmies",
+          "mint_prefix": "GisWWjhw",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-25 01:00"
+        },
+        {
+          "symbol": "BTC",
+          "mint_prefix": "GkSZVKcX",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 00:35"
+        },
         {
           "symbol": "CHRISTMAS",
           "mint_prefix": null,
@@ -164,38 +187,18 @@
           "label": "stopp för ålder/likviditet",
           "cycle": null,
           "time": "2026-11-24 03:05"
-        },
-        {
-          "symbol": "JIMMY",
-          "mint_prefix": "38M2z4",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 00:35"
-        },
-        {
-          "symbol": "THANKS",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 00:35"
         }
       ],
       "unknowns": [
-        "4 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 12.",
+        "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 10.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 00:31",
-      "to": "2026-11-25 00:31",
+      "from": "2026-11-18 01:00",
+      "to": "2026-11-25 01:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 330,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -208,9 +211,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 80,
-        "eligible_appearances": 650,
-        "eligible_cycles_measured": 71,
+        "new_tokens": 82,
+        "eligible_appearances": 645,
+        "eligible_cycles_measured": 70,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -218,20 +221,43 @@
         }
       },
       "killed": {
-        "scout_rule1": 53,
-        "scout_rule2": 25,
+        "scout_rule1": 54,
+        "scout_rule2": 26,
         "scout_rule11": 13,
-        "scout_unique": 54,
+        "scout_unique": 55,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 49,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 11,
+        "factory_kill": 12,
         "funding_avoid": 4,
         "risk_other": 2,
         "skipped_unverified": 0
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "Jimmies",
+          "mint_prefix": "GisWWjhw",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-25 01:00"
+        },
+        {
+          "symbol": "BTC",
+          "mint_prefix": "GkSZVKcX",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 00:35"
+        },
         {
           "symbol": "CHRISTMAS",
           "mint_prefix": null,
@@ -6022,6 +6048,11 @@
       },
       {
         "t": "2026-11-25 00:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 01:00",
         "cycle": null,
         "equity": 9.838158
       }
