@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 12:29",
+  "generated_at_stockholm": "2026-11-25 13:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 12:29",
-      "to": "2026-11-25 12:29",
+      "from": "2026-11-24 13:03",
+      "to": "2026-11-25 13:03",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -208,10 +208,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 12:29",
-      "to": "2026-11-25 12:29",
+      "from": "2026-11-18 13:03",
+      "to": "2026-11-25 13:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -224,9 +224,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 83,
-        "eligible_appearances": 503,
-        "eligible_cycles_measured": 53,
+        "new_tokens": 82,
+        "eligible_appearances": 485,
+        "eligible_cycles_measured": 51,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -246,7 +246,7 @@
         "risk_other": 5,
         "skipped_unverified": 0
       },
-      "passed_to_buy": 2,
+      "passed_to_buy": 1,
       "tokens": [
         {
           "symbol": "BASKET",
@@ -1688,16 +1688,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 708,
           "time": "2026-11-18 14:00"
-        },
-        {
-          "symbol": "DACT",
-          "mint_prefix": "GZUGmAtu",
-          "kind": "bought",
-          "rules": [],
-          "color": "green",
-          "label": "köpt (paper)",
-          "cycle": 705,
-          "time": "2026-11-18 12:40"
         }
       ],
       "unknowns": [
@@ -6159,6 +6149,11 @@
       },
       {
         "t": "2026-11-25 12:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 13:05",
         "cycle": null,
         "equity": 9.838158
       }
