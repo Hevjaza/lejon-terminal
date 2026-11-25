@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 22:33",
+  "generated_at_stockholm": "2026-11-25 23:09",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 22:33",
-      "to": "2026-11-25 22:33",
+      "from": "2026-11-24 23:09",
+      "to": "2026-11-25 23:09",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 20,
+        "new_tokens": 21,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 12,
+        "scout_rule1": 13,
         "scout_rule2": 7,
         "scout_rule11": 3,
-        "scout_unique": 12,
+        "scout_unique": 13,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 15,
+        "age_or_liq_filter": 19,
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 1,
@@ -39,6 +39,48 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Pnut",
+          "mint_prefix": "9bgy4dVr",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "LINK",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "NORFEATH",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "PTO",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
         {
           "symbol": "Pompompurin",
           "mint_prefix": "H2iscCQ4RiZ5",
@@ -369,8 +411,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 22:33",
-      "to": "2026-11-25 22:33",
+      "from": "2026-11-18 23:09",
+      "to": "2026-11-25 23:09",
       "timezone": "Europe/Stockholm",
       "cycles": 335,
       "journal_days_present": [
@@ -385,7 +427,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 70,
+        "new_tokens": 71,
         "eligible_appearances": 275,
         "eligible_cycles_measured": 33,
         "sources": {
@@ -395,12 +437,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 44,
+        "scout_rule1": 45,
         "scout_rule2": 19,
         "scout_rule11": 13,
-        "scout_unique": 45,
+        "scout_unique": 46,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 52,
+        "age_or_liq_filter": 56,
         "age_or_liq_filter_complete": false,
         "factory_kill": 9,
         "funding_avoid": 2,
@@ -409,6 +451,48 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "Pnut",
+          "mint_prefix": "9bgy4dVr",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "LINK",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "NORFEATH",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
+        {
+          "symbol": "PTO",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 22:35"
+        },
         {
           "symbol": "Pompompurin",
           "mint_prefix": "H2iscCQ4RiZ5",
@@ -1717,7 +1801,7 @@
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 52.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 56.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6260,6 +6344,11 @@
       },
       {
         "t": "2026-11-25 22:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 23:10",
         "cycle": null,
         "equity": 9.838158
       }
