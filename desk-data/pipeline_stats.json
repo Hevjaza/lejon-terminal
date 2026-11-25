@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 16:31",
+  "generated_at_stockholm": "2026-11-25 17:08",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 16:31",
-      "to": "2026-11-25 16:31",
+      "from": "2026-11-24 17:08",
+      "to": "2026-11-25 17:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -285,10 +285,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 16:31",
-      "to": "2026-11-25 16:31",
+      "from": "2026-11-18 17:08",
+      "to": "2026-11-25 17:08",
       "timezone": "Europe/Stockholm",
-      "cycles": 337,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -301,9 +301,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 79,
-        "eligible_appearances": 435,
-        "eligible_cycles_measured": 46,
+        "new_tokens": 78,
+        "eligible_appearances": 414,
+        "eligible_cycles_measured": 44,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -318,7 +318,7 @@
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 49,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 11,
+        "factory_kill": 10,
         "funding_avoid": 3,
         "risk_other": 5,
         "skipped_unverified": 0
@@ -1724,16 +1724,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 716,
           "time": "2026-11-18 18:30"
-        },
-        {
-          "symbol": "Apocrycoin",
-          "mint_prefix": "79rE2ac8JhN3",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 713,
-          "time": "2026-11-18 17:05"
         }
       ],
       "unknowns": [
