@@ -1475,19 +1475,20 @@ for _p in sorted(glob.glob(str(_d_root / "positions" / "D-*.json"))):
     _x = load_json(Path(_p))
     if isinstance(_x, dict):
         _d_pos.append(_x)
-_D_CAT_SV = {"a": "Regel 1 nära gränsen", "b": "Finansiering via stor hub", "c": "Likviditet 20–25k"}
+_D_CAT_SV = {"a": "Regel 1 nära gränsen", "b": "Finansiering via stor hub", "c": "Likviditet 15–25k",
+             "f": "Misstänkt bundling (mjuk flagga)"}
 _d_cats = _d_led.get("by_category") if isinstance(_d_led, dict) else None
 if not isinstance(_d_cats, dict):
     _d_cats = {}
 _d_rows = ['<div class="d-cat-row d-cat-head"><span>Mjuk regel som släpptes</span><b>köp</b><b>V/F</b><b>P/L SOL</b></div>']
-for _k in ("a", "b", "c"):
-    _c = _d_cats.get(_k) or {}
+for _k in ["a", "b", "c", "f"] + sorted(k for k in _d_cats if k not in ("a", "b", "c", "f")):
+    _c = _d_cats.get(_k) or ({"bought": 0, "wins": 0, "losses": 0, "realised_pnl_sol": 0.0} if _d_cats else {})
     try:
         _pl = f"{float(_c.get('realised_pnl_sol') or 0):+.4f}"
     except Exception:
         _pl = "–"
     _d_rows.append(
-        f'<div class="d-cat-row"><span>{_k} · {_c.get("label_sv") or _D_CAT_SV[_k]}</span>'
+        f'<div class="d-cat-row"><span>{_k} · {_c.get("label_sv") or " + ".join(_D_CAT_SV.get(x, x) for x in _k.split("+"))}</span>'
         f'<b>{fmt_known(_c.get("bought"))}</b><b>{fmt_known(_c.get("wins"))}/{fmt_known(_c.get("losses"))}</b><b>{_pl}</b></div>'
     )
 _d_open_html = []
@@ -1498,7 +1499,8 @@ for _x in sorted(_d_pos, key=lambda z: str(z.get("entry_utc") or ""), reverse=Tr
     if str(_x.get("status", "")).upper() == "OPEN":
         _lm = _x.get("last_mark") or {}
         _mult = _lm.get("multiple")
-        _d_open_html.append(f'<div class="d-pos">🟡 {_x.get("ticket")} · {_sym} · kategori {_cat} · '
+        _ftag = {"unresolved": " · finansiering ej spårad", "resolved": "", "hub": ""}.get(str(_x.get("d_funding_tag") or ""), "")
+        _d_open_html.append(f'<div class="d-pos">🟡 {_x.get("ticket")} · {_sym} · kategori {_cat}{_ftag} · '
                             f'{(str(_mult) + "x") if _mult is not None else "ingen kurs än"} · köpt {_x.get("entry_stockholm") or "–"}</div>')
     elif len(_d_closed_html) < 8:
         _ex = _x.get("exit") or {}
@@ -1522,7 +1524,7 @@ st.markdown(
   <div style="margin-top:8px">{''.join(_d_rows)}</div>
   <div style="margin-top:8px">{''.join(_d_open_html) or '<div class="d-pos">Inga öppna D-köp.</div>'}</div>
   <div style="margin-top:4px">{''.join(_d_closed_html)}</div>
-  <div class="goal-foot">D köper bara tokens som A stoppade för exakt en mjuk regel. Hårda stopp (fabrik, dold finansiering, regel 2 och 11) gäller fullt ut. D räknas inte i "Mål innan live" och skickar inga notiser. Inte finansiell rådgivning.</div>
+  <div class="goal-foot">Nya D-regler (25 nov): D köper tokens som A stoppade för en eller två mjuka regler – Regel 1 nära gränsen (upp till 40 %), likviditet 15–25k, stor hub, eller mjuk bundling-flagga när pengarna är spårade. D kollar själv varifrån pengarna kommer varje halvtimme; köp där det inte gick att spåra märks "finansiering ej spårad". Hårda stopp (fabrik, dold eller genomslussad finansiering, sybil, regel 2 och 11) gäller fullt ut. Samma storlek (0,2 SOL), max 10 öppna, samma stopp och vinstmål. D räknas inte i "Mål innan live" och skickar inga notiser. Bara låtsaspengar. Inte finansiell rådgivning.</div>
 </div>
 """,
     unsafe_allow_html=True,
