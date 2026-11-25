@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 03:33",
+  "generated_at_stockholm": "2026-11-25 04:06",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 03:33",
-      "to": "2026-11-25 03:33",
+      "from": "2026-11-24 04:06",
+      "to": "2026-11-25 04:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 46,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 8,
+        "new_tokens": 9,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -30,15 +30,25 @@
         "scout_rule11": 1,
         "scout_unique": 7,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 8,
+        "age_or_liq_filter": 6,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
-        "risk_other": 0,
+        "risk_other": 1,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "PERRO",
+          "mint_prefix": "4Di56UJzpnb7",
+          "kind": "risk_other",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (RISK)",
+          "cycle": null,
+          "time": "2026-11-25 03:40"
+        },
         {
           "symbol": "DongCoin",
           "mint_prefix": "DMFzUvtf",
@@ -198,36 +208,16 @@
           "label": "stopp för ålder/likviditet",
           "cycle": null,
           "time": "2026-11-24 09:59"
-        },
-        {
-          "symbol": "catalyst",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:58"
-        },
-        {
-          "symbol": "DONJENSEN",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:58"
         }
       ],
       "unknowns": [
-        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 8.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 6.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 03:33",
-      "to": "2026-11-25 03:33",
+      "from": "2026-11-18 04:06",
+      "to": "2026-11-25 04:06",
       "timezone": "Europe/Stockholm",
       "cycles": 331,
       "journal_days_present": [
@@ -242,9 +232,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 83,
-        "eligible_appearances": 614,
-        "eligible_cycles_measured": 66,
+        "new_tokens": 84,
+        "eligible_appearances": 605,
+        "eligible_cycles_measured": 65,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -261,11 +251,21 @@
         "age_or_liq_filter_complete": false,
         "factory_kill": 12,
         "funding_avoid": 4,
-        "risk_other": 2,
+        "risk_other": 3,
         "skipped_unverified": 0
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "PERRO",
+          "mint_prefix": "4Di56UJzpnb7",
+          "kind": "risk_other",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (RISK)",
+          "cycle": null,
+          "time": "2026-11-25 03:40"
+        },
         {
           "symbol": "DongCoin",
           "mint_prefix": "DMFzUvtf",
