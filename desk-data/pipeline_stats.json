@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 14:29",
+  "generated_at_stockholm": "2026-11-25 15:06",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 14:29",
-      "to": "2026-11-25 14:29",
+      "from": "2026-11-24 15:06",
+      "to": "2026-11-25 15:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -265,10 +265,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 14:29",
-      "to": "2026-11-25 14:29",
+      "from": "2026-11-18 15:06",
+      "to": "2026-11-25 15:06",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 336,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -281,9 +281,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 80,
-        "eligible_appearances": 465,
-        "eligible_cycles_measured": 49,
+        "new_tokens": 78,
+        "eligible_appearances": 454,
+        "eligible_cycles_measured": 48,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -291,10 +291,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 53,
-        "scout_rule2": 24,
+        "scout_rule1": 51,
+        "scout_rule2": 23,
         "scout_rule11": 11,
-        "scout_unique": 54,
+        "scout_unique": 52,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
@@ -1766,31 +1766,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 710,
           "time": "2026-11-18 15:30"
-        },
-        {
-          "symbol": "Tomás",
-          "mint_prefix": "5ChyeKeH1Hv4",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 709,
-          "time": "2026-11-18 15:00"
-        },
-        {
-          "symbol": "Leonida",
-          "mint_prefix": "9rbKkz2B",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 709,
-          "time": "2026-11-18 15:00"
         }
       ],
       "unknowns": [
@@ -6272,6 +6247,11 @@
       },
       {
         "t": "2026-11-25 14:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 15:05",
         "cycle": null,
         "equity": 9.838158
       }
