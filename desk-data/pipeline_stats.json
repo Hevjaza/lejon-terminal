@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 09:44",
+  "generated_at_stockholm": "2026-11-25 10:05",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 09:44",
-      "to": "2026-11-25 09:44",
+      "from": "2026-11-24 10:05",
+      "to": "2026-11-25 10:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 8,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 6,
+        "age_or_liq_filter": 2,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
@@ -200,58 +200,18 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-24 13:35"
-        },
-        {
-          "symbol": "JENSEN",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 09:59"
-        },
-        {
-          "symbol": "ATX",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 09:59"
-        },
-        {
-          "symbol": "Guest",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 09:59"
-        },
-        {
-          "symbol": "CLAUDIO",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 09:59"
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 6.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 2.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 09:44",
-      "to": "2026-11-25 09:44",
+      "from": "2026-11-18 10:05",
+      "to": "2026-11-25 10:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -265,8 +225,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 83,
-        "eligible_appearances": 553,
-        "eligible_cycles_measured": 58,
+        "eligible_appearances": 542,
+        "eligible_cycles_measured": 57,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6169,6 +6129,11 @@
       },
       {
         "t": "2026-11-25 09:04",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 10:10",
         "cycle": null,
         "equity": 9.838158
       }
