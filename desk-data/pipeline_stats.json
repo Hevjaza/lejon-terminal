@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 02:03",
+  "generated_at_stockholm": "2026-11-25 02:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 02:03",
-      "to": "2026-11-25 02:03",
+      "from": "2026-11-24 02:37",
+      "to": "2026-11-25 02:37",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 4,
+        "new_tokens": 6,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 3,
-        "scout_rule2": 2,
+        "scout_rule1": 5,
+        "scout_rule2": 3,
         "scout_rule11": 1,
-        "scout_unique": 3,
+        "scout_unique": 5,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 10,
         "age_or_liq_filter_complete": false,
@@ -39,6 +39,31 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "BOOBS",
+          "mint_prefix": "E35iEA2y",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:05"
+        },
+        {
+          "symbol": "WIKI",
+          "mint_prefix": "E2MJUFBM",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:05"
+        },
         {
           "symbol": "Jimmies",
           "mint_prefix": "GisWWjhw",
@@ -190,15 +215,15 @@
         }
       ],
       "unknowns": [
-        "3 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 10.",
+        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 10.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 02:03",
-      "to": "2026-11-25 02:03",
+      "from": "2026-11-18 02:37",
+      "to": "2026-11-25 02:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 331,
+      "cycles": 330,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -212,8 +237,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 82,
-        "eligible_appearances": 639,
-        "eligible_cycles_measured": 69,
+        "eligible_appearances": 623,
+        "eligible_cycles_measured": 67,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -222,7 +247,7 @@
       },
       "killed": {
         "scout_rule1": 54,
-        "scout_rule2": 26,
+        "scout_rule2": 25,
         "scout_rule11": 13,
         "scout_unique": 55,
         "scout_rules_unknown": 0,
@@ -235,6 +260,31 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "BOOBS",
+          "mint_prefix": "E35iEA2y",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:05"
+        },
+        {
+          "symbol": "WIKI",
+          "mint_prefix": "E2MJUFBM",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:05"
+        },
         {
           "symbol": "Jimmies",
           "mint_prefix": "GisWWjhw",
@@ -1651,32 +1701,6 @@
           "label": "stoppad av SCOUT",
           "cycle": 690,
           "time": "2026-11-18 03:05"
-        },
-        {
-          "symbol": "GTAVI",
-          "mint_prefix": "6wiaCq8o",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 688,
-          "time": "2026-11-18 02:10"
-        },
-        {
-          "symbol": "SHIT",
-          "mint_prefix": "Fn95NtGX",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 688,
-          "time": "2026-11-18 02:10"
         }
       ],
       "unknowns": [
@@ -6043,6 +6067,11 @@
       },
       {
         "t": "2026-11-25 02:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 02:40",
         "cycle": null,
         "equity": 9.838158
       }
