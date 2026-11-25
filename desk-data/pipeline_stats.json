@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 16:05",
+  "generated_at_stockholm": "2026-11-25 16:31",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 16:05",
-      "to": "2026-11-25 16:05",
+      "from": "2026-11-24 16:31",
+      "to": "2026-11-25 16:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 11,
+        "new_tokens": 13,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -30,15 +30,35 @@
         "scout_rule11": 0,
         "scout_unique": 7,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 9,
+        "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
-        "funding_avoid": 0,
+        "funding_avoid": 1,
         "risk_other": 3,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "ONEBASKET",
+          "mint_prefix": "EUVuqAZAVksZ",
+          "kind": "unknown",
+          "rules": [],
+          "color": "red",
+          "label": "okänt",
+          "cycle": null,
+          "time": "2026-11-25 16:10"
+        },
+        {
+          "symbol": "Anthropic",
+          "mint_prefix": "FwdEmF8XL3b2",
+          "kind": "funding_avoid",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (finansiering)",
+          "cycle": null,
+          "time": "2026-11-25 16:10"
+        },
         {
           "symbol": "Pompom",
           "mint_prefix": "5EmvWDizkpjA",
@@ -260,15 +280,15 @@
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 9.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 11.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 16:05",
-      "to": "2026-11-25 16:05",
+      "from": "2026-11-18 16:31",
+      "to": "2026-11-25 16:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 336,
+      "cycles": 337,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -281,9 +301,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 77,
-        "eligible_appearances": 444,
-        "eligible_cycles_measured": 47,
+        "new_tokens": 79,
+        "eligible_appearances": 435,
+        "eligible_cycles_measured": 46,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -296,15 +316,35 @@
         "scout_rule11": 11,
         "scout_unique": 51,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 53,
+        "age_or_liq_filter": 49,
         "age_or_liq_filter_complete": false,
         "factory_kill": 11,
-        "funding_avoid": 2,
+        "funding_avoid": 3,
         "risk_other": 5,
         "skipped_unverified": 0
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "ONEBASKET",
+          "mint_prefix": "EUVuqAZAVksZ",
+          "kind": "unknown",
+          "rules": [],
+          "color": "red",
+          "label": "okänt",
+          "cycle": null,
+          "time": "2026-11-25 16:10"
+        },
+        {
+          "symbol": "Anthropic",
+          "mint_prefix": "FwdEmF8XL3b2",
+          "kind": "funding_avoid",
+          "rules": [],
+          "color": "yellow",
+          "label": "undvik (finansiering)",
+          "cycle": null,
+          "time": "2026-11-25 16:10"
+        },
         {
           "symbol": "Pompom",
           "mint_prefix": "5EmvWDizkpjA",
@@ -1694,70 +1734,10 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 713,
           "time": "2026-11-18 17:05"
-        },
-        {
-          "symbol": "Billy",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "Games",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "KODA",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "Doubloon",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "Tomás",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "ACRUX",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 711,
-          "time": "2026-11-18 16:08"
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 53.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 49.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6245,6 +6225,11 @@
       },
       {
         "t": "2026-11-25 16:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 16:31",
         "cycle": null,
         "equity": 9.838158
       }
