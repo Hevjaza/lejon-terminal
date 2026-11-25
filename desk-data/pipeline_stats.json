@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 23:34",
+  "generated_at_stockholm": "2026-11-25 23:59",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 23:34",
-      "to": "2026-11-25 23:34",
+      "from": "2026-11-24 23:59",
+      "to": "2026-11-25 23:59",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 23,
+        "new_tokens": 24,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 14,
-        "scout_rule2": 8,
+        "scout_rule1": 15,
+        "scout_rule2": 9,
         "scout_rule11": 5,
-        "scout_unique": 14,
+        "scout_unique": 15,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 21,
         "age_or_liq_filter_complete": true,
@@ -39,6 +39,19 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Grodia",
+          "mint_prefix": "6HS1aeSk7osT",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 23:59"
+        },
         {
           "symbol": "MONEY",
           "mint_prefix": "6sA2MQ16",
@@ -436,10 +449,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 23:34",
-      "to": "2026-11-25 23:34",
+      "from": "2026-11-18 23:59",
+      "to": "2026-11-25 23:59",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 337,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -452,7 +465,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 74,
+        "new_tokens": 75,
         "eligible_appearances": 263,
         "eligible_cycles_measured": 32,
         "sources": {
@@ -462,10 +475,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 47,
-        "scout_rule2": 21,
+        "scout_rule1": 48,
+        "scout_rule2": 22,
         "scout_rule11": 15,
-        "scout_unique": 48,
+        "scout_unique": 49,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 55,
         "age_or_liq_filter_complete": false,
@@ -476,6 +489,19 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "Grodia",
+          "mint_prefix": "6HS1aeSk7osT",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 23:59"
+        },
         {
           "symbol": "MONEY",
           "mint_prefix": "6sA2MQ16",
@@ -6382,6 +6408,11 @@
       },
       {
         "t": "2026-11-25 23:10",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 23:34",
         "cycle": null,
         "equity": 9.838158
       }
