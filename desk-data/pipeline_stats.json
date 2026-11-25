@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 08:04",
+  "generated_at_stockholm": "2026-11-25 08:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 08:04",
-      "to": "2026-11-25 08:04",
+      "from": "2026-11-24 08:30",
+      "to": "2026-11-25 08:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -248,8 +248,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 08:04",
-      "to": "2026-11-25 08:04",
+      "from": "2026-11-18 08:30",
+      "to": "2026-11-25 08:30",
       "timezone": "Europe/Stockholm",
       "cycles": 335,
       "journal_days_present": [
@@ -265,8 +265,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 85,
-        "eligible_appearances": 579,
-        "eligible_cycles_measured": 61,
+        "eligible_appearances": 572,
+        "eligible_cycles_measured": 60,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -6180,6 +6180,16 @@
       },
       {
         "t": "2026-11-25 07:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 08:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 08:35",
         "cycle": null,
         "equity": 9.838158
       }
