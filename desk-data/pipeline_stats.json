@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 18:30",
+  "generated_at_stockholm": "2026-11-25 19:01",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 18:30",
-      "to": "2026-11-25 18:30",
+      "from": "2026-11-24 19:01",
+      "to": "2026-11-25 19:01",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -31,7 +31,7 @@
         "scout_unique": 8,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 12,
-        "age_or_liq_filter_complete": false,
+        "age_or_liq_filter_complete": true,
         "factory_kill": 1,
         "funding_avoid": 1,
         "risk_other": 3,
@@ -293,13 +293,12 @@
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 12.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 18:30",
-      "to": "2026-11-25 18:30",
+      "from": "2026-11-18 19:01",
+      "to": "2026-11-25 19:01",
       "timezone": "Europe/Stockholm",
       "cycles": 336,
       "journal_days_present": [
@@ -6231,6 +6230,11 @@
       },
       {
         "t": "2026-11-25 18:30",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 19:05",
         "cycle": null,
         "equity": 9.838158
       }
