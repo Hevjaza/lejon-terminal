@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 02:37",
+  "generated_at_stockholm": "2026-11-25 02:59",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 02:37",
-      "to": "2026-11-25 02:37",
+      "from": "2026-11-24 02:59",
+      "to": "2026-11-25 02:59",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 6,
+        "new_tokens": 8,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 5,
-        "scout_rule2": 3,
+        "scout_rule1": 7,
+        "scout_rule2": 5,
         "scout_rule11": 1,
-        "scout_unique": 5,
+        "scout_unique": 7,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 10,
+        "age_or_liq_filter": 11,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
@@ -39,6 +39,42 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "DongCoin",
+          "mint_prefix": "DMFzUvtf",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:58"
+        },
+        {
+          "symbol": "NVIDIA",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 02:58"
+        },
+        {
+          "symbol": "ChristmASS",
+          "mint_prefix": "CLxrgvfF",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:40"
+        },
         {
           "symbol": "BOOBS",
           "mint_prefix": "E35iEA2y",
@@ -215,15 +251,15 @@
         }
       ],
       "unknowns": [
-        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 10.",
+        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 11.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 02:37",
-      "to": "2026-11-25 02:37",
+      "from": "2026-11-18 02:59",
+      "to": "2026-11-25 02:59",
       "timezone": "Europe/Stockholm",
-      "cycles": 330,
+      "cycles": 332,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -236,7 +272,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 82,
+        "new_tokens": 84,
         "eligible_appearances": 623,
         "eligible_cycles_measured": 67,
         "sources": {
@@ -246,12 +282,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 54,
-        "scout_rule2": 25,
+        "scout_rule1": 56,
+        "scout_rule2": 27,
         "scout_rule11": 13,
-        "scout_unique": 55,
+        "scout_unique": 57,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 47,
+        "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
         "factory_kill": 12,
         "funding_avoid": 4,
@@ -260,6 +296,42 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "DongCoin",
+          "mint_prefix": "DMFzUvtf",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:58"
+        },
+        {
+          "symbol": "NVIDIA",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 02:58"
+        },
+        {
+          "symbol": "ChristmASS",
+          "mint_prefix": "CLxrgvfF",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "2"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 02:40"
+        },
         {
           "symbol": "BOOBS",
           "mint_prefix": "E35iEA2y",
@@ -1704,7 +1776,7 @@
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 47.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 48.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6072,6 +6144,11 @@
       },
       {
         "t": "2026-11-25 02:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 02:58",
         "cycle": null,
         "equity": 9.838158
       }

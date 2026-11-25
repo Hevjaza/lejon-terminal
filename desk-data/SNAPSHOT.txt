@@ -1,5 +1,5 @@
-Ögonblicksbild Europe/Stockholm 2026-11-25 02:37
-KILLED-noter i denna snapshot: 80 (av 750 på desken).
+Ögonblicksbild Europe/Stockholm 2026-11-25 02:59
+KILLED-noter i denna snapshot: 80 (av 751 på desken).
 Shadow-B, Shadow-C och Shadow-D ledger ingår om present (paper only).
 pipeline_stats.json = 24h/7d-pipeline (inga nycklar).
 Ingen .env, inga nycklar, inget lösenord ingår.
