@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 15:06",
+  "generated_at_stockholm": "2026-11-25 15:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 15:06",
-      "to": "2026-11-25 15:06",
+      "from": "2026-11-24 15:30",
+      "to": "2026-11-25 15:30",
       "timezone": "Europe/Stockholm",
       "cycles": 49,
       "journal_days_present": [
@@ -265,8 +265,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 15:06",
-      "to": "2026-11-25 15:06",
+      "from": "2026-11-18 15:30",
+      "to": "2026-11-25 15:30",
       "timezone": "Europe/Stockholm",
       "cycles": 336,
       "journal_days_present": [
@@ -281,9 +281,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 78,
-        "eligible_appearances": 454,
-        "eligible_cycles_measured": 48,
+        "new_tokens": 77,
+        "eligible_appearances": 444,
+        "eligible_cycles_measured": 47,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -291,10 +291,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 51,
+        "scout_rule1": 50,
         "scout_rule2": 23,
         "scout_rule11": 11,
-        "scout_unique": 52,
+        "scout_unique": 51,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 53,
         "age_or_liq_filter_complete": false,
@@ -1726,6 +1726,16 @@
           "time": "2026-11-18 16:08"
         },
         {
+          "symbol": "Doubloon",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 711,
+          "time": "2026-11-18 16:08"
+        },
+        {
           "symbol": "Tomás",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -1744,28 +1754,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 711,
           "time": "2026-11-18 16:08"
-        },
-        {
-          "symbol": "JESTER",
-          "mint_prefix": "VAYMVikuYQpW",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 710,
-          "time": "2026-11-18 15:30"
-        },
-        {
-          "symbol": "Doubloon",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 710,
-          "time": "2026-11-18 15:30"
         }
       ],
       "unknowns": [
