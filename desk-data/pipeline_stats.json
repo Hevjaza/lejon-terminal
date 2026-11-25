@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 02:59",
+  "generated_at_stockholm": "2026-11-25 03:33",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 02:59",
-      "to": "2026-11-25 02:59",
+      "from": "2026-11-24 03:33",
+      "to": "2026-11-25 03:33",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 7,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 11,
+        "age_or_liq_filter": 8,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
@@ -160,6 +160,16 @@
           "time": "2026-11-24 13:35"
         },
         {
+          "symbol": "JENSEN",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-24 09:59"
+        },
+        {
           "symbol": "ATX",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -208,58 +218,18 @@
           "label": "stopp för ålder/likviditet",
           "cycle": null,
           "time": "2026-11-24 03:58"
-        },
-        {
-          "symbol": "Milnur",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:05"
-        },
-        {
-          "symbol": "Flatulence",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:05"
-        },
-        {
-          "symbol": "JENSEN",
-          "mint_prefix": "9vLdkM",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:05"
-        },
-        {
-          "symbol": "CHIBI",
-          "mint_prefix": "4ZgqnN",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-24 03:05"
         }
       ],
       "unknowns": [
-        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 11.",
+        "2 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 8.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 02:59",
-      "to": "2026-11-25 02:59",
+      "from": "2026-11-18 03:33",
+      "to": "2026-11-25 03:33",
       "timezone": "Europe/Stockholm",
-      "cycles": 332,
+      "cycles": 331,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -272,9 +242,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 84,
-        "eligible_appearances": 623,
-        "eligible_cycles_measured": 67,
+        "new_tokens": 83,
+        "eligible_appearances": 614,
+        "eligible_cycles_measured": 66,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -282,10 +252,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 56,
+        "scout_rule1": 55,
         "scout_rule2": 27,
-        "scout_rule11": 13,
-        "scout_unique": 57,
+        "scout_rule11": 12,
+        "scout_unique": 56,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -1760,19 +1730,6 @@
           "label": "undvik (finansiering)",
           "cycle": 692,
           "time": "2026-11-18 06:05"
-        },
-        {
-          "symbol": "KATIA",
-          "mint_prefix": "5xhuX8VK",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "11"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 690,
-          "time": "2026-11-18 03:05"
         }
       ],
       "unknowns": [
@@ -6149,6 +6106,11 @@
       },
       {
         "t": "2026-11-25 02:58",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 03:40",
         "cycle": null,
         "equity": 9.838158
       }
