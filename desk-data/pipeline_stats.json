@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 13:03",
+  "generated_at_stockholm": "2026-11-25 13:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 13:03",
-      "to": "2026-11-25 13:03",
+      "from": "2026-11-24 13:30",
+      "to": "2026-11-25 13:30",
       "timezone": "Europe/Stockholm",
       "cycles": 48,
       "journal_days_present": [
@@ -30,7 +30,7 @@
         "scout_rule11": 1,
         "scout_unique": 8,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 2,
+        "age_or_liq_filter": 7,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 0,
@@ -39,6 +39,56 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "JaoJiu",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "BASKET",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "PERRO",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "Jimmies",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "GBNB",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
         {
           "symbol": "BASKET",
           "mint_prefix": "3Tg6YnNrfPdF",
@@ -203,15 +253,15 @@
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 2.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 7.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 13:03",
-      "to": "2026-11-25 13:03",
+      "from": "2026-11-18 13:30",
+      "to": "2026-11-25 13:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -239,7 +289,7 @@
         "scout_rule11": 12,
         "scout_unique": 55,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 46,
+        "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
         "factory_kill": 12,
         "funding_avoid": 2,
@@ -248,6 +298,56 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "JaoJiu",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "BASKET",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "PERRO",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "Jimmies",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
+        {
+          "symbol": "GBNB",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 13:05"
+        },
         {
           "symbol": "BASKET",
           "mint_prefix": "3Tg6YnNrfPdF",
@@ -1691,7 +1791,7 @@
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 46.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6154,6 +6254,11 @@
       },
       {
         "t": "2026-11-25 13:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 13:35",
         "cycle": null,
         "equity": 9.838158
       }
