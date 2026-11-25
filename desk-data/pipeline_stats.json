@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 22:03",
+  "generated_at_stockholm": "2026-11-25 22:33",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 22:03",
-      "to": "2026-11-25 22:03",
+      "from": "2026-11-24 22:33",
+      "to": "2026-11-25 22:33",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -369,10 +369,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 22:03",
-      "to": "2026-11-25 22:03",
+      "from": "2026-11-18 22:33",
+      "to": "2026-11-25 22:33",
       "timezone": "Europe/Stockholm",
-      "cycles": 337,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -385,9 +385,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 74,
-        "eligible_appearances": 301,
-        "eligible_cycles_measured": 35,
+        "new_tokens": 70,
+        "eligible_appearances": 275,
+        "eligible_cycles_measured": 33,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -395,14 +395,14 @@
         }
       },
       "killed": {
-        "scout_rule1": 47,
-        "scout_rule2": 20,
+        "scout_rule1": 44,
+        "scout_rule2": 19,
         "scout_rule11": 13,
-        "scout_unique": 48,
+        "scout_unique": 45,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 52,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 10,
+        "factory_kill": 9,
         "funding_avoid": 2,
         "risk_other": 4,
         "skipped_unverified": 0
@@ -1714,53 +1714,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 726,
           "time": "2026-11-18 23:30"
-        },
-        {
-          "symbol": "CRIME",
-          "mint_prefix": "96WnzbBG",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 724,
-          "time": "2026-11-18 22:32"
-        },
-        {
-          "symbol": "DAKITTY",
-          "mint_prefix": "3YyNSd5d",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
-        },
-        {
-          "symbol": "Mabel",
-          "mint_prefix": "EhjRG9DD",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
-        },
-        {
-          "symbol": "GTV",
-          "mint_prefix": "2NDTHcRE",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 723,
-          "time": "2026-11-18 22:05"
         }
       ],
       "unknowns": [
@@ -6302,6 +6255,11 @@
       },
       {
         "t": "2026-11-25 22:00",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 22:35",
         "cycle": null,
         "equity": 9.838158
       }
