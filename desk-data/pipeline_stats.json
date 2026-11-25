@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 18:09",
+  "generated_at_stockholm": "2026-11-25 18:30",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 18:09",
-      "to": "2026-11-25 18:09",
+      "from": "2026-11-24 18:30",
+      "to": "2026-11-25 18:30",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -298,8 +298,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 18:09",
-      "to": "2026-11-25 18:09",
+      "from": "2026-11-18 18:30",
+      "to": "2026-11-25 18:30",
       "timezone": "Europe/Stockholm",
       "cycles": 336,
       "journal_days_present": [
@@ -314,9 +314,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 79,
-        "eligible_appearances": 393,
-        "eligible_cycles_measured": 42,
+        "new_tokens": 77,
+        "eligible_appearances": 380,
+        "eligible_cycles_measured": 41,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -324,10 +324,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 51,
-        "scout_rule2": 23,
+        "scout_rule1": 49,
+        "scout_rule2": 22,
         "scout_rule11": 12,
-        "scout_unique": 52,
+        "scout_unique": 50,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
@@ -1725,31 +1725,6 @@
           "label": "undvik (RISK)",
           "cycle": 717,
           "time": "2026-11-18 19:10"
-        },
-        {
-          "symbol": "APCY",
-          "mint_prefix": "7fZK84wY",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 716,
-          "time": "2026-11-18 18:30"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "97t435T2",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": 716,
-          "time": "2026-11-18 18:30"
         }
       ],
       "unknowns": [
@@ -6251,6 +6226,11 @@
       },
       {
         "t": "2026-11-25 18:07",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 18:30",
         "cycle": null,
         "equity": 9.838158
       }
