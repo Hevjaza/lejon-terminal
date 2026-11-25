@@ -40,20 +40,29 @@
    "wins": 0,
    "losses": 0,
    "realised_pnl_sol": 0.0
+  },
+  "f": {
+   "label": "f-bundle-softflag",
+   "label_sv": "Misstänkt bundling (mjuk flagga)",
+   "bought": 0,
+   "closed": 0,
+   "wins": 0,
+   "losses": 0,
+   "realised_pnl_sol": 0.0
   }
  },
  "counts_toward_live_goals": false,
  "pings_user": false,
  "created_utc": "2026-11-23T09:05:28Z",
- "updated_utc": "2026-11-25T08:38:45Z",
+ "updated_utc": "2026-11-25T08:44:05Z",
  "rules": {
-  "entry": "D-2: A rejected for ONE or TWO soft reasons (a Rule 1 near-miss top15<=40 % k30>=2 / b funding ends at >=1000-tx hub / c liquidity 15-25k); untraced/unresolved funding allowed and tagged; everything else as A; hard kills unchanged",
+  "entry": "D-2: A rejected for ONE or TWO soft reasons (a Rule 1 near-miss top15<=40 % k30>=2 / b funding ends at >=1000-tx hub / c liquidity 15-25k / f scout soft flag 'Misstänkt bundling' with a fully resolved funding walk); untraced/unresolved funding allowed and tagged; everything else as A; hard kills unchanged",
   "exit": "A exits: SL -30 %, TP1 +100 % sells 50 % then break-even stop, TP2 +1000 %",
   "size_sol": 0.2,
   "max_open": 10,
   "daily_loss_frac": 0.02,
   "top10_max_pct": 35.0,
-  "rules_version": "D-2 2026-11-25 (1-2 soft reasons; R1 top15<=40 % k30>=2; liq 15-25k; untraced funding tagged; auto walk; A exits: SL -30 %, TP1 +100 % sells 50 % then BE, TP2 +1000 %)",
+  "rules_version": "D-2.1 2026-11-25 (1-2 soft reasons; R1 top15<=40 % k30>=2; liq 15-25k; f PASS-FLAG with resolved walk; untraced funding tagged; auto walk; A exits: SL -30 %, TP1 +100 % sells 50 % then BE, TP2 +1000 %)",
   "max_soft": 2
  }
 }

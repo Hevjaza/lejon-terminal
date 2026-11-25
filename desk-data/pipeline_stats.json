@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 09:41",
+  "generated_at_stockholm": "2026-11-25 09:44",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 09:41",
-      "to": "2026-11-25 09:41",
+      "from": "2026-11-24 09:44",
+      "to": "2026-11-25 09:44",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -248,10 +248,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 09:41",
-      "to": "2026-11-25 09:41",
+      "from": "2026-11-18 09:44",
+      "to": "2026-11-25 09:44",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -6234,6 +6234,15 @@
         "c": {
           "label": "c-liq-15-25k",
           "label_sv": "Likviditet 15–25k",
+          "bought": 0,
+          "closed": 0,
+          "wins": 0,
+          "losses": 0,
+          "realised_pnl_sol": 0.0
+        },
+        "f": {
+          "label": "f-bundle-softflag",
+          "label_sv": "Misstänkt bundling (mjuk flagga)",
           "bought": 0,
           "closed": 0,
           "wins": 0,
