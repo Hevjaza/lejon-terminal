@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-25 05:00",
+  "generated_at_stockholm": "2026-11-25 05:31",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 05:00",
-      "to": "2026-11-25 05:00",
+      "from": "2026-11-24 05:31",
+      "to": "2026-11-25 05:31",
       "timezone": "Europe/Stockholm",
       "cycles": 49,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 10,
+        "new_tokens": 11,
         "eligible_appearances": null,
         "eligible_cycles_measured": 0,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 7,
+        "scout_rule1": 8,
         "scout_rule2": 5,
         "scout_rule11": 1,
-        "scout_unique": 7,
+        "scout_unique": 8,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 6,
         "age_or_liq_filter_complete": false,
@@ -39,6 +39,18 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "YUMA",
+          "mint_prefix": "CkwFsrup",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 05:31"
+        },
         {
           "symbol": "Manlet",
           "mint_prefix": "6Luwyvmt",
@@ -226,10 +238,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 05:00",
-      "to": "2026-11-25 05:00",
+      "from": "2026-11-18 05:31",
+      "to": "2026-11-25 05:31",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -242,7 +254,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 85,
+        "new_tokens": 86,
         "eligible_appearances": 605,
         "eligible_cycles_measured": 65,
         "sources": {
@@ -252,10 +264,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 55,
+        "scout_rule1": 56,
         "scout_rule2": 27,
         "scout_rule11": 12,
-        "scout_unique": 56,
+        "scout_unique": 57,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
@@ -266,6 +278,18 @@
       },
       "passed_to_buy": 2,
       "tokens": [
+        {
+          "symbol": "YUMA",
+          "mint_prefix": "CkwFsrup",
+          "kind": "scout_kill",
+          "rules": [
+            "1"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 05:31"
+        },
         {
           "symbol": "Manlet",
           "mint_prefix": "6Luwyvmt",
@@ -6141,6 +6165,11 @@
       },
       {
         "t": "2026-11-25 04:40",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 05:31",
         "cycle": null,
         "equity": 9.838158
       }
