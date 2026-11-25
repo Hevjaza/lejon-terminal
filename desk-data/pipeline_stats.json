@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-25 05:31",
+  "generated_at_stockholm": "2026-11-25 06:05",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 05:31",
-      "to": "2026-11-25 05:31",
+      "from": "2026-11-24 06:05",
+      "to": "2026-11-25 06:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 49,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
@@ -238,10 +238,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 05:31",
-      "to": "2026-11-25 05:31",
+      "from": "2026-11-18 06:05",
+      "to": "2026-11-25 06:05",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -254,9 +254,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 86,
-        "eligible_appearances": 605,
-        "eligible_cycles_measured": 65,
+        "new_tokens": 85,
+        "eligible_appearances": 599,
+        "eligible_cycles_measured": 64,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -272,7 +272,7 @@
         "age_or_liq_filter": 48,
         "age_or_liq_filter_complete": false,
         "factory_kill": 12,
-        "funding_avoid": 4,
+        "funding_avoid": 3,
         "risk_other": 4,
         "skipped_unverified": 0
       },
@@ -1764,16 +1764,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 693,
           "time": "2026-11-18 06:30"
-        },
-        {
-          "symbol": "ANT",
-          "mint_prefix": "EadD2LMp6E",
-          "kind": "funding_avoid",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (finansiering)",
-          "cycle": 692,
-          "time": "2026-11-18 06:05"
         }
       ],
       "unknowns": [
@@ -6170,6 +6160,11 @@
       },
       {
         "t": "2026-11-25 05:31",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 06:06",
         "cycle": null,
         "equity": 9.838158
       }
