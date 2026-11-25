@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 20:31",
+  "generated_at_stockholm": "2026-11-25 21:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 20:31",
-      "to": "2026-11-25 20:31",
+      "from": "2026-11-24 21:03",
+      "to": "2026-11-25 21:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 49,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 17,
+        "new_tokens": 18,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -30,15 +30,25 @@
         "scout_rule11": 3,
         "scout_unique": 10,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 13,
+        "age_or_liq_filter": 14,
         "age_or_liq_filter_complete": true,
-        "factory_kill": 1,
+        "factory_kill": 2,
         "funding_avoid": 1,
         "risk_other": 3,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "SOL2",
+          "mint_prefix": "FF5V2c6M",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-25 20:35"
+        },
         {
           "symbol": "ATX",
           "mint_prefix": "Ya9PEJA9UZmb",
@@ -333,10 +343,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-18 20:31",
-      "to": "2026-11-25 20:31",
+      "from": "2026-11-18 21:03",
+      "to": "2026-11-25 21:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 336,
+      "cycles": 337,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -349,9 +359,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 74,
-        "eligible_appearances": 336,
-        "eligible_cycles_measured": 38,
+        "new_tokens": 75,
+        "eligible_appearances": 325,
+        "eligible_cycles_measured": 37,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -364,15 +374,25 @@
         "scout_rule11": 13,
         "scout_unique": 47,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 50,
+        "age_or_liq_filter": 51,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 10,
+        "factory_kill": 11,
         "funding_avoid": 3,
         "risk_other": 4,
         "skipped_unverified": 0
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "SOL2",
+          "mint_prefix": "FF5V2c6M",
+          "kind": "factory_kill",
+          "rules": [],
+          "color": "red",
+          "label": "stoppad av fabrikskoll",
+          "cycle": null,
+          "time": "2026-11-25 20:35"
+        },
         {
           "symbol": "ATX",
           "mint_prefix": "Ya9PEJA9UZmb",
@@ -1725,7 +1745,7 @@
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 50.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
@@ -6248,6 +6268,11 @@
       },
       {
         "t": "2026-11-25 20:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-25 21:00",
         "cycle": null,
         "equity": 9.838158
       }
