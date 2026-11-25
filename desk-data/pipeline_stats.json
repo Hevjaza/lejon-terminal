@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-25 17:08",
+  "generated_at_stockholm": "2026-11-25 17:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-24 17:08",
-      "to": "2026-11-25 17:08",
+      "from": "2026-11-24 17:35",
+      "to": "2026-11-25 17:35",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 48,
       "journal_days_present": [
         "2026-11-24",
         "2026-11-25"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 13,
+        "new_tokens": 14,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 7,
+        "scout_rule1": 8,
         "scout_rule2": 5,
-        "scout_rule11": 0,
-        "scout_unique": 7,
+        "scout_rule11": 1,
+        "scout_unique": 8,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 11,
+        "age_or_liq_filter": 12,
         "age_or_liq_filter_complete": false,
         "factory_kill": 1,
         "funding_avoid": 1,
@@ -39,6 +39,19 @@
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "BIAO",
+          "mint_prefix": "As3XtYSstuVd",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 17:10"
+        },
         {
           "symbol": "ONEBASKET",
           "mint_prefix": "EUVuqAZAVksZ",
@@ -280,15 +293,15 @@
         }
       ],
       "unknowns": [
-        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 11.",
+        "1 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 12.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     },
     "7d": {
-      "from": "2026-11-18 17:08",
-      "to": "2026-11-25 17:08",
+      "from": "2026-11-18 17:35",
+      "to": "2026-11-25 17:35",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 336,
       "journal_days_present": [
         "2026-11-18",
         "2026-11-19",
@@ -301,9 +314,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 78,
-        "eligible_appearances": 414,
-        "eligible_cycles_measured": 44,
+        "new_tokens": 79,
+        "eligible_appearances": 403,
+        "eligible_cycles_measured": 43,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -311,12 +324,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 50,
+        "scout_rule1": 51,
         "scout_rule2": 23,
-        "scout_rule11": 11,
-        "scout_unique": 51,
+        "scout_rule11": 12,
+        "scout_unique": 52,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 49,
+        "age_or_liq_filter": 50,
         "age_or_liq_filter_complete": false,
         "factory_kill": 10,
         "funding_avoid": 3,
@@ -325,6 +338,19 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "BIAO",
+          "mint_prefix": "As3XtYSstuVd",
+          "kind": "scout_kill",
+          "rules": [
+            "1",
+            "11"
+          ],
+          "color": "red",
+          "label": "stoppad av SCOUT",
+          "cycle": null,
+          "time": "2026-11-25 17:10"
+        },
         {
           "symbol": "ONEBASKET",
           "mint_prefix": "EUVuqAZAVksZ",
@@ -1727,7 +1753,7 @@
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 49.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 50.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
