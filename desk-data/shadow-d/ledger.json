@@ -33,8 +33,8 @@
    "realised_pnl_sol": 0.0
   },
   "c": {
-   "label": "c-liq-20-25k",
-   "label_sv": "Likviditet 20–25k",
+   "label": "c-liq-15-25k",
+   "label_sv": "Likviditet 15–25k",
    "bought": 0,
    "closed": 0,
    "wins": 0,
@@ -45,14 +45,15 @@
  "counts_toward_live_goals": false,
  "pings_user": false,
  "created_utc": "2026-11-23T09:05:28Z",
- "updated_utc": "2026-11-25T08:04:04Z",
+ "updated_utc": "2026-11-25T08:38:45Z",
  "rules": {
-  "entry": "A rejected for exactly ONE soft reason (a Rule 1 near-miss / b funding ends at >=1000-tx hub / c liquidity 20-25k); everything else as A; hard kills unchanged",
+  "entry": "D-2: A rejected for ONE or TWO soft reasons (a Rule 1 near-miss top15<=40 % k30>=2 / b funding ends at >=1000-tx hub / c liquidity 15-25k); untraced/unresolved funding allowed and tagged; everything else as A; hard kills unchanged",
   "exit": "A exits: SL -30 %, TP1 +100 % sells 50 % then break-even stop, TP2 +1000 %",
   "size_sol": 0.2,
   "max_open": 10,
   "daily_loss_frac": 0.02,
   "top10_max_pct": 35.0,
-  "rules_version": "D-1 (A exits: SL -30 %, TP1 +100 % sells 50 % then BE, TP2 +1000 %)"
+  "rules_version": "D-2 2026-11-25 (1-2 soft reasons; R1 top15<=40 % k30>=2; liq 15-25k; untraced funding tagged; auto walk; A exits: SL -30 %, TP1 +100 % sells 50 % then BE, TP2 +1000 %)",
+  "max_soft": 2
  }
 }
