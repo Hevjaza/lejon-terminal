@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-26 02:38",
+  "generated_at_stockholm": "2026-11-26 03:00",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 02:38",
-      "to": "2026-11-26 02:38",
+      "from": "2026-11-25 03:00",
+      "to": "2026-11-26 03:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 46,
       "journal_days_present": [
         "2026-11-25",
         "2026-11-26"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 23,
+        "new_tokens": 21,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -25,12 +25,12 @@
         }
       },
       "killed": {
-        "scout_rule1": 14,
-        "scout_rule2": 8,
+        "scout_rule1": 12,
+        "scout_rule2": 6,
         "scout_rule11": 5,
-        "scout_unique": 14,
+        "scout_unique": 12,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 21,
+        "age_or_liq_filter": 20,
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 1,
@@ -343,6 +343,16 @@
           "time": "2026-11-25 13:05"
         },
         {
+          "symbol": "CHRISTMAS",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-25 07:05"
+        },
+        {
           "symbol": "BASKET",
           "mint_prefix": "3Tg6YnNrfPdF",
           "kind": "risk_other",
@@ -383,52 +393,6 @@
           "label": "undvik (RISK)",
           "cycle": null,
           "time": "2026-11-25 03:40"
-        },
-        {
-          "symbol": "DongCoin",
-          "mint_prefix": "DMFzUvtf",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-25 02:58"
-        },
-        {
-          "symbol": "CHRISTMAS",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-25 02:58"
-        },
-        {
-          "symbol": "NVIDIA",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": null,
-          "time": "2026-11-25 02:58"
-        },
-        {
-          "symbol": "ChristmASS",
-          "mint_prefix": "CLxrgvfF",
-          "kind": "scout_kill",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-25 02:40"
         }
       ],
       "unknowns": [
@@ -436,10 +400,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 02:38",
-      "to": "2026-11-26 02:38",
+      "from": "2026-11-19 03:00",
+      "to": "2026-11-26 03:00",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
@@ -6376,6 +6340,16 @@
       },
       {
         "t": "2026-11-26 02:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 02:35",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 03:05",
         "cycle": null,
         "equity": 9.838158
       }
