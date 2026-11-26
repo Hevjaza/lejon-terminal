@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-26 02:06",
+  "generated_at_stockholm": "2026-11-26 02:38",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 02:06",
-      "to": "2026-11-26 02:06",
+      "from": "2026-11-25 02:38",
+      "to": "2026-11-26 02:38",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -436,10 +436,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 02:06",
-      "to": "2026-11-26 02:06",
+      "from": "2026-11-19 02:38",
+      "to": "2026-11-26 02:38",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
@@ -452,9 +452,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 75,
-        "eligible_appearances": 205,
-        "eligible_cycles_measured": 27,
+        "new_tokens": 74,
+        "eligible_appearances": 193,
+        "eligible_cycles_measured": 26,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -467,9 +467,9 @@
         "scout_rule11": 14,
         "scout_unique": 48,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 53,
+        "age_or_liq_filter": 52,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 10,
+        "factory_kill": 9,
         "funding_avoid": 2,
         "risk_other": 4,
         "skipped_unverified": 0
@@ -1805,30 +1805,10 @@
           "label": "stoppad av SCOUT",
           "cycle": 733,
           "time": "2026-11-19 03:05"
-        },
-        {
-          "symbol": "AI",
-          "mint_prefix": "A8mt1ypn7f",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 732,
-          "time": "2026-11-19 02:31"
-        },
-        {
-          "symbol": "FNDR",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 732,
-          "time": "2026-11-19 02:31"
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 53.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 52.",
         "5 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
