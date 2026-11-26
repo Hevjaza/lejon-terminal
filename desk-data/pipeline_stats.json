@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-26 09:11",
+  "generated_at_stockholm": "2026-11-26 09:41",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 09:11",
-      "to": "2026-11-26 09:11",
+      "from": "2026-11-25 09:41",
+      "to": "2026-11-26 09:41",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -421,8 +421,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 09:11",
-      "to": "2026-11-26 09:11",
+      "from": "2026-11-19 09:41",
+      "to": "2026-11-26 09:41",
       "timezone": "Europe/Stockholm",
       "cycles": 335,
       "journal_days_present": [
@@ -438,8 +438,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 72,
-        "eligible_appearances": 149,
-        "eligible_cycles_measured": 19,
+        "eligible_appearances": 140,
+        "eligible_cycles_measured": 18,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -452,7 +452,7 @@
         "scout_rule11": 13,
         "scout_unique": 46,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 46,
+        "age_or_liq_filter": 45,
         "age_or_liq_filter_complete": false,
         "factory_kill": 9,
         "funding_avoid": 1,
@@ -1687,20 +1687,10 @@
           "label": "stoppad av fabrikskoll",
           "cycle": 747,
           "time": "2026-11-19 10:05"
-        },
-        {
-          "symbol": "After",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 746,
-          "time": "2026-11-19 09:30"
         }
       ],
       "unknowns": [
-        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 46.",
+        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 45.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     }
@@ -6337,6 +6327,11 @@
       },
       {
         "t": "2026-11-26 09:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 09:40",
         "cycle": null,
         "equity": 9.838158
       }
