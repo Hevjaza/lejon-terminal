@@ -74,7 +74,25 @@
   "measured_slippage_pct": 0.1613,
   "round_trip_ratio": 0.9856
  },
- "marks": [],
- "last_mark": null,
+ "marks": [
+  {
+   "utc": "2026-11-26T05:02:55Z",
+   "exit_value_sol": 0.154729888,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.045280112,
+   "multiple": 0.7736,
+   "pct": -22.639,
+   "trigger": "cycle"
+  }
+ ],
+ "last_mark": {
+  "utc": "2026-11-26T05:02:55Z",
+  "exit_value_sol": 0.154729888,
+  "remaining_cost_basis_sol": 0.20001,
+  "unrealised_pnl_sol": -0.045280112,
+  "multiple": 0.7736,
+  "pct": -22.639,
+  "trigger": "cycle"
+ },
  "exit": null
 }
