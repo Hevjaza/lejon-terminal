@@ -146,15 +146,24 @@
    "multiple": 0.8146,
    "pct": -18.541,
    "trigger": "cycle"
+  },
+  {
+   "utc": "2026-11-26T09:04:51Z",
+   "exit_value_sol": 0.174794489,
+   "remaining_cost_basis_sol": 0.20001,
+   "unrealised_pnl_sol": -0.025215511,
+   "multiple": 0.8739,
+   "pct": -12.607,
+   "trigger": "cycle"
   }
  ],
  "last_mark": {
-  "utc": "2026-11-26T08:38:12Z",
-  "exit_value_sol": 0.162926517,
+  "utc": "2026-11-26T09:04:51Z",
+  "exit_value_sol": 0.174794489,
   "remaining_cost_basis_sol": 0.20001,
-  "unrealised_pnl_sol": -0.037083483,
-  "multiple": 0.8146,
-  "pct": -18.541,
+  "unrealised_pnl_sol": -0.025215511,
+  "multiple": 0.8739,
+  "pct": -12.607,
   "trigger": "cycle"
  },
  "exit": null
