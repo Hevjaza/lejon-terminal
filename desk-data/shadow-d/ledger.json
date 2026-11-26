@@ -5,7 +5,9 @@
  "equity_start_sol": 10.0,
  "realised_pnl_sol": 0.0,
  "daily": {},
- "equity_day_start": {},
+ "equity_day_start": {
+  "2026-11-26": 10.0
+ },
  "halted_dates": [],
  "trades_closed": 0,
  "wins": 0,
@@ -35,7 +37,7 @@
   "c": {
    "label": "c-liq-15-25k",
    "label_sv": "Likviditet 15–25k",
-   "bought": 0,
+   "bought": 1,
    "closed": 0,
    "wins": 0,
    "losses": 0,
@@ -54,7 +56,7 @@
  "counts_toward_live_goals": false,
  "pings_user": false,
  "created_utc": "2026-11-23T09:05:28Z",
- "updated_utc": "2026-11-26T04:03:18Z",
+ "updated_utc": "2026-11-26T04:36:14Z",
  "rules": {
   "entry": "D-2: A rejected for ONE or TWO soft reasons (a Rule 1 near-miss top15<=40 % k30>=2 / b funding ends at >=1000-tx hub / c liquidity 15-25k / f scout soft flag 'Misstänkt bundling' with a fully resolved funding walk); untraced/unresolved funding allowed and tagged; everything else as A; hard kills unchanged",
   "exit": "A exits: SL -30 %, TP1 +100 % sells 50 % then break-even stop, TP2 +1000 %",

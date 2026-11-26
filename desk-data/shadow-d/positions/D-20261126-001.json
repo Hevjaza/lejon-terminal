@@ -1,0 +1,80 @@
+{
+ "ticket": "D-20261126-001",
+ "strategy": "D",
+ "mint": "3jAB5ksB13Kgm2Q39NU6d2USUxBy2f9LaTvyay6Gpump",
+ "symbol": "ccat",
+ "status": "OPEN",
+ "label": "SHADOW-D SIMULATED (Jupiter quote, desk-side) - PAPER, inte riktiga pengar",
+ "paper": true,
+ "counts_toward_live_goals": false,
+ "d_category": "c",
+ "d_soft_reason": "c-liq-15-25k",
+ "d_soft_reason_sv": "Likviditet 15–25k",
+ "d_soft_reasons": [
+  "c"
+ ],
+ "d_funding_tag": "resolved",
+ "d_funding_note": "AUTO funding walk (D, bounded 80 calls/90 s; used 15 calls, 1.2 s): 10/10 wallets resolved; every wallet ends at a large hub / aged wallet (aged, hub, self); no pass-through, no sybil, no identical amounts",
+ "d_gate": {
+  "checks": [
+   "scout_check PASS (3jAB5ksB13Kgm2Q39NU6d2USUxBy2f9LaTvyay6Gpump.json, 0.0 h old)",
+   "scout PASS",
+   "funding resolved by RISK walk: AUTO funding walk (D, bounded 80 calls/90 s; used 15 calls, 1.2 s): 10/10 wallets resolved; every wallet ends at a large hub / aged wallet (aged, hub, self); no",
+   "liquidity 17,115 USD, age 365 min (pumpswap)",
+   "mint + freeze authority null (RPC)",
+   "no transfer fee / dangerous extension (extensions: ['metadataPointer', 'tokenMetadata'])",
+   "LP burned/locked: RugCheck lpLockedPct 100",
+   "top-10 ex-pool 31.63 % <= 35 % (RPC largest accounts, 1 pool/curve account(s) excluded)",
+   "factory_check PASS: WDMemByt.. PASS (2 mints, max 2/7d) not a launch factory under the mechanical test (2 distinct mints in complete history of 708 sigs, max 2 in any 7-day window; need ≥5 lifetime or ≥3 in 7d)"
+  ],
+  "soft": [
+   "c"
+  ],
+  "pair": {
+   "dex": "pumpswap",
+   "pool": "E4bKVRUt7Rhe2nJS4HQSA7z2kQpJYb58NMPHj2VbtGbP",
+   "liq_usd": 17114.62,
+   "age_min": 365.1,
+   "vol_h1": 12331.92,
+   "chg_h1": 53.22
+  },
+  "top10_pct": 31.63
+ },
+ "risk_note": null,
+ "entry_utc": "2026-11-26T04:36:13Z",
+ "entry_stockholm": "2026-11-26 05:36:13",
+ "size_sol": 0.2,
+ "entry_fee_sol": 1e-05,
+ "cost_sol": 0.20001,
+ "decimals": 6,
+ "tokens_raw": 356889454983,
+ "tokens_ui": 356889.454983,
+ "tokens_raw_initial": 356889454983,
+ "tokens_ui_initial": 356889.454983,
+ "entry_price_sol_per_token": 5.604256365869012e-07,
+ "stop_loss_frac": -0.3,
+ "stop_loss_price_sol_per_token": 3.922979456108308e-07,
+ "tp1_price_sol_per_token": 1.1208512731738024e-06,
+ "tp2_price_sol_per_token": 6.164682002455913e-06,
+ "stop_loss_after_tp1_frac": 0.0,
+ "rules_version": "D-2.1 2026-11-25 (1-2 soft reasons; R1 top15<=40 % k30>=2; liq 15-25k; f PASS-FLAG with resolved walk; untraced funding tagged; auto walk; A exits: SL -30 %, TP1 +100 % sells 50 % then BE, TP2 +1000 %)",
+ "tp1_done": false,
+ "tp2_done": false,
+ "partial_exits": [],
+ "realised_partial_pnl_sol": 0.0,
+ "proceeds_so_far_sol": 0.0,
+ "entry_quote": {
+  "quote_utc": "2026-11-26T04:36:13Z",
+  "route": [
+   "Kipseli",
+   "Hadron",
+   "Pump.fun Amm"
+  ],
+  "out_tokens_raw": 356889454983,
+  "measured_slippage_pct": 0.1613,
+  "round_trip_ratio": 0.9856
+ },
+ "marks": [],
+ "last_mark": null,
+ "exit": null
+}

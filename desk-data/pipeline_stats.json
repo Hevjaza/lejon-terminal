@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-26 05:03",
+  "generated_at_stockholm": "2026-11-26 05:36",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 05:03",
-      "to": "2026-11-26 05:03",
+      "from": "2026-11-25 05:36",
+      "to": "2026-11-26 05:36",
       "timezone": "Europe/Stockholm",
       "cycles": 46,
       "journal_days_present": [
@@ -15,7 +15,7 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 21,
+        "new_tokens": 20,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -25,10 +25,10 @@
         }
       },
       "killed": {
-        "scout_rule1": 13,
+        "scout_rule1": 12,
         "scout_rule2": 7,
         "scout_rule11": 5,
-        "scout_unique": 13,
+        "scout_unique": 12,
         "scout_rules_unknown": 0,
         "age_or_liq_filter": 22,
         "age_or_liq_filter_complete": true,
@@ -404,18 +404,6 @@
           "label": "undvik (RISK)",
           "cycle": null,
           "time": "2026-11-25 06:40"
-        },
-        {
-          "symbol": "YUMA",
-          "mint_prefix": "CkwFsrup",
-          "kind": "scout_kill",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stoppad av SCOUT",
-          "cycle": null,
-          "time": "2026-11-25 05:31"
         }
       ],
       "unknowns": [
@@ -423,10 +411,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 05:03",
-      "to": "2026-11-26 05:03",
+      "from": "2026-11-19 05:36",
+      "to": "2026-11-26 05:36",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
@@ -1761,7 +1749,7 @@
       ],
       "unknowns": [
         "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 51.",
-        "3 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
+        "1 rundor har disc.py-text utan ett tydligt antal godkända kandidater.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     }
@@ -6355,6 +6343,16 @@
         "t": "2026-11-26 04:40",
         "cycle": null,
         "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 05:03",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 05:40",
+        "cycle": null,
+        "equity": 9.838158
       }
     ]
   },
@@ -6392,7 +6390,7 @@
       "closed": 0,
       "wins": 0,
       "losses": 0,
-      "open": 0,
+      "open": 1,
       "win_rate_pct": null,
       "label": "PAPER – inte riktiga pengar",
       "counts_toward_live_goals": false,
@@ -6418,7 +6416,7 @@
         "c": {
           "label": "c-liq-15-25k",
           "label_sv": "Likviditet 15–25k",
-          "bought": 0,
+          "bought": 1,
           "closed": 0,
           "wins": 0,
           "losses": 0,
