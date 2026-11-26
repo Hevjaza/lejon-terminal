@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-26 04:37",
+  "generated_at_stockholm": "2026-11-26 05:03",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 04:37",
-      "to": "2026-11-26 04:37",
+      "from": "2026-11-25 05:03",
+      "to": "2026-11-26 05:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 46,
       "journal_days_present": [
         "2026-11-25",
         "2026-11-26"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 22,
+        "new_tokens": 21,
         "eligible_appearances": 7,
         "eligible_cycles_measured": 1,
         "sources": {
@@ -34,7 +34,7 @@
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 1,
-        "risk_other": 2,
+        "risk_other": 1,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
@@ -416,16 +416,6 @@
           "label": "stoppad av SCOUT",
           "cycle": null,
           "time": "2026-11-25 05:31"
-        },
-        {
-          "symbol": "Manlet",
-          "mint_prefix": "6Luwyvmt",
-          "kind": "risk_other",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (RISK)",
-          "cycle": null,
-          "time": "2026-11-25 04:40"
         }
       ],
       "unknowns": [
@@ -433,10 +423,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 04:37",
-      "to": "2026-11-26 04:37",
+      "from": "2026-11-19 05:03",
+      "to": "2026-11-26 05:03",
       "timezone": "Europe/Stockholm",
-      "cycles": 334,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
