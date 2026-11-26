@@ -1,14 +1,14 @@
 {
-  "generated_at_stockholm": "2026-11-26 10:04",
+  "generated_at_stockholm": "2026-11-26 10:37",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 10:04",
-      "to": "2026-11-26 10:04",
+      "from": "2026-11-25 10:37",
+      "to": "2026-11-26 10:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 47,
+      "cycles": 46,
       "journal_days_present": [
         "2026-11-25",
         "2026-11-26"
@@ -421,10 +421,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 10:04",
-      "to": "2026-11-26 10:04",
+      "from": "2026-11-19 10:37",
+      "to": "2026-11-26 10:37",
       "timezone": "Europe/Stockholm",
-      "cycles": 335,
+      "cycles": 334,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
@@ -437,9 +437,9 @@
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 72,
-        "eligible_appearances": 140,
-        "eligible_cycles_measured": 18,
+        "new_tokens": 70,
+        "eligible_appearances": 122,
+        "eligible_cycles_measured": 16,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -452,9 +452,9 @@
         "scout_rule11": 13,
         "scout_unique": 46,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 45,
+        "age_or_liq_filter": 46,
         "age_or_liq_filter_complete": false,
-        "factory_kill": 9,
+        "factory_kill": 7,
         "funding_avoid": 1,
         "risk_other": 4,
         "skipped_unverified": 0
@@ -1670,27 +1670,17 @@
         },
         {
           "symbol": "APOCRYCOIN",
-          "mint_prefix": "6dy9DhP5",
-          "kind": "factory_kill",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
           "rules": [],
           "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 747,
-          "time": "2026-11-19 10:05"
-        },
-        {
-          "symbol": "APOCRYCOIN",
-          "mint_prefix": "3hwL6shc",
-          "kind": "factory_kill",
-          "rules": [],
-          "color": "red",
-          "label": "stoppad av fabrikskoll",
-          "cycle": 747,
-          "time": "2026-11-19 10:05"
+          "label": "stopp för ålder/likviditet",
+          "cycle": 749,
+          "time": "2026-11-19 11:05"
         }
       ],
       "unknowns": [
-        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 45.",
+        "9 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 46.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     }
@@ -6337,6 +6327,11 @@
       },
       {
         "t": "2026-11-26 10:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 10:40",
         "cycle": null,
         "equity": 9.838158
       }
