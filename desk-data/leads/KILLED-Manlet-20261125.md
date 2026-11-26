@@ -1,2 +1,0 @@
-# KILLED-RISK Manlet 6LuwyvmTMyJiQRZQPneZCfr2gehSSAvQbMWgXCjopump (2026-11-25)
-scout_check PASS (R1 creator buy 12.67 %, R2 not hit, R11 0.99 %). RISK check 6: top-10 holders ex-pool = 51.7 + 1.63 + 1.53 + 1.52 + 1.33 + 1.23 + 1.17 + 1.03 + 1.0 + 1.0 = ~63 % (single wallet 6a7igBmQ 51.7 %, system-owned wallet, not a pool/program; pool 4okxTvuJ 8.41 % excluded). > 40 % cap = hard KILL, Momentum-undantag cannot apply. Mint/freeze authority null. No lead id, no ticket, no buy.

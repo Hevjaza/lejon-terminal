@@ -1,0 +1,3 @@
+# AVOID (c596, 2026-11-14) GTA$ 6Nh9cmDoQvd2FvjNm44VmTwbyiKtxgmM7SCuhREhpump (pool BivxoZ...)
+SCOUT: rule 1 not hit (3 wallets, 13.6% slot0), rule 2 not hit (no co-sign, migration 2026-11-14 11:38Z, curve created 11-03), rule 11 not hit (0 buyers in window). Evidence: research/raw-20261114/c596/.
+RISK: top-10 ex-pool 20.3% (pass); mint/freeze authority none; LP supply 0 (pool-owned). Deployer/fee payer 2zbQ3fdz...: bot-like wallet (nonce-based txs, ~35 distinct mints touched in 40-tx sample, >1000 txs in 6 days, at least one other token Create 2026-11-09) -> launch-factory/serial-launcher pattern (RISK check 8, t39u hard kill); same name/ticker as GTA$ 8Hdz killed c591. Also h1 +616% with 8.5k buys/6k sells (bot-driven). Verdict: AVOID, no ticket, no buy.

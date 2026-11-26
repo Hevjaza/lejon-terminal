@@ -1,1 +1,0 @@
-# KILLED-SCOUT Marvin (HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump) c606. Rule 1 HIT: top 15 wallets in slots 0-2 bought 33.7 % of tradable supply (19 wallets, 34.95 % total; creation slot 7 wallets 20.2 %; paid RPC). No RISK, no ticket.

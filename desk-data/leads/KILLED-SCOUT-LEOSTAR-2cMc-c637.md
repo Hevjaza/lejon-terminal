@@ -1,1 +1,0 @@
-KILLED-SCOUT LEOSTAR 2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump (c637): Rule 1 + Rule 11 on-chain; 21 buyers filled whole curve in slot 0 (top10 110% tradable, 2 wallets reach 30%), multiwallet create txs, migration same slot+2. Age 34m, buy/sell 1.50x.

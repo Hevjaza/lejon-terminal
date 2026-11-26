@@ -1,1 +1,0 @@
-KILLED-SCOUT BAWSAQ D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump (c637): Rule 1; one wallet (5tH8Lx...) bought 99.96% of tradable supply in creation slot, 1 wallet reaches 30%; migrated 2 slots after create.

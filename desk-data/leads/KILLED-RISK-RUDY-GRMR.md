@@ -1,2 +1,0 @@
-# KILLED-RISK RUDY (GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump) 2026-11-20
-scout_check PASS-FLAG (Misstänkt bundling: slot0 2 buyers 15.04 %, creator buy 14.14 %). RISK: top-10 ex-pool 20.99 %, mint/freeze authority none, curve complete. Check 8 factory_check on create-signer 5FqUo9aBjsp7QeeyN6Vi2ZmF2fjS4H5EU7wnAQwPy17z = KILL (3 distinct CreateV2 mints in 7d window, all 2026-11-20 12:59-13:04Z). Hard KILL, no ticket, no buy.
