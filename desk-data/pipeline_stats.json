@@ -1,21 +1,21 @@
 {
-  "generated_at_stockholm": "2026-11-26 06:38",
+  "generated_at_stockholm": "2026-11-26 07:12",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 06:38",
-      "to": "2026-11-26 06:38",
+      "from": "2026-11-25 07:12",
+      "to": "2026-11-26 07:12",
       "timezone": "Europe/Stockholm",
-      "cycles": 48,
+      "cycles": 47,
       "journal_days_present": [
         "2026-11-25",
         "2026-11-26"
       ],
       "journal_days_missing": [],
       "discovered": {
-        "new_tokens": 20,
+        "new_tokens": 19,
         "eligible_appearances": 17,
         "eligible_cycles_measured": 2,
         "sources": {
@@ -30,15 +30,35 @@
         "scout_rule11": 5,
         "scout_unique": 12,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 22,
+        "age_or_liq_filter": 24,
         "age_or_liq_filter_complete": true,
         "factory_kill": 2,
         "funding_avoid": 1,
-        "risk_other": 1,
+        "risk_other": 0,
         "skipped_unverified": 0
       },
       "passed_to_buy": 0,
       "tokens": [
+        {
+          "symbol": "Cupseymas",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-26 07:08"
+        },
+        {
+          "symbol": "Elonmas",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-26 07:08"
+        },
         {
           "symbol": "CHOCBAR",
           "mint_prefix": null,
@@ -393,17 +413,7 @@
           "color": "red",
           "label": "stopp för ålder/likviditet",
           "cycle": null,
-          "time": "2026-11-25 07:05"
-        },
-        {
-          "symbol": "BASKET",
-          "mint_prefix": "3Tg6YnNrfPdF",
-          "kind": "risk_other",
-          "rules": [],
-          "color": "yellow",
-          "label": "undvik (RISK)",
-          "cycle": null,
-          "time": "2026-11-25 06:40"
+          "time": "2026-11-25 13:05"
         }
       ],
       "unknowns": [
@@ -411,10 +421,10 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 06:38",
-      "to": "2026-11-26 06:38",
+      "from": "2026-11-19 07:12",
+      "to": "2026-11-26 07:12",
       "timezone": "Europe/Stockholm",
-      "cycles": 336,
+      "cycles": 335,
       "journal_days_present": [
         "2026-11-19",
         "2026-11-20",
@@ -429,7 +439,7 @@
       "discovered": {
         "new_tokens": 72,
         "eligible_appearances": 180,
-        "eligible_cycles_measured": 25,
+        "eligible_cycles_measured": 23,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -442,7 +452,7 @@
         "scout_rule11": 13,
         "scout_unique": 46,
         "scout_rules_unknown": 0,
-        "age_or_liq_filter": 49,
+        "age_or_liq_filter": 47,
         "age_or_liq_filter_complete": false,
         "factory_kill": 9,
         "funding_avoid": 1,
@@ -451,6 +461,26 @@
       },
       "passed_to_buy": 1,
       "tokens": [
+        {
+          "symbol": "Cupseymas",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-26 07:08"
+        },
+        {
+          "symbol": "Elonmas",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": null,
+          "time": "2026-11-26 07:08"
+        },
         {
           "symbol": "CHOCBAR",
           "mint_prefix": null,
@@ -1649,6 +1679,16 @@
           "time": "2026-11-19 10:05"
         },
         {
+          "symbol": "After",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 746,
+          "time": "2026-11-19 09:30"
+        },
+        {
           "symbol": "DCTY",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -1667,65 +1707,10 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 742,
           "time": "2026-11-19 07:37"
-        },
-        {
-          "symbol": "GTA",
-          "mint_prefix": "8CnvwZJL",
-          "kind": "filter_age_liq",
-          "rules": [
-            "1",
-            "2"
-          ],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 741,
-          "time": "2026-11-19 07:05"
-        },
-        {
-          "symbol": "GTA6IRL",
-          "mint_prefix": "4NShmh1A",
-          "kind": "filter_age_liq",
-          "rules": [
-            "1"
-          ],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 741,
-          "time": "2026-11-19 07:05"
-        },
-        {
-          "symbol": "After",
-          "mint_prefix": "CHNgaDuX",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 741,
-          "time": "2026-11-19 07:05"
-        },
-        {
-          "symbol": "Palbot",
-          "mint_prefix": "FwtqW8PB",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 740,
-          "time": "2026-11-19 06:40"
-        },
-        {
-          "symbol": "SYRUP",
-          "mint_prefix": "2XjNoVME",
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 740,
-          "time": "2026-11-19 06:40"
         }
       ],
       "unknowns": [
-        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 49.",
+        "10 runda(or) nämner ålder/likviditet-stopp utan tokennamn; namngivna filterstopp är 47.",
         "Uppdelning mellan DexScreener och GeckoTerminal går inte att läsa ut ur journalen."
       ]
     }
@@ -6337,6 +6322,11 @@
       },
       {
         "t": "2026-11-26 06:33",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 07:08",
         "cycle": null,
         "equity": 9.838158
       }
