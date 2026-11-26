@@ -1,12 +1,12 @@
 {
-  "generated_at_stockholm": "2026-11-26 08:10",
+  "generated_at_stockholm": "2026-11-26 08:35",
   "timezone": "Europe/Stockholm",
   "paper": true,
   "disclaimer": "PAPER – inte riktiga pengar. Inte finansiell rådgivning.",
   "windows": {
     "24h": {
-      "from": "2026-11-25 08:10",
-      "to": "2026-11-26 08:10",
+      "from": "2026-11-25 08:35",
+      "to": "2026-11-26 08:35",
       "timezone": "Europe/Stockholm",
       "cycles": 47,
       "journal_days_present": [
@@ -16,8 +16,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 19,
-        "eligible_appearances": 17,
-        "eligible_cycles_measured": 2,
+        "eligible_appearances": 10,
+        "eligible_cycles_measured": 1,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -421,8 +421,8 @@
       ]
     },
     "7d": {
-      "from": "2026-11-19 08:10",
-      "to": "2026-11-26 08:10",
+      "from": "2026-11-19 08:35",
+      "to": "2026-11-26 08:35",
       "timezone": "Europe/Stockholm",
       "cycles": 335,
       "journal_days_present": [
@@ -438,8 +438,8 @@
       "journal_days_missing": [],
       "discovered": {
         "new_tokens": 72,
-        "eligible_appearances": 163,
-        "eligible_cycles_measured": 21,
+        "eligible_appearances": 156,
+        "eligible_cycles_measured": 20,
         "sources": {
           "dexscreener": null,
           "geckoterminal": null,
@@ -1589,6 +1589,16 @@
           "time": "2026-11-19 12:06"
         },
         {
+          "symbol": "DCTY",
+          "mint_prefix": null,
+          "kind": "filter_age_liq",
+          "rules": [],
+          "color": "red",
+          "label": "stopp för ålder/likviditet",
+          "cycle": 750,
+          "time": "2026-11-19 11:35"
+        },
+        {
           "symbol": "Sparrow",
           "mint_prefix": null,
           "kind": "filter_age_liq",
@@ -1687,16 +1697,6 @@
           "label": "stopp för ålder/likviditet",
           "cycle": 746,
           "time": "2026-11-19 09:30"
-        },
-        {
-          "symbol": "DCTY",
-          "mint_prefix": null,
-          "kind": "filter_age_liq",
-          "rules": [],
-          "color": "red",
-          "label": "stopp för ålder/likviditet",
-          "cycle": 744,
-          "time": "2026-11-19 08:35"
         }
       ],
       "unknowns": [
@@ -6327,6 +6327,11 @@
       },
       {
         "t": "2026-11-26 08:05",
+        "cycle": null,
+        "equity": 9.838158
+      },
+      {
+        "t": "2026-11-26 08:30",
         "cycle": null,
         "equity": 9.838158
       }
